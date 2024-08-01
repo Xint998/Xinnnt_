@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Main page</title>
+
+<style id="applicationStylesheet" type="text/css" >
+	.mediaViewInfo {
+		--web-view-name: Main page;
+		--web-view-id: Main_page;
+		--web-scale-on-resize: true;
+		--web-enable-deep-linking: true;
+	}
+	:root {
+		--web-view-ids: Main_page;
+	}
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		border: none;
+		
+	}
+	#Main_page1 {
+		
+		position: absolute;
+		width: 100vw;
+		height: 100vh;
+		overflow: hidden;
+		background: url(未标题-1.jpg);
+		--web-view-name: Main page;
+		--web-view-id: Main_page;
+		--web-scale-on-resize: true;
+		--web-enable-deep-linking: true;
+		
+	}
+	
+	
+	#nametitle {
+        position:fixed;
+        left:30px;
+        top:20px;
+        z-index: 1000;
+        
+    }
+    #rec {
+        position:fixed;
+        width:100vw;
+        height:60px;
+        top:0;
+        overflow:hidden;
+        background-color: rgba(255, 255, 255, 0.809);
+        z-index:1000;
+    }
+	
+	#img1 {
+		height:auto;
+		width:100vw;
+	}
+
+	@font-face {
+		font-family:jianjie2;
+		src:url(font/ShengHuoHenKuDanNiHenTian-2.ttf);
+	}
+
+
+	
+	
+	#n_5 {
+		position: absolute;
+		width: 0px;
+		height: 0px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Portfolio {
+        right:17.5vw;
+        top: 25px;
+        position: fixed;
+        overflow: visible;
+        width: 66.128px;
+        height: 28.681869506835938px;
+        --web-animation: fadein undefineds undefined;
+        --web-action-type: page;
+        --web-action-target: Portfolio.html;
+        cursor: pointer;
+        line-height: 999.9998168945312px;
+        margin-top: -492.9999084472656px;
+        text-align: center;
+        font-family: Bangla MN;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 17px;
+        color: rgb(128, 128, 128);
+        text-decoration-line:underline;
+        text-underline-offset: 8px;
+        z-index: 1000;
+        
+    }
+
+    #Main_Page {
+        right: 27vw;
+        top: 25px;
+        position: fixed;
+        overflow: visible;
+        width: 94.128px;
+        height: 28.681869506835938px;
+        --web-animation: fadein undefineds undefined;
+        --web-action-type: page;
+        --web-action-target: Main_page.html;
+        cursor: pointer;
+        line-height: 999.9998168945312px;
+        margin-top: -492.9999084472656px;
+        text-align: center;
+        font-family: Bangla MN;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 17px;
+        color: rgba(3,0,0,1);
+        z-index: 1000;
+        
+    }
+	#Contact {
+        right: 7vw;
+        top: 25px;
+        position: fixed;
+        overflow: visible;
+        width: 72.509px;
+        height: 28.681869506835938px;
+        --web-animation: fadein undefineds undefined;
+        --web-action-type: page;
+        --web-action-target: archive.html;
+        cursor: pointer;
+        line-height: 999.9998168945312px;
+        margin-top: -492.9999084472656px;
+        text-align: center;
+        font-family: Bangla MN;
+        font-weight: normal;
+        font-size: 17px;
+        color: rgba(3,0,0,1);
+        z-index: 1000;
+    }
+
+	.bigbox {
+		align-content: center;
+		width:90vw;
+		height:87vh;
+		
+		border: 3px gray solid;
+		display:flex;
+		overflow:hidden;
+		top:8vh;
+		left:5vw;
+		position:absolute;
+		
+	}
+
+	
+
+	.bigboxleft{
+		position:absolute;
+		
+		top:-3px;
+		left:-3px;
+		height:87vh;
+		width:37vw;
+	}
+
+	.up {
+		display:flex;
+		flex-direction:row;
+		position:absolute;
+		overflow: hidden;
+		height:13vh;
+		border: 3px gray solid;
+		top:-3px;
+		left:-3px;
+
+	}
+
+
+	.upleft {
+	
+		border: 3px gray solid;
+		font-family:krungthep;
+		left:-3px;
+		width:18.5vw;
+		height:12.7vh;
+		
+		border-bottom: transparent solid;
+		border-top: transparent solid;
+		font-size: 1.8vw;
+		color: rgb(107, 107, 107);
+		text-align: center;
+		padding:2vh;
+		
+	}	
+
+
+	@font-face {
+		font-family:krungthep;
+		src:url(font/Krungthep.ttf)
+	}
+
+
+	.upright {
+		right:-3px;
+		top:-3px;
+		width:18.5vw;
+		font-family:krungthep;
+		color: rgb(107, 107, 107);
+		text-align: center;
+		margin:auto;
+		font-size: 3.5vw;
+	}
+	
+
+
+	@font-face {
+		font-family:PlayfairDisplay-Regular;
+		src:url(font/PlayfairDisplay-VariableFont_wght.ttf);
+	}
+
+	.bottom	{
+		position:absolute;
+		bottom:-3px;
+		height:74vh;
+		width:37vw;
+		
+		
+
+
+	}
+
+	#个人简介 {
+		position: absolute;
+		width:27vw;
+		height:auto;
+		top:10vh;
+		left:5vw;
+		font-family: 'Courier New', Courier, monospace;
+		font-size:0.95vw;
+		z-index:99;
+	}
+	
+
+	#个人简介2 {
+		position: absolute;
+		width:27vw;
+		height:auto;
+		top:40vh;
+		left:5vw;
+		font-family: jianjie2;
+		font-size:1vw;
+		color:rgb(61, 60, 60);
+		z-index:99;
+	}
+
+	.imgme {
+		width:53vw;
+		height:87vh;
+		position:absolute;
+		border: 3px gray solid;
+		right:-3px;
+		bottom:-3px;
+		padding:auto;
+		text-align: center;
+	}
+
+	#me {
+		width:44vw;
+		height:auto;
+		position:relative;
+		margin: 1vh;
+		
+	}
+	
+	.welcome {
+		font-family: PlayfairDisplay-Regular;
+		font-size: 9vw;
+		letter-spacing: 0.3vw;
+		color: rgb(58, 58, 58);
+		
+	}
+
+</style>
+</head>
+<body>
+<div id="Main_page1">
+	<div id="rec"></div>	
+	<div class="bigbox">
+		<div class="bigboxleft">
+			<div class="up">
+				<div class="upleft"><p>GRAPHIC</p> 
+					DESIGN</div>
+				<div class="upright">VCUARTS</div>
+				
+			</div>
+			<div class="bottom">
+				<div id="个人简介">
+					<p>  &nbsp;  &nbsp; Hello! I am Xintong Wu from Fujian, China and currently located in Richmond, VA. </p>
+					<p>	 &nbsp;  &nbsp; A Pisces girl born in 2000. I am a Chinese traditional culture explorer. Love anything related to art. In my free time, I like to study Chinese cuisine, drawing or painting and play video games with my friends.</p>
+					<p>	 &nbsp;  &nbsp; I am currently a senior graphic design major student at Virginia Commonwealth University.</p>
+				</div>
+			
+				<div id="个人简介2">
+					<p>  &nbsp;  &nbsp; 你好呀！我是吴炘彤来自中国福建福州，现居住美国维吉尼亚州的里士满。</p>
+					<p>	 &nbsp;  &nbsp; 一个出生于千禧年的双鱼座女生。同时也是中国传统文化爱好者。喜欢与艺术相关的一切事物。 在闲暇之时我喜欢研究中国美食和各种颜料绘画。我也是一个喜欢和朋友一起玩游戏的资深网瘾少女。</p>
+					<p>	 &nbsp;  &nbsp; 我现在是一名就读于维吉尼亚联邦大学的大四平面设计专业学生。</p>
+				</div>
+			</div>
+		</div>
+		
+			<div class="imgme">
+				<div class="welcome">WELCOME</div>
+				<img id=me src="me.png">
+			</div>
+		
+	</div>
+	
+	
+		
+	<div id="Portfolio">
+		<a href="Portfolio.html" style="text-decoration: none; color: black;"><span>Portfolio</span></a>
+	</div>
+	<div id="Main_Page">
+		<a href="Main_page.html" style="text-decoration: none; color: black;"><span>Main Page</span></a>
+	</div>
+	<div id="Contact">
+		<a href="archive.html" style="text-decoration: none; color: black;"><span>Contact</span></a>
+	</div>
+
+	</div>
+	<div id="nametitle"><img src="resource/2x/资源 1@2x.png" style="height:40px; width:140px"></div>
+
+	<img id="n_5" src="n_5.png" srcset="n_5.png 1x, n_5@2x.png 2x">
+		
+	
+
+	</div>
+</div>
+</body>
+</html>

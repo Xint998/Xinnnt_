@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title></title>
+<style id="applicationStylesheet" type="text/css">
+	.mediaViewInfo {
+		--web-view-name: Portfolio – 7;
+		--web-view-id: Portfolio__7;
+		--web-scale-on-resize: true;
+		--web-enable-deep-linking: true;
+	}
+	:root {
+		--web-view-ids: Portfolio__7;
+	}
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		border: none;
+	}
+	#Portfolio__1 {
+		position: absolute;
+		display:flex;
+		width: 100vw;
+		height: auto;
+		background-color: rgba(255,255,255,1);
+	
+		--web-view-name: Portfolio – 7;
+		--web-view-id: Portfolio__7;
+		--web-scale-on-resize: true;
+		--web-enable-deep-linking: true;
+	}
+	
+
+
+	#nametitle {
+        position:fixed;
+        left:30px;
+        top:20px;
+        z-index: 1000;
+        
+    }
+    #rec {
+        position:fixed;
+        width:100vw;
+        height:60px;
+        top:0;
+        overflow:hidden;
+        background-color: rgba(255, 255, 255, 0.809);
+        z-index:1000;
+    }
+
+    #Portfolio {
+        right:17.5vw;
+        top: 25px;
+        position: fixed;
+        overflow: visible;
+        width: 66.128px;
+        height: 28.681869506835938px;
+        --web-animation: fadein undefineds undefined;
+        --web-action-type: page;
+        --web-action-target: Portfolio.html;
+        cursor: pointer;
+        line-height: 999.9998168945312px;
+        margin-top: -492.9999084472656px;
+        text-align: center;
+        font-family: Bangla MN;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 17px;
+        color: rgb(128, 128, 128);
+        text-decoration-line:underline;
+        text-underline-offset: 8px;
+        z-index: 1000;
+        
+    }
+
+    #Main_Page {
+        right: 27vw;
+        top: 25px;
+        position: fixed;
+        overflow: visible;
+        width: 94.128px;
+        height: 28.681869506835938px;
+        --web-animation: fadein undefineds undefined;
+        --web-action-type: page;
+        --web-action-target: Main_page.html;
+        cursor: pointer;
+        line-height: 999.9998168945312px;
+        margin-top: -492.9999084472656px;
+        text-align: center;
+        font-family: Bangla MN;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 17px;
+        color: rgba(3,0,0,1);
+        z-index: 1000;
+        
+    }
+    #Contact {
+        right: 7vw;
+        top: 25px;
+        position: fixed;
+        overflow: visible;
+        width: 72.509px;
+        height: 28.681869506835938px;
+        --web-animation: fadein undefineds undefined;
+        --web-action-type: page;
+        --web-action-target: archive.html;
+        cursor: pointer;
+        line-height: 999.9998168945312px;
+        margin-top: -492.9999084472656px;
+        text-align: center;
+        font-family: Bangla MN;
+        font-weight: normal;
+        font-size: 17px;
+        color: rgba(3,0,0,1);
+        z-index: 1000;
+    }
+
+
+	#main_pic {
+		position: absolute;
+		width: 658px;
+		height: 658px;
+		left: 127px;
+		top: 170px;
+		overflow: hidden;
+		
+	
+	}
+
+	.box {
+    	height: 658px;
+    	width: 658px;   
+		z-index: 1; 
+	}
+	.description {
+		position:absolute;
+		right:8vw;
+		width:20vw;
+		top:50vh;
+		text-align: left;
+		font-family: Noto;
+		font-size: 10px;
+		letter-spacing: 1px;
+		line-height: 24px;
+		color:rgb(151, 151, 151);
+	}
+	@font-face {
+		font-family:PlayfairDisplay-Regular;
+		src:url(font/PlayfairDisplay-VariableFont_wght.ttf);
+	}
+	@font-face {
+		font-family:Noto;
+		src:url(font/NotoSerif-Regular.ttf);
+	}
+	.title{
+		
+		font-size: 17px;
+		letter-spacing: 1px;
+		line-height: 30px;
+		font-family:Noto;
+		text-align: left;
+		text-decoration: underline ;
+		text-underline-offset: 3px;
+	}
+
+	.imagedescription {
+		position: relative;
+		font-size: 6px;
+		letter-spacing: 1px;
+		line-height: 30px;
+		font-family:Noto;
+		text-align: left;
+		color:rgb(151, 151, 151);
+		top:127vh;
+		text-align: center;
+		
+	}
+
+	.imagedescription2 {
+		position: relative;
+		font-size: 6px;
+		letter-spacing: 1px;
+		line-height: 30px;
+		font-family:Noto;
+		text-align: left;
+		color:rgb(151, 151, 151);
+		top:215vh;
+		text-align: center;
+		
+	}
+	.box2 {
+		position:absolute;
+		height:500px;
+		width:500px;
+		top:1100px;
+		left:150px;
+		z-index:1;
+	}
+
+	nav {
+        width: 90vw;
+        height: 600px;
+		top:1300px;
+		left:80px;
+		display:flex;
+		flex-direction: row;
+		position:absolute;
+		overflow:hidden;
+	}
+
+	ul {
+     width: 100vw;
+     height: 100%;
+     animation: picmove 15s linear infinite alternate ;
+	 display:flex;
+	flex-direction: row;
+    }
+
+	@keyframes picmove {
+        from {
+             transform: translate(200px);
+           }
+           to {
+            transform: translate(-1700px);
+        }
+    }
+
+	ul:hover {
+            animation-play-state: paused;
+			
+    }
+
+	li {
+		list-style:none;
+	}
+
+
+
+	@font-face {
+		font-family:PlayfairDisplay-Regular;
+		src:url(font/PlayfairDisplay-VariableFont_wght.ttf);
+	}
+	
+
+
+	.img1 {
+		position:absolute;
+		top: 120vh;
+		left:17vw;
+		z-index: 1;
+
+	}
+	.img2 {
+		position:absolute;
+		top: 200vh;
+		left:17vw;
+		z-index: 1;
+	}
+
+	.img3 {
+		position:absolute;
+		top: 290vh;
+		left:17vw;
+		z-index: 1;
+	}
+
+	.img4 {
+		position:absolute;
+		top: 380vh;
+		left:17vw;
+		z-index: 1;
+	}
+
+	.img5 {
+		position:absolute;
+		top: 470vh;
+		left:17vw;
+		z-index: 1;
+	}
+
+	.img6 {
+		position:absolute;
+		top: 560vh;
+		left:17vw;
+		z-index: 1;
+	}
+
+	.img7 {
+		position:absolute;
+		top: 650vh;
+		left:17vw;
+		z-index: 1;
+	}
+	.img8 {
+		position:absolute;
+		top: 740vh;
+		left:17vw;
+		z-index: 1;
+	}
+
+	.img9 {
+		position:absolute;
+		top: 830vh;
+		left:17vw;
+		z-index: 1;
+	}
+
+	
+
+</style>
+</head>
+<body>
+<div id="Portfolio__1">
+	<div id="rec"></div>	
+	<div id="nametitle"><img src="resource/2x/资源 1@2x.png" style="height:40px; width:140px"></div>
+	
+	<div id="Portfolio">
+		<a href="Portfolio.html" style="text-decoration: none; color: black;"><span>Portfolio</span></a>
+	</div>
+	<div id="Main_Page">
+		<a href="Main_page.html" style="text-decoration: none; color: black;"><span>Main Page</span></a>
+	</div>
+	<div id="Contact">
+		<a href="archive.html" style="text-decoration: none; color: black;"><span>Contact</span></a>
+	</div>
+    
+	<div class ="box">
+		<img id="main_pic" src="Ikea research web/core project 2.jpg" style="width: 658px; height:658px; object-fit: cover;"></div>
+		
+		<div class="description">
+            <div class="title">
+                <p>Ipad Paperless Notebook Design</p>
+            </div>
+            <p>Exhibition</p>
+            <p>&nbsp</p>
+            <p>As an extension of the MEMORY FO(U)R SEASONS website project, we allocated four spaces for the exhibition, each representing one of the four seasons. For each space, we designed calendars spanning three months and invited visitors to record their memories of the day on sticky notes specifically designed for the assigned season. These sticky notes were then placed on the corresponding dates. To facilitate this process, we created virtual indoor renderings of the exhibition spaces.</p>
+		
+        </div>
+        
+        <div class="img1"><img src="Ikea research web/core project 2-1.jpg" style="width:65vw; height:auto"></div>
+		<div class="img2"><img src="Ikea research web/core project 2-2.jpg" style="width:65vw; height:auto"></div>
+		<div class="img3"><img src="Ikea research web/core project 2-3.jpg" style="width:65vw; height:auto"></div>
+		<div class="img4"><img src="Ikea research web/core project 2-4.jpg" style="width:65vw; height:auto"></div>
+		<div class="img5"><img src="Ikea research web/core project 2-5.jpg" style="width:65vw; height:auto"></div>
+		<div class="img6"><img src="Ikea research web/core project 2-6.jpg" style="width:65vw; height:auto"></div>
+		<div class="img7"><img src="Ikea research web/core project 2-7.jpg" style="width:65vw; height:auto"></div>
+		
+	</div>
+
+
+
+    
+	<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>memory station</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+		<link type="text/css" rel="stylesheet" href="style.css">
+	</head>
+
+	<body>
+        
+        
+
+		<!-- Import the component -->
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    
+        <!-- Use it like any other HTML element -->
+        <div class="model">
+            <model-viewer id="model"
+            alt="memory-station" 
+            src="gltf/记忆宇宙2.gltf" 
+            ar-scale="auto"
+            ar environment-image="texture/moonless_golf_4k.hdr" 
+            shadow-intensity="0.5" 
+            camera-controls 
+            touch-action="pan-y" 
+            auto-rotate 
+            rotation-per-second="15deg"
+            interaction-prompt="none"
+            poster="gltf/poster1.webp"
+            pre-load="auto"
+            camera-orbit="5m"
+            >
+            
+            
+        
+            <button class="a1" 
+            slot="hotspot-1">
+                <a href="网站分页码/大明湖/大明湖.html" style="text-decoration: none; color:inherit;">Daming Lake</a>
+            </button>  
+
+
+            <button class="a2" 
+            slot="hotspot-2">
+                <a href="网站分页码/反方向的钟/Web_1920___7.html" style="text-decoration: none; color:inherit;">反方向的钟</a>
+            </button>  
+
+
+            <button class="a3" 
+            slot="hotspot-3">
+                <a href="网站分页码/非自然死亡/FL_2___5.html" style="text-decoration: none; color:inherit;">Unnatural</a>
+            </button>  
+
+
+            <button class="a4" 
+            slot="hotspot-4">
+                <a href="网站分页码/cognitive/Qi_1.html" style="text-decoration: none; color:inherit;">Cogitive</a>
+            </button>
+            
+            <button class="a5" 
+            slot="hotspot-5">
+                <a href="网站分页码/借口/借口1.html"style="text-decoration: none; color:inherit;">借口</a>
+            </button>
+
+
+            <button class="a6" 
+            slot="hotspot-6">
+                <a href="网站分页码/裂缝里的阳光/裂缝里的阳光.html"style="text-decoration: none; color:inherit;">裂缝里的阳光</a>
+            </button>
+
+
+            <button class="a7" 
+            slot="hotspot-7">
+                <a href="网站分页码/七里香/FL_1.html"style="text-decoration: none; color:inherit;">七里香</a>
+            </button>
+
+            <button class="a8" 
+            slot="hotspot-8">
+                <a href="网站分页码/一路向北/一路向北1.html"style="text-decoration: none; color:inherit;">一路向北</a>
+            </button>
+
+            <button class="a9" 
+            slot="hotspot-9">
+                <a href="网站分页码/元气少女缘结神/元气少女缘结神.html" style="text-decoration: none; color:inherit;">元气少女缘结神</a>
+            </button>
+
+            <button class="a10" 
+            slot="hotspot-10">
+                <a href="网站分页码/bd/bd.html" style="text-decoration: none; color:inherit;">Birthday letter</a>
+            </button>
+
+            <button class="a11" 
+            slot="hotspot-11">
+                <a href="网站分页码/bear/Bear_1.html" style="text-decoration: none; color:inherit;">My knight bear</a>
+            </button>
+              
+
+            <button class="a12" 
+            slot="hotspot-12">
+                <a href="网站分页码/book/book.html" style="text-decoration: none; color:inherit;">Book</a>
+            </button>
+
+            <button class="a13" 
+            slot="hotspot-13">
+                <a href="网站分页码/chen/Chen_1.html" style="text-decoration: none; color:inherit;">What happened??</a>
+            </button>
+
+            <button class="a14" 
+            slot="hotspot-14">
+                <a href="网站分页码/childhood/childhood.html" style="text-decoration: none; color:inherit;">Childhood</a>
+            </button>
+
+            <button class="a15" 
+            slot="hotspot-15">
+                <a href="网站分页码/encourage/Encourage_1.html" style="text-decoration: none; color:inherit;">Encourage</a>
+            </button>
+
+            <button class="a16" 
+            slot="hotspot-16">
+                <a href="网站分页码/Erik/Erik_1.html" style="text-decoration: none; color:inherit;">Temporary people give permanent lessons.</a>
+            </button>
+            
+            <button class="a17" 
+            slot="hotspot-17">
+                <a href="网站分页码/FL/FL_1.html" style="text-decoration: none; color:inherit;">Florida</a>
+            </button>
+
+            <button class="a18" 
+            slot="hotspot-18">
+                <a href="网站分页码/friend/Friend_1.html" style="text-decoration: none; color:inherit;">Friend?</a>
+            </button>
+
+            <button class="a19" 
+            slot="hotspot-19">
+                <a href="网站分页码/grandfather/grandfather_1.html" style="text-decoration: none; color:inherit;">Grandfather</a>
+            </button>
+
+            <button class="a20" 
+            slot="hotspot-20">
+                <a href="网站分页码/grandma/Grandma_1.html" style="text-decoration: none; color:inherit;">Grandma</a>
+            </button>
+
+            <button class="a21" 
+            slot="hotspot-21">
+                <a href="网站分页码/hometown/hometown.html" style="text-decoration: none; color:inherit;">Hometown</a>
+            </button>
+
+            <button class="a22" 
+            slot="hotspot-21">
+                <a href="网站分页码/intership/Ekta_1.html" style="text-decoration: none; color:inherit;">Intership</a>
+            </button>
+
+            <button class="a23" 
+            slot="hotspot-23">
+                <a href="网站分页码/Jia/Jia.html" style="text-decoration: none; color:inherit;">我所热爱的</a>
+            </button>
+
+            <button class="a24" 
+            slot="hotspot-24">
+                <a href="网站分页码/mianmian/Mian.html" style="text-decoration: none; color:inherit;">A bunny</a>
+            </button>
+
+            <button class="a25" 
+            slot="hotspot-25">
+                <a href="网站分页码/Nostalgia/nostalgia_1.html" style="text-decoration: none; color:inherit;">Nostalgia</a>
+            </button>
+
+            <button class="a26" 
+            slot="hotspot-26">
+                <a href="网站分页码/ny_1/NY_1.html" style="text-decoration: none; color:inherit;">New York</a>
+            </button>
+
+            <button class="a27" 
+            slot="hotspot-27">
+                <a href="网站分页码/poem/poem.html" style="text-decoration: none; color:inherit;">Poem</a>
+            </button>
+
+            <button class="a28" 
+            slot="hotspot-28">
+                <a href="网站分页码/qiqi/Qiqi_1.html" style="text-decoration: none; color:inherit;">Cousin</a>
+            </button>
+
+            <button class="a29" 
+            slot="hotspot-29">
+                <a href="网站分页码/Skiing/Skiing_1.html" style="text-decoration: none; color:inherit;">Skiing</a>
+            </button>
+
+            
+            <button class="a30" 
+            slot="hotspot-30">
+                <a href="网站分页码/train to busan/Train_to_busan.html" style="text-decoration: none; color:inherit;">Trian to busan</a>
+            </button>
+
+            <button class="a31" 
+            slot="hotspot-31">
+                <a href="网站分页码/xinyu/Xinyu_1.html" style="text-decoration: none; color:inherit;">One last meet</a>
+            </button>
+
+            
+
+            
+            
+        </model-viewer>
+    </div>
+    
+
+
+    <script type="module">
+        const modelViewer = document.querySelector("#hotspot-camera-view-demo");
+        const annotationClicked = (annotation) => {
+            let dataset = annotation.dataset;
+            modelViewer.cameraTarget = dataset.target;
+            modelViewer.cameraOrbit = dataset.orbit;
+            modelViewer. fieldOfView = '45deg';
+        }
+
+
+    modelViewer2.querySelectorAll('button').forEach((hotspot)
+        => {
+            hotspot.addEvenListener('click', () =>
+        annotationClicked(hotspot));
+
+    });
+    </script>
+
+    
+	</body>
+</html>
+

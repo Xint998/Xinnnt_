@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nail Salon Brochure</title>
+<style id="applicationStylesheet" type="text/css">
+	.mediaViewInfo {
+		--web-view-name: Portfolio – 10;
+		--web-view-id: Portfolio__10;
+		--web-scale-on-resize: true;
+		--web-enable-deep-linking: true;
+	}
+	:root {
+		--web-view-ids: Portfolio__10;
+	}
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;  
+		border: none;
+		overflow-x: hidden;
+	}
+	#Portfolio__10 {
+		position: absolute;
+		width: 100vw;
+		height: 208vh;
+		background-color: rgba(255,255,255,1);
+		overflow:hidden;
+		--web-view-name: Portfolio – 10;
+		--web-view-id: Portfolio__10;
+		--web-scale-on-resize: true;
+		--web-enable-deep-linking: true;
+	}
+	
+
+	
+	
+	#nametitle {
+        position:fixed;
+        left:30px;
+        top:20px;
+        z-index: 1000;
+        
+    }
+    #rec {
+        position:fixed;
+        width:100vw;
+        height:60px;
+        top:0;
+        overflow:hidden;
+        background-color: rgba(255, 255, 255, 0.809);
+        z-index:1000;
+    }
+
+    #Portfolio {
+        right:17.5vw;
+        top: 25px;
+        position: fixed;
+        overflow: visible;
+        width: 66.128px;
+        height: 28.681869506835938px;
+        --web-animation: fadein undefineds undefined;
+        --web-action-type: page;
+        --web-action-target: Portfolio.html;
+        cursor: pointer;
+        line-height: 999.9998168945312px;
+        margin-top: -492.9999084472656px;
+        text-align: center;
+        font-family: Bangla MN;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 17px;
+        color: rgb(128, 128, 128);
+        text-decoration-line:underline;
+        text-underline-offset: 8px;
+        z-index: 1000;
+        
+    }
+
+    #Main_Page {
+        right: 27vw;
+        top: 25px;
+        position: fixed;
+        overflow: visible;
+        width: 94.128px;
+        height: 28.681869506835938px;
+        --web-animation: fadein undefineds undefined;
+        --web-action-type: page;
+        --web-action-target: Main_page.html;
+        cursor: pointer;
+        line-height: 999.9998168945312px;
+        margin-top: -492.9999084472656px;
+        text-align: center;
+        font-family: Bangla MN;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 17px;
+        color: rgba(3,0,0,1);
+        z-index: 1000;
+        
+    }
+	#Contact {
+        right: 7vw;
+        top: 25px;
+        position: fixed;
+        overflow: visible;
+        width: 72.509px;
+        height: 28.681869506835938px;
+        --web-animation: fadein undefineds undefined;
+        --web-action-type: page;
+        --web-action-target: archive.html;
+        cursor: pointer;
+        line-height: 999.9998168945312px;
+        margin-top: -492.9999084472656px;
+        text-align: center;
+        font-family: Bangla MN;
+        font-weight: normal;
+        font-size: 17px;
+        color: rgba(3,0,0,1);
+        z-index: 1000;
+    }
+
+
+	#miya1 {
+		position: absolute;
+		width: 658px;
+		height: 658px;
+		left: 127px;
+		top: 170px;
+		overflow: hidden;
+		
+	
+	}
+
+	.box {
+    	height: 658px;
+    	width: 658px;    
+	}
+	.miya2 {
+		position:absolute;
+		top: 120vh;
+		left:20vw;
+		z-index: 1;
+		
+	}
+
+	
+	
+	.description {
+		position:absolute;
+		right:8vw;
+		width:25vw;
+		top:37vh;
+		text-align: left;
+		font-family: Noto;
+		font-size: 10px;
+		letter-spacing: 1px;
+		line-height: 24px;
+		color:rgb(151, 151, 151);
+	}
+
+	.title{
+		
+		font-size: 17px;
+		letter-spacing: 1px;
+		line-height: 30px;
+		font-family:Noto;
+		text-align: left;
+		text-decoration: underline ;
+		text-underline-offset: 3px;
+	}
+
+	@font-face {
+		font-family:PlayfairDisplay-Regular;
+		src:url(font/PlayfairDisplay-VariableFont_wght.ttf);
+	}
+	@font-face {
+		font-family:Noto;
+		src:url(font/NotoSerif-Regular.ttf);
+	}
+
+	
+
+	
+</style>
+</head>
+<body>
+<div id="Portfolio__10">
+	
+	<div id="rec"></div>
+	<div id="nametitle"><img src="resource/2x/资源 1@2x.png" style="height:40px; width:140px"></div>
+
+	<div id="Portfolio">
+		<a href="Portfolio.html" style="text-decoration: none; color: black;"><span>Portfolio</span></a>
+	</div>
+	<div id="Main_Page">
+		<a href="Main_page.html" style="text-decoration: none; color: black;"><span>Main Page</span></a>
+	</div>
+	<div id="Contact">
+		<a href="archive.html" style="text-decoration: none; color: black;"><span>Contact</span></a>
+	</div>
+
+	<div class ="box">
+		<img id=miya1 src="miya/miya1.jpg" style="width: 658px; height:658px; object-fit: cover;"></div>
+
+	<div class="miya2">
+		<img src="miya/miya2.jpg" style="width:60vw; height:auto">
+	</div>
+
+	<div class="description">
+		<div class="title">
+			<p>Miya Nail & Spa brochure</p>
+		</div>
+		<p>Size: 8.5 * 11 inch</p>
+		<p>&nbsp</p>
+		<p>	The brochure design for the nail salon is brimming with creativity and allure. To begin with, the cover features a pink gradient and subtly revealed floral images, while the interior design strikes a balance between simplicity and effective information delivery, clearly showcasing images and prices of various nail services. The overall presentation, complemented by a soft pink background and rounded frame accents, exudes a feminine charm.
+
+In terms of layout, smooth fonts have been employed to enhance the overall readability of the brochure. Carefully selected high-quality images emphasize the professionalism of the nail salon, instilling confidence in the quality of services for customers. Additionally, the brochure includes customer testimonials and contact information, allowing clients to easily learn about others' nail experiences and make service appointments. Overall, this brochure is not only aesthetically pleasing but also effectively captures the attention of potential customers, showcasing the unique charm of the nail salon.</p>
+	</div>
+	
+</div>
+</body>
+</html>

@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WORLD & IDENTITY</title>
+<style id="applicationStylesheet" type="text/css">
+	.mediaViewInfo {
+		--web-view-name: Portfolio – 5;
+		--web-view-id: Portfolio__5;
+		--web-scale-on-resize: true;
+		--web-enable-deep-linking: true;
+	}
+	:root {
+		--web-view-ids: Portfolio__5;
+	}
+	
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		border: none;
+	}
+	#Portfolio__1 {
+		position: absolute;
+		display:flex;
+		width: 100vw;
+		height: 400px;
+		background-color: rgba(255,255,255,1);
+	
+		--web-view-name: Portfolio – 5;
+		--web-view-id: Portfolio__5;
+		--web-scale-on-resize: true;
+		--web-enable-deep-linking: true;
+	}
+	
+
+
+	#nametitle {
+        position:fixed;
+        left:30px;
+        top:20px;
+        z-index: 1000;
+        
+    }
+    #rec {
+        position:fixed;
+        width:100vw;
+        height:60px;
+        top:0;
+        overflow:hidden;
+        background-color: rgba(255, 255, 255, 0.809);
+        z-index:1000;
+    }
+
+    #Portfolio {
+        right:17.5vw;
+        top: 25px;
+        position: fixed;
+        overflow: visible;
+        width: 66.128px;
+        height: 28.681869506835938px;
+        --web-animation: fadein undefineds undefined;
+        --web-action-type: page;
+        --web-action-target: Portfolio.html;
+        cursor: pointer;
+        line-height: 999.9998168945312px;
+        margin-top: -492.9999084472656px;
+        text-align: center;
+        font-family: Bangla MN;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 17px;
+        color: rgb(128, 128, 128);
+        text-decoration-line:underline;
+        text-underline-offset: 8px;
+        z-index: 1000;
+        
+    }
+
+    #Main_Page {
+        right: 27vw;
+        top: 25px;
+        position: fixed;
+        overflow: visible;
+        width: 94.128px;
+        height: 28.681869506835938px;
+        --web-animation: fadein undefineds undefined;
+        --web-action-type: page;
+        --web-action-target: Main_page.html;
+        cursor: pointer;
+        line-height: 999.9998168945312px;
+        margin-top: -492.9999084472656px;
+        text-align: center;
+        font-family: Bangla MN;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 17px;
+        color: rgba(3,0,0,1);
+        z-index: 1000;
+        
+    }
+    #Contact {
+        right: 7vw;
+        top: 25px;
+        position: fixed;
+        overflow: visible;
+        width: 72.509px;
+        height: 28.681869506835938px;
+        --web-animation: fadein undefineds undefined;
+        --web-action-type: page;
+        --web-action-target: archive.html;
+        cursor: pointer;
+        line-height: 999.9998168945312px;
+        margin-top: -492.9999084472656px;
+        text-align: center;
+        font-family: Bangla MN;
+        font-weight: normal;
+        font-size: 17px;
+        color: rgba(3,0,0,1);
+        z-index: 1000;
+    }
+
+
+	#main_pic {
+		position: absolute;
+		width: 658px;
+		height: 658px;
+		left: 127px;
+		top: 170px;
+		overflow: hidden;
+		
+	
+	}
+
+	.box {
+    	height: 658px;
+    	width: 658px;   
+		z-index: 1; 
+	}
+	
+	.description {
+		position:absolute;
+		right:8vw;
+		width:25vw;
+		top:45vh;
+		text-align: left;
+		font-family: Noto;
+		font-size: 10px;
+		letter-spacing: 1px;
+		line-height: 24px;
+		color:rgb(151, 151, 151);
+	}
+	@font-face {
+		font-family:PlayfairDisplay-Regular;
+		src:url(font/PlayfairDisplay-VariableFont_wght.ttf);
+	}
+	@font-face {
+		font-family:Noto;
+		src:url(font/NotoSerif-Regular.ttf);
+	}
+	.title{
+		
+		font-size: 17px;
+		letter-spacing: 1px;
+		line-height: 30px;
+		font-family:Noto;
+		text-align: left;
+		text-decoration: underline ;
+		text-underline-offset: 3px;
+	}
+
+	.imagedescription {
+		position: relative;
+		font-size: 9px;
+		letter-spacing: 1px;
+		line-height: 30px;
+		font-family:Noto;
+		color:rgb(151, 151, 151);
+		top:240vh;
+		text-align: center;
+		z-index:100;
+		left: 22vw;
+		width:55vw;
+	}
+
+
+
+
+
+
+	@font-face {
+		font-family:PlayfairDisplay-Regular;
+		src:url(font/PlayfairDisplay-VariableFont_wght.ttf);
+	}
+	
+
+
+	.img1 {
+		position:absolute;
+		top: 120vh;
+		left:17vw;
+		z-index: 1;
+
+	}
+	.img2 {
+		position:absolute;
+		top: 200vh;
+		left:17vw;
+		z-index: 1;
+	}
+
+	.img3 {
+		position:absolute;
+		top: 290vh;
+		left:17vw;
+		z-index: 1;
+	}
+
+	.img4 {
+		position:absolute;
+		top: 380vh;
+		left:17vw;
+		z-index: 1;
+	}
+
+	.img5 {
+		position:absolute;
+		top: 470vh;
+		left:17vw;
+		z-index: 1;
+	}
+
+	.img6 {
+		position:absolute;
+		top: 560vh;
+		left:17vw;
+		z-index: 1;
+	}
+
+	.img7 {
+		position:absolute;
+		top: 650vh;
+		left:17vw;
+		z-index: 1;
+	}
+	.img8 {
+		position:absolute;
+		top: 740vh;
+		left:17vw;
+		z-index: 1;
+	}
+
+	.img9 {
+		position:absolute;
+		top: 830vh;
+		left:17vw;
+		z-index: 1;
+	}
+
+	
+	
+	
+
+</style>
+
+</head>
+<body>
+<div id="Portfolio__1">
+	
+		
+	<div id="rec"></div>
+		
+	<div id="nametitle"><img src="resource/2x/资源 1@2x.png" style="height:40px; width:140px"></div>
+	
+	<div id="Portfolio">
+		<a href="Portfolio.html" style="text-decoration: none; color: black;"><span>Portfolio</span></a>
+	</div>
+	<div id="Main_Page">
+		<a href="Main_page.html" style="text-decoration: none; color: black;"><span>Main Page</span></a>
+	</div>
+	<div id="Contact">
+		<a href="archive.html" style="text-decoration: none; color: black;"><span>Contact</span></a>
+	</div>
+	
+	<div class ="box">
+		<img id="main_pic" src="multi (anthony)/0.jpg" style="width: 658px; height:658px;">
+	
+		<div class="description">
+			<div class="title"><p>WORLD & IDENTITY</p></div>
+			<p>Size: 8.5 * 11 inch</p>
+			<p>&nbsp</p>
+			<p>A quasi-guerilla installation involving the display of many of our questions around both the Pollak building and the greater area of Richmond that surrounds us. We want to prompt moments of self reflection and analysis into some of the areas we investigated in our Worlds publication. Why are we here? What stories are we telling ourselves? Why are we trying to figure this all out? These installs are meant to be temporary, existing for a short period of time and catching your attention at the end of your peripheral vision. We don’t want to force them to ask these questions, but just prompt them to think about it a bit more if they haven’t in a while. We installed in many different locations and encourage viewers to find them all, mirroring the exploration angle that we also encouraged in our original publication. We plan to ask the questions, but to allow the viewer to see where that leads them. (Eric)</p>
+		</div>
+		<div class="img1"><img src="multi (anthony)/未标题-1.png" style="width:65vw; height:auto"></div>
+		
+		<div class="imagedescription">
+			<p>In my research, I delved into the interconnected world of Chinese mythology. Within this vast universe, I explored the attributes of mythical characters and examined how this intricate world was meticulously developed step by step. Even in contemporary China, people sculpt and worship the characters depicted in these myths, showing their enduring influence.</p>
+
+			<p>To incorporate the essence of Chinese mythology into the project, I adopted the layout style found in ancient Chinese books. Additionally, I curated and edited images from popular mythological TV shows and movies, which are widely recognized by the Chinese audience. These visuals served as a visual representation of the rich mythological narratives.</p>
+			
+			<p>To further emphasize the distinction between the mythological realm and the real world, I created a tape that could only be read by rotating it, adding a playful twist. While it couldn't be played in the conventional sense, it served as a reminder for readers to differentiate between the realm of mythology and the world they inhabit.</p>
+			
+			<p>Through my contribution, I aimed to illuminate the captivating world of Chinese mythology, showcasing its significance and prompting readers to appreciate its distinctiveness from reality.</p>
+		</div>
+	</div>
+</div>
+</body>
+</html>

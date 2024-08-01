@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Upcycling</title>
+<style id="applicationStylesheet" type="text/css">
+	.mediaViewInfo {
+		--web-view-name: Portfolio – 3;
+		--web-view-id: Portfolio__3;
+		--web-scale-on-resize: true;
+		--web-enable-deep-linking: true;
+	}
+	:root {
+		--web-view-ids: Portfolio__3;
+	}
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		border: none;
+		overflow-x: hidden;
+	}
+	#Portfolio__1 {
+		position: absolute;
+		width: 100vw;
+		height: 5250px;
+		background-color: rgba(255,255,255,1);
+		overflow: hidden;
+		--web-view-name: Portfolio – 1;
+		--web-view-id: Portfolio__1;
+		--web-scale-on-resize: true;
+		--web-enable-deep-linking: true;
+	}
+	
+	
+	#nametitle {
+		position:fixed;
+		left:30px;
+		top:20px;
+		z-index: 1000;
+		
+	}
+
+	#Portfolio {
+		right:17.5vw;
+		top: 25px;
+		position: fixed;
+		overflow: visible;
+		width: 66.128px;
+		height: 28.681869506835938px;
+		--web-animation: fadein undefineds undefined;
+		--web-action-type: page;
+		--web-action-target: Portfolio.html;
+		cursor: pointer;
+		line-height: 999.9998168945312px;
+		margin-top: -492.9999084472656px;
+		text-align: center;
+		font-family: Bangla MN;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 17px;
+		color: rgb(128, 128, 128);
+		text-decoration-line:underline;
+		text-underline-offset: 8px;
+		z-index: 1000;
+	}
+
+	
+	#Main_Page {
+		right: 27vw;
+		top: 25px;
+		position: fixed;
+		overflow: visible;
+		width: 94.128px;
+		height: 28.681869506835938px;
+		--web-animation: fadein undefineds undefined;
+		--web-action-type: page;
+		--web-action-target: Main_page.html;
+		cursor: pointer;
+		line-height: 999.9998168945312px;
+		margin-top: -492.9999084472656px;
+		text-align: center;
+		font-family: Bangla MN;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 17px;
+		color: rgba(3,0,0,1);
+		z-index: 1000;
+		
+	}
+	#Contact {
+		right: 7vw;
+		top: 25px;
+		position: fixed;
+		overflow: visible;
+		width: 72.509px;
+		height: 28.681869506835938px;
+		--web-animation: fadein undefineds undefined;
+		--web-action-type: page;
+		--web-action-target: archive.html;
+		cursor: pointer;
+		line-height: 999.9998168945312px;
+		margin-top: -492.9999084472656px;
+		text-align: center;
+		font-family: Bangla MN;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 17px;
+		color: rgba(3,0,0,1);
+		z-index: 1000;
+	}
+	#rec {
+		position:fixed;
+		width:100vw;
+		height:60px;
+		top:0;
+		overflow:hidden;
+		z-index: 1000;
+		background-color: rgba(255, 255, 255, 0.809);
+	}
+	
+
+	#coreiii {
+		position: absolute;
+		width: 658px;
+		height: 658px;
+		left: 127px;
+		top: 170px;
+		overflow: hidden;
+		
+	
+	}
+
+	.box {
+    	height: 658px;
+    	width: 658px;    
+	}
+	.bigimg {
+		position:absolute;
+		top: 120vh;
+		left:20vw;
+		z-index: 1;
+		
+	}
+
+	.bigimg2 {
+		position:absolute;
+		
+		top:225vh;
+		left:20vw;
+		z-index: 1;
+	}
+	
+
+	.bigimg3 {
+		position: absolute;
+		
+		top:335vh;
+		left:20vw;
+		z-index:1;
+	}
+
+	.bigimg4 {
+		position: absolute;
+		
+		top:435vh;
+		left:20vw;
+		z-index:1;
+	}
+
+
+
+	.description {
+		position:absolute;
+		right:8vw;
+		width:20vw;
+		top:48vh;
+		text-align: left;
+		font-family: Noto;
+		font-size: 6px;
+		letter-spacing: 1px;
+		line-height: 24px;
+		color:rgb(151, 151, 151);
+	}
+
+	.title{
+		
+		font-size: 16px;
+		letter-spacing: 1px;
+		line-height: 30px;
+		font-family:Noto;
+		text-align: left;
+		text-decoration: underline ;
+		text-underline-offset: 3px;
+	}
+
+	.imagedescription {
+		position: relative;
+		font-size: 6px;
+		letter-spacing: 1px;
+		line-height: 25px;
+		font-family:Noto;
+		left: 30vw;
+		color:rgb(151, 151, 151);
+		top:449vh;
+		text-align: center;
+		width:40vw;
+		
+	}
+
+	.imagedescription2 {
+		position: relative;
+		font-size: 6px;
+		letter-spacing: 1px;
+		line-height: 25px;
+		font-family:Noto;
+		text-align: center;
+		color:rgb(151, 151, 151);
+		top:141vh;
+		width:40vw;
+		left: 30vw;
+	}
+
+	.imagedescription3 {
+		position: relative;
+		font-size: 6px;
+		letter-spacing: 1px;
+		line-height: 25px;
+		font-family:Noto;
+		text-align: center;
+		color:rgb(151, 151, 151);
+		top:230vh;
+		width:40vw;
+		left:30vw;
+		
+	}
+
+	@font-face {
+		font-family:PlayfairDisplay-Regular;
+		src:url(font/PlayfairDisplay-VariableFont_wght.ttf);
+	}
+	@font-face {
+		font-family:Noto;
+		src:url(font/NotoSerif-Regular.ttf);
+	}
+</style>
+</head>
+<body>
+<div id="Portfolio__1">
+	
+	<div id="rec"></div>	
+	<div id="nametitle"><img src="resource/2x/资源 1@2x.png" style="height:40px; width:140px"></div>
+
+	
+	<div id="Portfolio">
+		<a href="Portfolio.html" style="text-decoration: none; color: black;"><span>Portfolio</span></a>
+	</div>
+	<div id="Main_Page">
+		<a href="Main_page.html" style="text-decoration: none; color: black;"><span>Main Page</span></a>
+	</div>
+	<div id="Contact">
+		<a href="archive.html" style="text-decoration: none; color: black;"><span>Contact</span></a>
+	</div>
+
+	<div class ="box">
+		<img id="coreiii" src="CoreIII/core 3-exhibition brochure 2.jpg" style="width: 658px; height:658px; object-fit: cover;"></div>
+		<div class="description">
+			<div class="title">
+				<p>UPCYCLING</p>
+			</div>
+			<p>Size: 4.25 * 5.5 inch &nbsp(For small book)</p>
+			<p>&nbsp &nbsp &nbsp &nbsp &nbsp17 * 5.5 inch &nbsp(For brochure)</p>
+			<p>&nbsp</p>
+			<p>Ying Ying, Xinyu Na, and I delved into the exploration of upcycling and reinvention, culminating in an exhibition set up at <a href="https://www.studiotwothree.org/" style="text-decoration: underline; text-underline-offset:3px; color: inherit;">Studio 23</a>. For this project, we sourced all our materials, except for printing paper, from recycled sources such as fabrics, plastic bottles, and furniture. </p>
+			<p>Our project served as a call to action, urging everyone to pay attention to environmental protection issues and harness the power of materials in crafting sustainable designs in their own lives.</p>
+		</div>
+	<div class="bigimg">
+		<img src="CoreIII/1.jpg" style="width:60vw; height:auto">
+	</div>
+	<div class="imagedescription2">
+		<p>Ying Ying utilized materials like plastic bottles and denim fabric to craft a captivating decorative artwork. Her creativity knew no bounds as she breathed new life into these discarded items.</p>
+	</div>
+	<div class="bigimg2">
+		<img src="CoreIII/core 3-exhibition book.jpg" style="width:60vw; height:auto"></div>
+
+	<div class="imagedescription">
+		<p>I took apart a broken chair from my home and embarked on a journey of disassembly, cutting, assembly, and finally, painting and decorating. The end result was a small stool created for my mom's little garden. With meticulous attention to detail, I transformed what was once discarded into a functional and aesthetically pleasing piece.</p>
+	</div>
+	<div class="bigimg3">
+		<img src="CoreIII/core 3-exhibition.jpg" style="width:60vw; height:auto"></div>
+	<div class="imagedescription3">
+		<p>We documented the entire process in a small book, gathering inspiration from online experts who specialize in upcycling and reinvention. Through this endeavor, we aimed to raise awareness about environmental conservation and promote the idea of utilizing materials in creative ways for everyday designs.</p>
+	</div>
+	<div class="bigimg4">
+		<img src="CoreIII/3.jpg" style="width:60vw; height:auto"></div>
+</div>
+</body>
+</html>

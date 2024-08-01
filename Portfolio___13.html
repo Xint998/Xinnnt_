@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shatter and Devour</title>
+<style id="applicationStylesheet" type="text/css">
+	.mediaViewInfo {
+		--web-view-name: Portfolio – 13;
+		--web-view-id: Portfolio__13;
+		--web-scale-on-resize: true;
+		--web-enable-deep-linking: true;
+	}
+	:root {
+		--web-view-ids: Portfolio__13;
+	}
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		border: none;
+		overflow-x: hidden;
+	}
+	#Portfolio__1 {
+		position: absolute;
+		width: 100vw;
+		height: 200vh;
+		background-color: rgba(255,255,255,1);
+		
+		--web-view-name: Portfolio – 13;
+		--web-view-id: Portfolio__13;
+		--web-scale-on-resize: true;
+		--web-enable-deep-linking: true;
+	}
+	
+	
+	#nametitle {
+        position:fixed;
+        left:30px;
+        top:20px;
+        z-index: 1000;
+        
+    }
+    #rec {
+        position:fixed;
+        width:100vw;
+        height:60px;
+        top:0;
+        overflow:hidden;
+        background-color: rgba(255, 255, 255, 0.809);
+        z-index:1000;
+    }
+
+    #Portfolio {
+        right:17.5vw;
+        top: 25px;
+        position: fixed;
+        overflow: visible;
+        width: 66.128px;
+        height: 28.681869506835938px;
+        --web-animation: fadein undefineds undefined;
+        --web-action-type: page;
+        --web-action-target: Portfolio.html;
+        cursor: pointer;
+        line-height: 999.9998168945312px;
+        margin-top: -492.9999084472656px;
+        text-align: center;
+        font-family: Bangla MN;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 17px;
+        color: rgb(128, 128, 128);
+        text-decoration-line:underline;
+        text-underline-offset: 8px;
+        z-index: 1000;
+        
+    }
+
+    #Main_Page {
+        right: 27vw;
+        top: 25px;
+        position: fixed;
+        overflow: visible;
+        width: 94.128px;
+        height: 28.681869506835938px;
+        --web-animation: fadein undefineds undefined;
+        --web-action-type: page;
+        --web-action-target: Main_page.html;
+        cursor: pointer;
+        line-height: 999.9998168945312px;
+        margin-top: -492.9999084472656px;
+        text-align: center;
+        font-family: Bangla MN;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 17px;
+        color: rgba(3,0,0,1);
+        z-index: 1000;
+        
+    }
+    #Contact {
+        right: 7vw;
+        top: 25px;
+        position: fixed;
+        overflow: visible;
+        width: 72.509px;
+        height: 28.681869506835938px;
+        --web-animation: fadein undefineds undefined;
+        --web-action-type: page;
+        --web-action-target: archive.html;
+        cursor: pointer;
+        line-height: 999.9998168945312px;
+        margin-top: -492.9999084472656px;
+        text-align: center;
+        font-family: Bangla MN;
+        font-weight: normal;
+        font-size: 17px;
+        color: rgba(3,0,0,1);
+        z-index: 1000;
+    }
+
+
+	#main_pic {
+		position: absolute;
+		width: 658px;
+		height: 658px;
+		left: 127px;
+		top: 170px;
+		overflow: hidden;
+		
+	
+	}
+
+	.box {
+    	height: 658px;
+    	width: 658px;   
+		z-index: 1; 
+	}
+	.description {
+		position:absolute;
+		right:8vw;
+		width:20vw;
+		top:50vh;
+		text-align: left;
+		font-family: Noto;
+		font-size: 10px;
+		letter-spacing: 1px;
+		line-height: 24px;
+		color:rgb(151, 151, 151);
+	}
+	@font-face {
+		font-family:PlayfairDisplay-Regular;
+		src:url(font/PlayfairDisplay-VariableFont_wght.ttf);
+	}
+	@font-face {
+		font-family:Noto;
+		src:url(font/NotoSerif-Regular.ttf);
+	}
+	.title{
+		
+		font-size: 17px;
+		letter-spacing: 1px;
+		line-height: 30px;
+		font-family:Noto;
+		text-align: left;
+		text-decoration: underline ;
+		text-underline-offset: 3px;
+	}
+
+	.imagedescription {
+		position: relative;
+		font-size: 6px;
+		letter-spacing: 1px;
+		line-height: 30px;
+		font-family:Noto;
+		text-align: left;
+		color:rgb(151, 151, 151);
+		top:127vh;
+		text-align: center;
+		
+	}
+
+	.imagedescription2 {
+		position: relative;
+		font-size: 6px;
+		letter-spacing: 1px;
+		line-height: 30px;
+		font-family:Noto;
+		text-align: left;
+		color:rgb(151, 151, 151);
+		top:215vh;
+		text-align: center;
+		
+	}
+	.box2 {
+		position:absolute;
+		height:500px;
+		width:500px;
+		top:1100px;
+		left:150px;
+		z-index:1;
+	}
+
+	nav {
+        width: 90vw;
+        height: 600px;
+		top:1300px;
+		left:80px;
+		display:flex;
+		flex-direction: row;
+		position:absolute;
+		overflow:hidden;
+	}
+
+	ul {
+     width: 100vw;
+     height: 100%;
+     animation: picmove 15s linear infinite alternate ;
+	 display:flex;
+	flex-direction: row;
+    }
+
+	@keyframes picmove {
+        from {
+             transform: translate(200px);
+           }
+           to {
+            transform: translate(-1700px);
+        }
+    }
+
+	ul:hover {
+            animation-play-state: paused;
+			
+    }
+
+	li {
+		list-style:none;
+	}
+
+
+
+	@font-face {
+		font-family:PlayfairDisplay-Regular;
+		src:url(font/PlayfairDisplay-VariableFont_wght.ttf);
+	}
+	
+
+
+	.img1 {
+		position:absolute;
+		top: 120vh;
+		left:17vw;
+		z-index: 1;
+
+	}
+	.img2 {
+		position:absolute;
+		top: 200vh;
+		left:17vw;
+		z-index: 1;
+	}
+
+	.img3 {
+		position:absolute;
+		top: 290vh;
+		left:17vw;
+		z-index: 1;
+	}
+
+	.img4 {
+		position:absolute;
+		top: 380vh;
+		left:17vw;
+		z-index: 1;
+	}
+	.gif{
+		position: absolute;
+		top: 120vh;
+		left:17vw;
+	}
+</style>
+</head>
+<body>
+<div id="Portfolio__1">
+	
+	<div id="rec"></div>	
+	<div id="nametitle"><img src="resource/2x/资源 1@2x.png" style="height:40px; width:140px"></div>
+	
+	<div onclick="application.goToTargetView(event)" id="Portfolio">
+		<a href="Portfolio.html" style="text-decoration: none; color: black;"><span>Portfolio</span></a>
+	</div>
+	<div id="Main_Page">
+		<a href="Main_page.html" style="text-decoration: none; color: black;"><span>Main Page</span></a>
+	</div>
+	<div id="Contact">
+		<a href="archive.html" style="text-decoration: none; color: black;"><span>Contact</span></a>
+	</div>
+
+	<div class ="box">
+		<img id="main_pic" src="web design/未标题-1.png" style="width: 658px; height:658px; object-fit: cover;"></div>
+	</div>
+
+	<div class="description">
+		<div class="title">
+			<a href="https://xint998.github.io/Xinnnt-room/accordion/index.html" style="text-decoration: none;color:inherit;"><p>Shatter and Devour</p></a>
+		</div>
+		<p>Website</p>
+		<p>&nbsp</p>
+		<p>Inspired by the accordion, this creative webpage allows you to adjust the webpage border size to see the process of image splitting.</p>
+	
+	</div>
+
+	<div class="gif"><img src="web design/ezgif.com-gif-maker.gif" style="width:65vw; height:auto;"></div>
+	
+</div>
+</body>
+</html>
