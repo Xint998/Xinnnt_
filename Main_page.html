@@ -1,346 +1,469 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Main page</title>
-
-<style id="applicationStylesheet" type="text/css" >
-	.mediaViewInfo {
-		--web-view-name: Main page;
-		--web-view-id: Main_page;
-		--web-scale-on-resize: true;
-		--web-enable-deep-linking: true;
-	}
-	:root {
-		--web-view-ids: Main_page;
-	}
-	* {
-		margin: 0;
-		padding: 0;
-		box-sizing: border-box;
-		border: none;
-		
-	}
-	#Main_page1 {
-		
-		position: absolute;
-		width: 100vw;
-		height: 100vh;
-		overflow: hidden;
-		background: url(未标题-1.jpg);
-		--web-view-name: Main page;
-		--web-view-id: Main_page;
-		--web-scale-on-resize: true;
-		--web-enable-deep-linking: true;
-		
-	}
-	
-	
-	#nametitle {
-        position:fixed;
-        left:30px;
-        top:20px;
-        z-index: 1000;
-        
-    }
-    #rec {
-        position:fixed;
-        width:100vw;
-        height:60px;
-        top:0;
-        overflow:hidden;
-        background-color: rgba(255, 255, 255, 0.809);
-        z-index:1000;
-    }
-	
-	#img1 {
-		height:auto;
-		width:100vw;
-	}
-
-	@font-face {
-		font-family:jianjie2;
-		src:url(font/ShengHuoHenKuDanNiHenTian-2.ttf);
-	}
-
-
-	
-	
-	#n_5 {
-		position: absolute;
-		width: 0px;
-		height: 0px;
-		left: 0px;
-		top: 0px;
-		overflow: visible;
-	}
-	#Portfolio {
-        right:17.5vw;
-        top: 25px;
-        position: fixed;
-        overflow: visible;
-        width: 66.128px;
-        height: 28.681869506835938px;
-        --web-animation: fadein undefineds undefined;
-        --web-action-type: page;
-        --web-action-target: Portfolio.html;
-        cursor: pointer;
-        line-height: 999.9998168945312px;
-        margin-top: -492.9999084472656px;
-        text-align: center;
-        font-family: Bangla MN;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 17px;
-        color: rgb(128, 128, 128);
-        text-decoration-line:underline;
-        text-underline-offset: 8px;
-        z-index: 1000;
-        
-    }
-
-    #Main_Page {
-        right: 27vw;
-        top: 25px;
-        position: fixed;
-        overflow: visible;
-        width: 94.128px;
-        height: 28.681869506835938px;
-        --web-animation: fadein undefineds undefined;
-        --web-action-type: page;
-        --web-action-target: Main_page.html;
-        cursor: pointer;
-        line-height: 999.9998168945312px;
-        margin-top: -492.9999084472656px;
-        text-align: center;
-        font-family: Bangla MN;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 17px;
-        color: rgba(3,0,0,1);
-        z-index: 1000;
-        
-    }
-	#Contact {
-        right: 7vw;
-        top: 25px;
-        position: fixed;
-        overflow: visible;
-        width: 72.509px;
-        height: 28.681869506835938px;
-        --web-animation: fadein undefineds undefined;
-        --web-action-type: page;
-        --web-action-target: archive.html;
-        cursor: pointer;
-        line-height: 999.9998168945312px;
-        margin-top: -492.9999084472656px;
-        text-align: center;
-        font-family: Bangla MN;
-        font-weight: normal;
-        font-size: 17px;
-        color: rgba(3,0,0,1);
-        z-index: 1000;
-    }
-
-	.bigbox {
-		align-content: center;
-		width:90vw;
-		height:87vh;
-		
-		border: 3px gray solid;
-		display:flex;
-		overflow:hidden;
-		top:8vh;
-		left:5vw;
-		position:absolute;
-		
-	}
-
-	
-
-	.bigboxleft{
-		position:absolute;
-		
-		top:-3px;
-		left:-3px;
-		height:87vh;
-		width:37vw;
-	}
-
-	.up {
-		display:flex;
-		flex-direction:row;
-		position:absolute;
-		overflow: hidden;
-		height:13vh;
-		border: 3px gray solid;
-		top:-3px;
-		left:-3px;
-
-	}
-
-
-	.upleft {
-	
-		border: 3px gray solid;
-		font-family:krungthep;
-		left:-3px;
-		width:18.5vw;
-		height:12.7vh;
-		
-		border-bottom: transparent solid;
-		border-top: transparent solid;
-		font-size: 1.8vw;
-		color: rgb(107, 107, 107);
-		text-align: center;
-		padding:2vh;
-		
-	}	
-
-
-	@font-face {
-		font-family:krungthep;
-		src:url(font/Krungthep.ttf)
-	}
-
-
-	.upright {
-		right:-3px;
-		top:-3px;
-		width:18.5vw;
-		font-family:krungthep;
-		color: rgb(107, 107, 107);
-		text-align: center;
-		margin:auto;
-		font-size: 3.5vw;
-	}
-	
-
-
-	@font-face {
-		font-family:PlayfairDisplay-Regular;
-		src:url(font/PlayfairDisplay-VariableFont_wght.ttf);
-	}
-
-	.bottom	{
-		position:absolute;
-		bottom:-3px;
-		height:74vh;
-		width:37vw;
-		
-		
-
-
-	}
-
-	#个人简介 {
-		position: absolute;
-		width:27vw;
-		height:auto;
-		top:10vh;
-		left:5vw;
-		font-family: 'Courier New', Courier, monospace;
-		font-size:0.95vw;
-		z-index:99;
-	}
-	
-
-	#个人简介2 {
-		position: absolute;
-		width:27vw;
-		height:auto;
-		top:40vh;
-		left:5vw;
-		font-family: jianjie2;
-		font-size:1vw;
-		color:rgb(61, 60, 60);
-		z-index:99;
-	}
-
-	.imgme {
-		width:53vw;
-		height:87vh;
-		position:absolute;
-		border: 3px gray solid;
-		right:-3px;
-		bottom:-3px;
-		padding:auto;
-		text-align: center;
-	}
-
-	#me {
-		width:44vw;
-		height:auto;
-		position:relative;
-		margin: 1vh;
-		
-	}
-	
-	.welcome {
-		font-family: PlayfairDisplay-Regular;
-		font-size: 9vw;
-		letter-spacing: 0.3vw;
-		color: rgb(58, 58, 58);
-		
-	}
-
-</style>
-</head>
-<body>
-<div id="Main_page1">
-	<div id="rec"></div>	
-	<div class="bigbox">
-		<div class="bigboxleft">
-			<div class="up">
-				<div class="upleft"><p>GRAPHIC</p> 
-					DESIGN</div>
-				<div class="upright">VCUARTS</div>
-				
-			</div>
-			<div class="bottom">
-				<div id="个人简介">
-					<p>  &nbsp;  &nbsp; Hello! I am Xintong Wu from Fujian, China and currently located in Richmond, VA. </p>
-					<p>	 &nbsp;  &nbsp; A Pisces girl born in 2000. I am a Chinese traditional culture explorer. Love anything related to art. In my free time, I like to study Chinese cuisine, drawing or painting and play video games with my friends.</p>
-					<p>	 &nbsp;  &nbsp; I am currently a senior graphic design major student at Virginia Commonwealth University.</p>
-				</div>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <title>Main Page</title>
+    <style id="applicationStylesheet" type="text/css">
+        .mediaViewInfo {
+            --web-view-name: Main_Page;
+            --web-view-id: Main_Page;
+            --web-scale-on-resize: true;
+            --web-enable-deep-linking: true;
+        }
+        :root {
+            --web-view-ids: Main_Page;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            border: none;
 			
-				<div id="个人简介2">
-					<p>  &nbsp;  &nbsp; 你好呀！我是吴炘彤来自中国福建福州，现居住美国维吉尼亚州的里士满。</p>
-					<p>	 &nbsp;  &nbsp; 一个出生于千禧年的双鱼座女生。同时也是中国传统文化爱好者。喜欢与艺术相关的一切事物。 在闲暇之时我喜欢研究中国美食和各种颜料绘画。我也是一个喜欢和朋友一起玩游戏的资深网瘾少女。</p>
-					<p>	 &nbsp;  &nbsp; 我现在是一名就读于维吉尼亚联邦大学的大四平面设计专业学生。</p>
-				</div>
+			
+			
+        }
+        #Portfolio__1 {
+            position: absolute;
+            display: flex;
+            width: 100vw;
+            height: 100vh;
+            background-color: rgba(255, 255, 255, 1);
+			overflow: hidden;
+            --web-view-name: Main_Page;
+            --web-view-id: Main_Page;
+            --web-scale-on-resize: true;
+            --web-enable-deep-linking: true;
+			
+        }
+		.transparent {
+			width:100vw;
+			height: 200vh;
+			z-index:1000;
+			overflow: hidden;
+		}
+
+        #nametitle {
+            position: fixed;
+            left: 30px;
+            top: 20px;
+            z-index: 10000;
+        }
+        #rec {
+            position: fixed;
+            width: 100vw;
+            height: 60px;
+            top: 0;
+            overflow: hidden;
+            background-color: rgba(255, 255, 255, 0.809);
+            z-index: 10000;
+        }
+
+		#rec_s {
+			position:absolute;
+			width:15px;
+			height: 15px;
+			color: gray;
+			z-index: 10000;
+		}
+
+        #Portfolio {
+            right: 17.5vw;
+            top: 25px;
+            position: fixed;
+            overflow: visible;
+            width: 66.128px;
+            height: 28.681869506835938px;
+            --web-animation: fadein undefineds undefined;
+            --web-action-type: page;
+            --web-action-target: Portfolio.html;
+            cursor: pointer;
+            line-height: 999.9998168945312px;
+            margin-top: -492.9999084472656px;
+            text-align: center;
+            font-family: Bangla MN;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 17px;
+            color: rgb(128, 128, 128);
+            
+            z-index: 10000;
+        }
+
+        #Main_Page {
+            right: 27vw;
+            top: 25px;
+            position: fixed;
+            overflow: visible;
+            width: 94.128px;
+            height: 28.681869506835938px;
+            --web-animation: fadein undefineds undefined;
+            --web-action-type: page;
+            --web-action-target: Main_page.html;
+            cursor: pointer;
+            line-height: 999.9998168945312px;
+            margin-top: -492.9999084472656px;
+            text-align: center;
+            font-family: Bangla MN;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 17px;
+            color: rgba(3, 0, 0, 1);
+            z-index: 10000;
+			text-decoration-line: underline;
+            text-underline-offset: 8px;
+        }
+        #Contact {
+            right: 7vw;
+            top: 25px;
+            position: fixed;
+            overflow: visible;
+            width: 72.509px;
+            height: 28.681869506835938px;
+            --web-animation: fadein undefineds undefined;
+            --web-action-type: page;
+            --web-action-target: archive.html;
+            cursor: pointer;
+            line-height: 999.9998168945312px;
+            margin-top: -492.9999084472656px;
+            text-align: center;
+            font-family: Bangla MN;
+            font-weight: normal;
+            font-size: 17px;
+            color: rgba(3, 0, 0, 1);
+            z-index: 10000;
+        }
+		.butterfly {
+			width: 100vw;
+			height:100vh;
+			position: sticky;
+			overflow: hidden;
+			
+		}
+		
+		.section{
+			width: 100vw;
+			height:100vh;
+			display: flex;
+			transition: transform 1s ease-in-out;
+			position: absolute;
+			overflow: hidden;
+		}
+		
+
+		.box1{
+			top:100vh;
+			position: absolute;
+			height: 100vh;
+			
+		}
+
+		model-viewer {
+			width: 100vw;
+			height:100vh;
+			position: fixed;
+			z-index: 100;
+			overflow: hidden;
+		}
+
+        @font-face {
+            font-family: PlayfairDisplay-Regular;
+            src: url(font/PlayfairDisplay-VariableFont_wght.ttf);
+        }
+
+		@font-face {
+			font-family: yeseva-one-regular;
+			src: url(font/YesevaOne-Regular.ttf)
+		}
+		@font-face {
+			font-family: Unna;
+			src: url(font/Unna-Regular.ttf)
+		}
+
+		@font-face {
+			font-family: Zi;
+			src: url(font/ZiYuYongSongTi-2.ttf)
+		}
+
+		@font-face {
+			font-family: zen;
+			src: url(font/ZenMaruGothic-Regular.ttf)
+		}
+
+        a:hover {
+            opacity: 0.5;
+            filter: alpha(opacity=50);
+        }
+
+		
+
+		/*简历*/
+		.heading{
+			Font-family: yeseva-one-regular; 
+			font-size:16px; 
+			position: absolute; 
+			z-index: 10000;
+			left:5vw;
+			top:10vh;
+			letter-spacing: 2px;
+		}
+
+		.bodyfont1 {
+			font-family: Unna; 
+			top:14vh; 
+			position: absolute;
+			z-index: 10000;
+			left: 10vw;
+			letter-spacing: 0.5px;
+			word-spacing: 3px;
+			line-height: 25px;
+			font-size: 12px;
+		}
+
+		.heading2 {
+			Font-family: yeseva-one-regular; 
+			font-size:16px; 
+			position: absolute; 
+			z-index: 10000;
+			left:5vw;
+			
+			letter-spacing: 2px;
+		}
+
+		.bodyfont2 {
+			font-family: Unna; 
+			
+			position: absolute;
+			z-index: 10000;
+			left: 10vw;
+			letter-spacing: 0.5px;
+			word-spacing: 3px;
+			line-height: 25px;
+			font-size: 15px;
+
+		}
+
+		.bodyfont3 {
+			font-family: Zi; 
+			
+			position: absolute;
+			z-index: 10000;
+			left: 10vw;
+			letter-spacing: 1px;
+			word-spacing: 2px;
+			line-height: 25px;
+			font-size: 8px;
+		}
+
+		.bodyfont4 {
+			font-family: zen; 
+			
+			position: absolute;
+			z-index: 10000;
+			left: 10vw;
+			letter-spacing: 1px;
+			word-spacing: 2px;
+			line-height: 25px;
+			font-size: 10px;
+			line-height: 20px;
+		}
+
+		.bodyfont5 {
+			font-family: Unna; 
+			
+			position: absolute;
+			z-index: 10000;
+			left: 10vw;
+			letter-spacing: 0.5px;
+			word-spacing: 3px;
+			line-height: 2.5vh;
+			font-size: 13px;
+
+		}
+		
+		.linkbox {
+			height:8vh;
+			width: 50vw;
+			right: 0px;
+			z-index:1000000;
+		}
+
+		.link{
+			
+			height: 2vh;
+			position:absolute; 
+			z-index:1000000; 
+			font-family: PlayfairDisplay-Regular; 
+			font-size: 16px; 
+			bottom: 3vh; 
+			right: 5vw;
+		}
+
+		.link2{
+			
+			position:absolute; 
+			z-index:1000000; 
+			font-family: PlayfairDisplay-Regular; 
+			font-size: 16px; 
+			bottom: 3vh; 
+			right: 15vw;
+		}
+
+    </style>
+	</head>
+   
+
+
+<body>
+	 <!-- Import the component -->
+	 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+
+<div id="Portfolio__1">
+    <div id="rec"></div>
+    <div id="nametitle"><img src="resource/2x/资源 1@2x.png" style="height:40px; width:140px"></div>
+
+    <div id="Portfolio">
+        <a href="Portfolio.html" style="text-decoration: none; color: black;"><span>Portfolio</span></a>
+    </div>
+    <div id="Main_Page">
+        <a href="Main_page.html" style="text-decoration: none; color: black;"><span>Main Page</span></a>
+    </div>
+    <div id="Contact">
+        <a href="archive.html" style="text-decoration: none; color: black;"><span>Contact</span></a>
+    </div>
+
+	<p style="font-family: Urbanist; position: fixed; font-size: 20px; bottom:2vh;  width: 50vw;
+	color: rgba(183, 183, 183, 0.855); text-align: center; word-spacing: 6px; letter-spacing: 10px; left:25vw; z-index:1000;">
+	GRAPHIC DESIGN</p>
+	
+	<p style="font-family: Urbanist; position: fixed; font-size: 16px; top:40vh; right: 1vw; 
+	color: rgb(116, 116, 116); text-align: center; letter-spacing: 10px; writing-mode: vertical-lr; z-index:1000">2019-2024</p>
+
+    <!-- Use it like any other HTML element -->
+    <div class="butterfly">
+        <model-viewer id="model"
+            alt="butterfly"
+            src="main_page/butterflies1.gltf"
+            ar-scale="fixed"
+            shadow-intensity="0.5"
+			camera-target="5m 0m 5m"
+            touch-action="pan-y"
+            rotation-per-second="30deg"
+            interaction-prompt="none"
+            pre-load="auto"
+            camera-orbit="90deg 0 0 "
+			scale="1.5 1.5 1.5"
+			autoplay
+			auto-rotate>
+        </model-viewer>
+    </div>
+
+
+	<script type="module">
+   	 	const modelViewer = document.querySelector("#model");
+   	 	const annotationClicked = (annotation) => {
+        	let dataset = annotation.dataset;
+       		modelViewer.cameraTarget = dataset.target;
+        	modelViewer.cameraOrbit = dataset.orbit;
+        	modelViewer.fieldOfView = '45deg';
+    	}
+
+    	modelViewer.querySelectorAll('button').forEach((hotspot) => {
+        	hotspot.addEventListener('click', () => annotationClicked(hotspot));
+    	});
+
+	
+		let currentSection = 0;
+
+		const sections = document.querySelectorAll('.section');
+		const totalSections = sections.length;
+
+		function scrollSection(event) {
+			event.preventDefault();
+			if (event.deltaY > 0) {
+				currentSection = Math.min(currentSection + 1, totalSections - 1);
+			} else {
+				currentSection = Math.max(currentSection - 1, 0);
+			}
+			sections.forEach((section, index) => {
+			section.style.transform = `translateY(-${currentSection * 100}vh)`;
+			});
+		}
+
+		window.addEventListener('wheel', scrollSection);
+
+	</script>
+
+
+	<div class="section" id="section1">
+			<img src="main_page/transparent.png" style="position: absolute; z-index: 999; width: 100vw; height: 200vh;">
+			<img src="main_page/2.png" style="position: absolute; width: 53vw; right:7vw; top: 12vh; overflow: hidden;">
+			<p style="z-index: 1000;font-family: PlayfairDisplay-Regular; font-size: 12px; position:absolute; width: 40vw; left:5vw; top:70vh; letter-spacing: 1px; word-spacing: 3px; text-align: justify; line-height: 22px;">
+		I am Xintong Wu, a passionate graphic design graduate originally from Fujian, China, 
+		now residing in Richmond, Virginia. Proficient in Adobe Creative Suite and other design 
+		software like Figma, I apply these tools to meet diverse design needs. Additionally, I have 
+		studied foundational 3D modeling (Cinema 4D) and gained practical experience in brand design,
+		promotional materials, print advertising, and web design. I am dedicated to solving complex
+		visual communication challenges through creativity. In my leisure time, I enjoy painting and 
+		playing video games with friends, which enrich my life and provide unique inspiration for my work.</p>
+	</div>
+
+	
+	
+	
+	
+
+
+	<div class="box1">
+		<div class="section" id="section2">
+		
+			<div class="heading"><p>Education</p></div>
+			<div class="rec_s" style="left:9vw; top:14vh;"></div>
+			<div class="bodyfont1" style="width:30vw;">
+				<p>Virginia Commonwealth University, Richmond</p>
+				<p>School of Art</p>
+				<p>Graphic Design Department</p>
+			</div>
+			<div class="heading2" style="top:25vh;"><p>Experience</p></div>
+			<div class="bodyfont2" style="top:29vh; "><p>Miya Nails and Spa</p></div>
+			<div class="bodyfont3" style="top:31vh; "><p>2020.7 - 2024.3</p></div>
+			<div class="bodyfont4" style="top:33.7vh;"><p>Technician, website design and social media design, brochure and video editing.</p></div>
+
+			<div class="bodyfont2" style="top:39vh; "><p>Practicum</p></div>
+			<div class="bodyfont3" style="top:41vh; "><p>2023.1-2023.5</p></div>
+			<div class="bodyfont4" style="top:43.7vh;"><p>Manually identifying and systematically classifying fonts to create a structured library. 
+				</p><p> library enables quick access and serves as a reference for design projects, ensuring diverse and standardized font use.</p></div>
+		
+			<div class="bodyfont2" style="top:51vh; "><p>Taobao Online store owner (China)</p></div>
+			<div class="bodyfont3" style="top:53vh; "><p>Website</p></div>
+			<div class="bodyfont4" style="top:55.7vh;"><p>Selling Ipad paperless note templates for app like Goodnotes and Notability.</p></div>
+
+			<div class="heading2" style="top:62vh;"><p>Skill</p></div>
+			<div class="bodyfont5" style="top:66vh; ">
+				<p>Photoshop</p> 
+				<p>Illustrator</p>
+				<p>Indesign</p>
+				<p>Figma</p>
+				<p>Adobe XD</p>
+				<p>Procreate</p>
+				<p>Spline</p>
+				<p>After Effect</p>
+				<p>HTML & CSS</p>
+				<p>JavaScript</p>
+			
+			</div>
+			<div class="linkbox">
+				<div class="link2"><a href="https://www.instagram.com/xinnnt_/" style="text-decoration: none; color:gray;" target="_blank">Instagram</a></div>
+				<div class="link"><a href="https://www.linkedin.com/in/xintong-wu-33697a203/" style="text-decoration: none; color:gray; " target="_blank">LinkedIn</a></div>
+		
+		
 			</div>
 		</div>
-		
-			<div class="imgme">
-				<div class="welcome">WELCOME</div>
-				<img id=me src="me.png">
-			</div>
-		
-	</div>
-	
-	
-		
-	<div id="Portfolio">
-		<a href="Portfolio.html" style="text-decoration: none; color: black;"><span>Portfolio</span></a>
-	</div>
-	<div id="Main_Page">
-		<a href="Main_page.html" style="text-decoration: none; color: black;"><span>Main Page</span></a>
-	</div>
-	<div id="Contact">
-		<a href="archive.html" style="text-decoration: none; color: black;"><span>Contact</span></a>
 	</div>
 
-	</div>
-	<div id="nametitle"><img src="resource/2x/资源 1@2x.png" style="height:40px; width:140px"></div>
-
-	<img id="n_5" src="n_5.png" srcset="n_5.png 1x, n_5@2x.png 2x">
-		
 	
 
-	</div>
 </div>
 </body>
 </html>
