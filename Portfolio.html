@@ -122,6 +122,7 @@
             height: 100vh;
             display: flex;
             transition: transform 1.5s ease-in-out;
+            -webkit-overflow-scrolling: touch; /* 允许在iOS设备上平滑滚动 */
         }
 
         #PORT_FO_LIO_FO_LIO {
@@ -277,11 +278,7 @@
 
         
         
-        #section4 {
-            background: #ffffff6a;
-            overflow-y: auto; /* 允许垂直滚动 */
-            height: 100vh; /* 使得整个视口内只能看到一部分内容 */
-        }
+        
 
         .zoomable {
             width: 200px;
