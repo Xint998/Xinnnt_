@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio</title>
+<style id="applicationStylesheet" type="text/css">
+	.mediaViewInfo {
+		--web-view-name: Portfolio;
+		--web-view-id: Portfolio;
+		--web-scale-on-resize: true;
+		--web-enable-deep-linking: true;
+	}
+	:root {
+		--web-view-ids: Portfolio;
+	}
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		border: none;
+		overflow-x: hidden;
+		
+	}
+	#Portfolio1 {
+		position: absolute;
+		background: url(未标题-1.jpg);
+		width: 100vw;
+		height: 5000px;
+		background-color: rgb(255, 255, 255);
+		--web-view-name: Portfolio;
+		--web-view-id: Portfolio;
+		--web-scale-on-resize: true;
+		--web-enable-deep-linking: true;
+
+	}
+
+
+
+	#PORT_FO_LIO_FO_LIO {
+		position: absolute;
+		width: 38vw;
+		height: 80vh;
+		left: 9vw;
+		top: 12vh;
+		overflow: hidden;
+		animation:slidein 4s infinite alternate ease-in-out;
+	}
+
+	@keyframes slidein {
+  from {
+    transform: translateX(0%);
+  }
+
+  to {
+    transform: translateX(50px);
+  }
+}
+
+	#PORT_FO_LIO_FO_LIO_m {
+		left: 8vw;
+		top: 7vh;
+		position: absolute;
+		overflow: hidden;
+		width: 70vw;
+		height: 90vh;
+		line-height: 30vh;
+		margin-top: -25px;
+		text-align: left;
+		font-family: PlayfairDisplay-Regular;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 13vw;
+		color: rgba(3,0,0,1);
+		letter-spacing: 0.5px;
+	}
+	@font-face {
+		font-family:PlayfairDisplay-Regular;
+		src:url(font/PlayfairDisplay-VariableFont_wght.ttf);
+	}
+	
+	#nametitle {
+        position:fixed;
+        left:30px;
+        top:20px;
+        z-index: 1000;
+        
+    }
+    #rec {
+        position:fixed;
+        width:100vw;
+        height:60px;
+        top:0;
+        overflow:hidden;
+        background-color: rgba(255, 255, 255, 0.809);
+        z-index:1000;
+    }
+
+    #Portfolio {
+        right:17.5vw;
+        top: 25px;
+        position: fixed;
+        overflow: visible;
+        width: 66.128px;
+        height: 28.681869506835938px;
+        --web-animation: fadein undefineds undefined;
+        --web-action-type: page;
+        --web-action-target: Portfolio.html;
+        cursor: pointer;
+        line-height: 1000px;
+        margin-top: -492.9999084472656px;
+        text-align: center;
+        font-family: Bangla MN;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 17px;
+        color: rgb(128, 128, 128);
+        text-decoration-line:underline;
+        text-underline-offset: 8px;
+        z-index: 1000;
+        
+    }
+
+    #Main_Page {
+        right: 27vw;
+        top: 25px;
+        position: fixed;
+        overflow: visible;
+        width: 94.128px;
+        height: 28.681869506835938px;
+        --web-animation: fadein undefineds undefined;
+        --web-action-type: page;
+        --web-action-target: Main_page.html;
+        cursor: pointer;
+        line-height: 999.9998168945312px;
+        margin-top: -492.9999084472656px;
+        text-align: center;
+        font-family: Bangla MN;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 17px;
+        color: rgba(3,0,0,1);
+        z-index: 1000;
+        
+    }
+    #Contact {
+        right: 7vw;
+        top: 25px;
+        position: fixed;
+        overflow: visible;
+        width: 72.509px;
+        height: 28.681869506835938px;
+        --web-animation: fadein undefineds undefined;
+        --web-action-type: page;
+        --web-action-target: archive.html;
+        cursor: pointer;
+        line-height: 999.9998168945312px;
+        margin-top: -492.9999084472656px;
+        text-align: center;
+        font-family: Bangla MN;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 17px;
+        color: rgba(3,0,0,1);
+        z-index: 1000;
+    }
+
+	
+	#zine_mock_up3 {
+		position: absolute;
+		width: 25vw;
+		height: 25vw;
+		left: 11vw;
+		top: 130vh;
+		overflow: hidden;
+		--web-animation: fadein undefineds undefined;
+		--web-action-type: page;
+		--web-action-target: Portfolio___1.html;
+		cursor: pointer;
+	}
+	#design_practice_collection_boo {
+		position: absolute;
+		width: 25vw;
+		height: 25vw;
+		left: 37.5vw;
+		top: 130vh;
+		overflow: visible;
+		--web-animation: fadein undefineds undefined;
+		--web-action-type: page;
+		--web-action-target: Portfolio___2.html;
+		cursor: pointer;
+	}
+	#Rectangle {
+		position: absolute;
+		width: 25vw;
+		height: 25vw;
+		Right: 11vw;
+		top: 178vh;
+		overflow: visible;
+		--web-animation: fadein undefineds undefined;
+		--web-action-type: page;
+		--web-action-target: Portfolio___4.html;
+		cursor: pointer;
+	}
+	#coreiii {
+		position: absolute;
+		width: 25vw;
+		height: 25vw;
+		left: 11vw;
+		top: 178vh;
+		overflow: visible;
+		--web-animation: fadein undefineds undefined;
+		--web-action-type: page;
+		--web-action-target: Portfolio___3.html;
+		cursor: pointer;
+	}
+	
+	
+	#multig {
+		position: absolute;
+		width: 25vw;
+		height: 25vw;
+		left: 37.5vw;
+		top: 178vh;
+		overflow: visible;
+		--web-animation: fadein undefineds undefined;
+		--web-action-type: page;
+		--web-action-target: Portfolio___5.html;
+		cursor: pointer;
+	}
+
+	#plant {
+		position: absolute;
+		overflow: visible;
+		width: 25vw;
+		height: 25vw;
+		right: 11vw;
+		top: 130vh;
+		--web-animation: fadein undefineds undefined;
+		--web-action-type: page;
+		--web-action-target: Portfolio___6.html;
+		cursor: pointer;
+	}
+
+	#multi-memory {
+		position: absolute;
+		width: 25vw;
+		height: 25vw;
+		left: 11vw;
+		top: 226vh;
+		overflow: hidden;
+		--web-animation: fadein undefineds undefined;
+		--web-action-type: page;
+		--web-action-target: Portfolio___7.html;
+		cursor: pointer;
+		
+	}
+
+	#multi-mapping {
+		position: absolute;
+		width: 25vw;
+		height: 25vw;
+		left: 37.5vw;
+		top: 226vh;
+		overflow: hidden;
+		--web-animation: fadein undefineds undefined;
+		--web-action-type: page;
+		--web-action-target: Portfolio___8.html;
+		cursor: pointer;
+		
+	}
+
+	#roy {
+		position: absolute;
+		width: 25vw;
+		height: 25vw;
+		left: 11vw;
+		top: 274vh;
+		overflow: hidden;
+		--web-animation: fadein undefineds undefinßed;
+		--web-action-type: page;
+		--web-action-target: Portfolio___12.html;
+		cursor: pointer;
+		
+	}
+
+
+	#multiweb {
+		position: absolute;
+		width: 25vw;
+		height: 25vw;
+		right: 11vw;
+		top: 226vh;
+		overflow: hidden;
+		--web-animation: fadein undefineds undefinßed;
+		--web-action-type: page;
+		--web-action-target: Portfolio___13.html;
+		cursor: pointer;
+		
+	}
+
+	#web-accordin {
+		position: absolute;
+		width: 25vw;
+		height: 25vw;
+		right: 11vw;
+		top: 274vh;
+		overflow: hidden;
+		--web-animation: fadein undefineds undefinßed;
+		--web-action-type: page;
+		--web-action-target: Portfolio___13.html;
+		cursor: pointer;
+		
+	}
+
+	#california {
+		position: absolute;
+		width: 25vw;
+		height: 25vw;
+		left: 37.5vw;
+		top: 274vh;
+		overflow: hidden;
+		--web-animation: fadein undefineds undefinßed;
+		--web-action-type: page;
+		--web-action-target: Portfolio___14.html;
+		cursor: pointer;
+		
+	}
+	
+
+	#陷落星河 {
+		position: absolute;
+		width: 20vw;
+		height: 20vw;
+		left: 40vw;
+		top: 405vh;
+		overflow: visible;
+		--web-animation: fadein undefineds undefined;
+		--web-action-type: page;
+		--web-action-target: Portfolio___11.html;
+		cursor: pointer;
+	}
+
+	#miyabrochure {
+		position: absolute;
+		width: 20vw;
+		height: 20vw;
+		left: 10vw;
+		top: 405vh;
+		overflow: hidden;
+		--web-animation: fadein undefineds undefined;
+		--web-action-type: page;
+		--web-action-target: Portfolio___10.html;
+		cursor: pointer;
+		
+	}
+
+	#wayfinding {
+		position: absolute;
+		width: 25vw;
+		height: 25vw;
+		left: 11vw;
+		top: 322vh;
+		overflow: hidden;
+		--web-animation: fadein undefineds undefinßed;
+		--web-action-type: page;
+		--web-action-target: Portfolio___12.html;
+		cursor: pointer;
+		
+	}
+		
+	#synthesis {
+		position: absolute;
+		width: 25vw;
+		height: 25vw;
+		left: 37.5vw;
+		top: 322vh;
+		overflow: hidden;
+		--web-animation: fadein undefineds undefinßed;
+		--web-action-type: page;
+		--web-action-target: Portfolio___14.html;
+		cursor: pointer;
+		
+	}
+
+	# {
+		position: absolute;
+		width: 25vw;
+		height: 25vw;
+		right: 11vw;
+		top: 322vh;
+		overflow: hidden;
+		--web-animation: fadein undefineds undefinßed;
+		--web-action-type: page;
+		--web-action-target: Portfolio___13.html;
+		cursor: pointer;
+		
+	}
+
+	#wayfinding {
+		position: absolute;
+		width: 25vw;
+		height: 25vw;
+		left: 11vw;
+		top: 322vh;
+		overflow: hidden;
+		--web-animation: fadein undefineds undefinßed;
+		--web-action-type: page;
+		--web-action-target: Portfolio___12.html;
+		cursor: pointer;
+		
+	}
+		
+	# {
+		position: absolute;
+		width: 25vw;
+		height: 25vw;
+		left: 37.5vw;
+		top: 322vh;
+		overflow: hidden;
+		--web-animation: fadein undefineds undefinßed;
+		--web-action-type: page;
+		--web-action-target: Portfolio___14.html;
+		cursor: pointer;
+		
+	}
+
+	# {
+		position: absolute;
+		width: 25vw;
+		height: 25vw;
+		right: 11vw;
+		top: 322vh;
+		overflow: hidden;
+		--web-animation: fadein undefineds undefinßed;
+		--web-action-type: page;
+		--web-action-target: Portfolio___13.html;
+		cursor: pointer;
+		
+	}
+
+
+
+
+	a:hover{
+		opacity:0.5;
+		filter:alpha(opacity=50);
+		
+	}
+	
+	@font-face {
+		font-family:krungthep;
+		src:url(font/Krungthep.ttf)
+	}
+
+</style>
+</head>
+<body>
+<div id="Portfolio1">
+	
+		
+	<img id="PORT_FO_LIO_FO_LIO" src="PORT_FO_LIO_FO_LIO.png" srcset="PORT_FO_LIO_FO_LIO.png 1x, PORT_FO_LIO_FO_LIO@2x.png 2x">
+		
+	<div id="PORT_FO_LIO_FO_LIO_m">
+		<span>PORT</span><br/><span>FO</span><br/><span>LIO</span><br/><span>FO</span><br/><span>LIO</span>
+	</div>
+	
+
+	<a href="Portfolio___1.html"><img  id="zine_mock_up3" src="zine/zine_mock_up3@2x.png"></a>
+		
+	<a href="Portfolio___2.html"><img id="design_practice_collection_boo" src="chinese new year collection book/design_practice_collection_boo@2x.png"></a>
+		
+	<a href="Portfolio___4.html"><img id="Rectangle" src="resource/core 4 kim/Rectangle@2x.jpg"></a>
+		
+	<a href="Portfolio___3.html"><img id="coreiii" src="coreIII/core 3-exhibition brochure 2.jpg"></a>
+		
+	<a href="Portfolio___11.html"><img id="陷落星河" src="淘宝/手打效果图.jpg"></a>
+	
+	<a href="Portfolio___15.html"><img id="plant" src="plant/4-0-0.jpg"></a>
+
+	<a href="Portfolio___10.html"><img id="miyabrochure" src="miya/miya1.jpg"></a>
+
+	<a href="Portfolio___5.html"><img id="multig" src="multi (anthony)/0.jpg"></a>
+
+	<a href="Portfolio___7.html"><img id="multi-memory" src="resource/multi calendar/title wall.jpg"></a>
+
+	<a href="Portfolio___8.html"><img  id="multi-mapping" src="resource/multi mapping/cover-mapping.png"></a>
+
+	<a href="Portfolio___6.html"><img id="multiweb" src="multi website img/multi 1 - Google Chrome 2021_12_10 15_12_34.png"></a>
+
+	<a href="Portfolio___13.html"><img id="web-accordin" src="web design/未标题-1.png"></a>
+
+	<a href="Portfolio___14.html"><img id="california" src="web design/california.png"></a>
+
+	<a href="Portfolio___12.html"><img  id="roy" src="critical writing/Spiral Notebook Mockup.jpg"></a>
+
+	<a href="Portfolio___16.html"><img  id="wayfinding" src="exhibition_david/1.jpg"></a>
+
+	<a href="Portfolio___19.html"><img  id="synthesis" src="Synthesis/ps/1.png"></a>
+
+	<a href=""><img  id="" src=""></a>
+
+	<a href=""><img  id="" src=""></a>
+
+	<a href=""><img  id="" src=""></a>
+
+	<a href=""><img  id="" src=""></a>
+
+	<a href=""><img  id="" src=""></a>
+
+	<a href=""><img  id="" src=""></a>
+
+	<a href=""><img  id="" src=""></a>
+
+
+
+
+
+	<div id="rec"></div>
+	<div id="nametitle"><img src="resource/2x/资源 1@2x.png" style="height:40px; width:140px"></div>
+
+	<div id="Portfolio">
+		<a href="Portfolio.html" style="text-decoration: none; color: black;"><span>Portfolio</span></a>
+	</div>
+	<div id="Main_Page">
+		<a href="Main_page.html" style="text-decoration: none; color: black;"><span>Main Page</span></a>
+	</div>
+	<div id="Contact">
+		<a href="archive.html" style="text-decoration: none; color: black;"><span>Contact</span></a>
+	</div>
+
+
+</body>
+</html>

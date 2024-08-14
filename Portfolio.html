@@ -1,430 +1,590 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Portfolio</title>
-<style id="applicationStylesheet" type="text/css">
-	.mediaViewInfo {
-		--web-view-name: Portfolio;
-		--web-view-id: Portfolio;
-		--web-scale-on-resize: true;
-		--web-enable-deep-linking: true;
-	}
-	:root {
-		--web-view-ids: Portfolio;
-	}
-	* {
-		margin: 0;
-		padding: 0;
-		box-sizing: border-box;
-		border: none;
-		overflow-x: hidden;
-		
-	}
-	#Portfolio1 {
-		position: absolute;
-		background: url(未标题-1.jpg);
-		width: 100vw;
-		height: 5000px;
-		background-color: rgb(255, 255, 255);
-		--web-view-name: Portfolio;
-		--web-view-id: Portfolio;
-		--web-scale-on-resize: true;
-		--web-enable-deep-linking: true;
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <title>Portfolio</title>
+    <style id="applicationStylesheet" type="text/css">
+        @font-face {
+            font-family: PlayfairDisplay-Regular;
+            src: url(font/PlayfairDisplay-VariableFont_wght.ttf);
+        }
 
-	}
+        #Portfolio1 {
+            position: absolute;
+            background: url(未标题-1.jpg);
+            width: 100vw;
+            height: 5000px;
+            background-color: rgb(255, 255, 255);
+            --web-view-name: Portfolio;
+            --web-view-id: Portfolio;
+            --web-scale-on-resize: true;
+            --web-enable-deep-linking: true;
+        }
 
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            overflow: hidden;
+            scroll-behavior: smooth;
+            
+        }
 
-
-	#PORT_FO_LIO_FO_LIO {
-		position: absolute;
-		width: 38vw;
-		height: 80vh;
-		left: 9vw;
-		top: 12vh;
-		overflow: hidden;
-		animation:slidein 4s infinite alternate ease-in-out;
-	}
-
-	@keyframes slidein {
-  from {
-    transform: translateX(0%);
-  }
-
-  to {
-    transform: translateX(50px);
-  }
-}
-
-	#PORT_FO_LIO_FO_LIO_m {
-		left: 8vw;
-		top: 7vh;
-		position: absolute;
-		overflow: hidden;
-		width: 70vw;
-		height: 90vh;
-		line-height: 30vh;
-		margin-top: -25px;
-		text-align: left;
-		font-family: PlayfairDisplay-Regular;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 13vw;
-		color: rgba(3,0,0,1);
-		letter-spacing: 0.5px;
-	}
-	@font-face {
-		font-family:PlayfairDisplay-Regular;
-		src:url(font/PlayfairDisplay-VariableFont_wght.ttf);
-	}
-	
-	#nametitle {
-        position:fixed;
-        left:30px;
-        top:20px;
-        z-index: 1000;
+        #nametitle {
+            position: fixed;
+            left: 30px;
+            top: 20px;
+            z-index: 1000;
+        }
         
-    }
-    #rec {
-        position:fixed;
-        width:100vw;
-        height:60px;
-        top:0;
-        overflow:hidden;
-        background-color: rgba(255, 255, 255, 0.809);
-        z-index:1000;
-    }
+        #rec {
+            position: fixed;
+            width: 100vw;
+            height: 60px;
+            top: 0;
+            overflow: hidden;
+            background-color: rgba(255, 255, 255, 0.809);
+            z-index: 1000;
+        }
 
-    #Portfolio {
-        right:17.5vw;
-        top: 25px;
-        position: fixed;
-        overflow: visible;
-        width: 66.128px;
-        height: 28.681869506835938px;
-        --web-animation: fadein undefineds undefined;
-        --web-action-type: page;
-        --web-action-target: Portfolio.html;
-        cursor: pointer;
-        line-height: 1000px;
-        margin-top: -492.9999084472656px;
-        text-align: center;
-        font-family: Bangla MN;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 17px;
-        color: rgb(128, 128, 128);
-        text-decoration-line:underline;
-        text-underline-offset: 8px;
-        z-index: 1000;
+        #Portfolio {
+            right: 17.5vw;
+            top: 25px;
+            position: fixed;
+            overflow: visible;
+            width: 66.128px;
+            height: 28.681869506835938px;
+            --web-animation: fadein undefineds undefined;
+            --web-action-type: page;
+            --web-action-target: Portfolio.html;
+            cursor: pointer;
+            line-height: 1000px;
+            margin-top: -492.9999084472656px;
+            text-align: center;
+            font-family: Bangla MN;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 17px;
+            color: rgb(128, 128, 128);
+            text-decoration-line: underline;
+            text-underline-offset: 8px;
+            z-index: 1000;
+        }
         
-    }
+        #Main_Page {
+            right: 27vw;
+            top: 25px;
+            position: fixed;
+            overflow: visible;
+            width: 94.128px;
+            height: 28.681869506835938px;
+            --web-animation: fadein undefineds undefined;
+            --web-action-type: page;
+            --web-action-target: Main_page.html;
+            cursor: pointer;
+            line-height: 999.9998168945312px;
+            margin-top: -492.9999084472656px;
+            text-align: center;
+            font-family: Bangla MN;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 17px;
+            color: rgba(3,0,0,1);
+            z-index: 1000;
+        }
 
-    #Main_Page {
-        right: 27vw;
-        top: 25px;
-        position: fixed;
-        overflow: visible;
-        width: 94.128px;
-        height: 28.681869506835938px;
-        --web-animation: fadein undefineds undefined;
-        --web-action-type: page;
-        --web-action-target: Main_page.html;
-        cursor: pointer;
-        line-height: 999.9998168945312px;
-        margin-top: -492.9999084472656px;
-        text-align: center;
-        font-family: Bangla MN;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 17px;
-        color: rgba(3,0,0,1);
-        z-index: 1000;
+        #Contact {
+            right: 7vw;
+            top: 25px;
+            position: fixed;
+            overflow: visible;
+            width: 72.509px;
+            height: 28.681869506835938px;
+            --web-animation: fadein undefineds undefined;
+            --web-action-type: page;
+            --web-action-target: archive.html;
+            cursor: pointer;
+            line-height: 999.9998168945312px;
+            margin-top: -492.9999084472656px;
+            text-align: center;
+            font-family: Bangla MN;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 17px;
+            color: rgba(3,0,0,1);
+            z-index: 1000;
+        }
+
+        .section {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            transition: transform 1.5s ease-in-out;
+        }
+
+        #PORT_FO_LIO_FO_LIO {
+            position: absolute;
+            width: 38vw;
+            height: 80vh;
+            left: 9vw;
+            top: 12vh;
+            overflow: hidden;
+            animation: slidein 4s infinite alternate ease-in-out;
+        }
+
+        @keyframes slidein {
+            from {
+                transform: translateX(0%);
+            }
+            to {
+                transform: translateX(50px);
+            }
+        }
+
+        #PORT_FO_LIO_FO_LIO_m {
+            left: 8vw;
+            top: 7vh;
+            position: absolute;
+            overflow: hidden;
+            width: 70vw;
+            height: 90vh;
+            line-height: 30vh;
+            margin-top: -25px;
+            text-align: left;
+            font-family: PlayfairDisplay-Regular;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 13vw;
+            color: rgba(3,0,0,1);
+            letter-spacing: 0.5px;
+        }
+
+        #section2 {
+            background: #ffffff3c;
+           
+        }
+
+        #synthesis {
+            width: 60vh;
+            height: 60vh;
+            position: absolute;
+            left: 14vw;
+            top: 23vh;
+        }
+
+        #flower {
+            width: 29vh;
+            height: 29vh;
+            position: absolute;
+            left: 49vw;
+            top: 23vh;
+        }
+
+        #miya {
+            width: 29vh;
+            height: 29vh;
+            position: absolute;
+            left: 66.5vw;
+            top: 23vh;
+        }
+
+        #bedroom {
+            width: 29vh;
+            height: 29vh;
+            position: absolute;
+            left: 49vw;
+            top: 54vh;
+        }
         
-    }
-    #Contact {
-        right: 7vw;
-        top: 25px;
-        position: fixed;
-        overflow: visible;
-        width: 72.509px;
-        height: 28.681869506835938px;
-        --web-animation: fadein undefineds undefined;
-        --web-action-type: page;
-        --web-action-target: archive.html;
-        cursor: pointer;
-        line-height: 999.9998168945312px;
-        margin-top: -492.9999084472656px;
-        text-align: center;
-        font-family: Bangla MN;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 17px;
-        color: rgba(3,0,0,1);
-        z-index: 1000;
-    }
+        
 
-	
-	#zine_mock_up3 {
-		position: absolute;
-		width: 25vw;
-		height: 25vw;
-		left: 11vw;
-		top: 130vh;
-		overflow: hidden;
-		--web-animation: fadein undefineds undefined;
-		--web-action-type: page;
-		--web-action-target: Portfolio___1.html;
-		cursor: pointer;
-	}
-	#design_practice_collection_boo {
-		position: absolute;
-		width: 25vw;
-		height: 25vw;
-		left: 37.5vw;
-		top: 130vh;
-		overflow: visible;
-		--web-animation: fadein undefineds undefined;
-		--web-action-type: page;
-		--web-action-target: Portfolio___2.html;
-		cursor: pointer;
-	}
-	#Rectangle {
-		position: absolute;
-		width: 25vw;
-		height: 25vw;
-		Right: 11vw;
-		top: 178vh;
-		overflow: visible;
-		--web-animation: fadein undefineds undefined;
-		--web-action-type: page;
-		--web-action-target: Portfolio___4.html;
-		cursor: pointer;
-	}
-	#coreiii {
-		position: absolute;
-		width: 25vw;
-		height: 25vw;
-		left: 11vw;
-		top: 178vh;
-		overflow: visible;
-		--web-animation: fadein undefineds undefined;
-		--web-action-type: page;
-		--web-action-target: Portfolio___3.html;
-		cursor: pointer;
-	}
-	
-	
-	#multig {
-		position: absolute;
-		width: 25vw;
-		height: 25vw;
-		left: 37.5vw;
-		top: 178vh;
-		overflow: visible;
-		--web-animation: fadein undefineds undefined;
-		--web-action-type: page;
-		--web-action-target: Portfolio___5.html;
-		cursor: pointer;
-	}
+        .scroll-container {
+            display: flex;
+            align-items: center;
+            animation: scroll 40s  linear infinite;
+            animation-play-state: paused; /* 默认暂停 */
+        }
 
-	#multiweb {
-		position: absolute;
-		overflow: visible;
-		width: 25vw;
-		height: 25vw;
-		right: 11vw;
-		top: 130vh;
-		--web-animation: fadein undefineds undefined;
-		--web-action-type: page;
-		--web-action-target: Portfolio___6.html;
-		cursor: pointer;
-	}
+        .scroll-container img {
+            width: 57vh;
+            height: 57vh;
+            object-fit: cover;
+            margin-right: 2vw;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
 
-	#multi-memory {
-		position: absolute;
-		width: 25vw;
-		height: 25vw;
-		left: 11vw;
-		top: 226vh;
-		overflow: hidden;
-		--web-animation: fadein undefineds undefined;
-		--web-action-type: page;
-		--web-action-target: Portfolio___7.html;
-		cursor: pointer;
-		
-	}
+        @keyframes scroll {
+            0% {
+                transform: translateX(46%);
+            }
+            100% {
+                transform: translateX(-45%);
+            }
+        }
 
-	#multi-mapping {
-		position: absolute;
-		width: 25vw;
-		height: 25vw;
-		left: 37.5vw;
-		top: 226vh;
-		overflow: hidden;
-		--web-animation: fadein undefineds undefined;
-		--web-action-type: page;
-		--web-action-target: Portfolio___8.html;
-		cursor: pointer;
-		
-	}
+        .paused {
+            animation-play-state: paused;
+        }
 
-	#roy {
-		position: absolute;
-		width: 25vw;
-		height: 25vw;
-		left: 11vw;
-		top: 274vh;
-		overflow: hidden;
-		--web-animation: fadein undefineds undefinßed;
-		--web-action-type: page;
-		--web-action-target: Portfolio___12.html;
-		cursor: pointer;
-		
-	}
+        .s3 {
+            left: 12.5vw;
+            top: 14.5vh;
+            width: 75vw;
+            height: 75vh;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            position: relative;
+        }
 
+        #section4 {
+            background: #ffffff6a;
+        }
 
-	#ikea-poster {
-		position: absolute;
-		width: 25vw;
-		height: 25vw;
-		right: 11vw;
-		top: 226vh;
-		overflow: hidden;
-		--web-animation: fadein undefineds undefinßed;
-		--web-action-type: page;
-		--web-action-target: Portfolio___13.html;
-		cursor: pointer;
-		
-	}
+        a:hover {
+            opacity: 0.5;
+            filter: alpha(opacity=50);
+        }
 
-	#web-accordin {
-		position: absolute;
-		width: 25vw;
-		height: 25vw;
-		right: 11vw;
-		top: 274vh;
-		overflow: hidden;
-		--web-animation: fadein undefineds undefinßed;
-		--web-action-type: page;
-		--web-action-target: Portfolio___13.html;
-		cursor: pointer;
-		
-	}
+        .lastpage {
+            position: absolute; 
+            font-size: 5.5vw; 
+            top: 12vh; 
+            left: 0vw; 
+            color: rgb(0, 0, 0); 
+            text-align: left; 
+            letter-spacing: 10px; 
+            writing-mode: vertical-lr; 
+            z-index: 1000;
+            font-family: PlayfairDisplay-Regular;
+        }
 
-	#california {
-		position: absolute;
-		width: 25vw;
-		height: 25vw;
-		left: 37.5vw;
-		top: 274vh;
-		overflow: hidden;
-		--web-animation: fadein undefineds undefinßed;
-		--web-action-type: page;
-		--web-action-target: Portfolio___14.html;
-		cursor: pointer;
-		
-	}
-	
+        .posterimg {
+            
+            position: absolute;
+            align-items:center;
+            width:71.5vw;
+            height: 80vh;
+            right:8vw;
+            top:13vh;
+            overflow: auto;
+        }
 
-	#陷落星河 {
-		position: absolute;
-		width: 20vw;
-		height: 20vw;
-		left: 40vw;
-		top: 405vh;
-		overflow: visible;
-		--web-animation: fadein undefineds undefined;
-		--web-action-type: page;
-		--web-action-target: Portfolio___11.html;
-		cursor: pointer;
-	}
+        
+        
+        #section4 {
+            background: #ffffff6a;
+            overflow-y: auto; /* 允许垂直滚动 */
+            height: 100vh; /* 使得整个视口内只能看到一部分内容 */
+        }
 
-	#miyabrochure {
-		position: absolute;
-		width: 20vw;
-		height: 20vw;
-		left: 10vw;
-		top: 405vh;
-		overflow: hidden;
-		--web-animation: fadein undefineds undefined;
-		--web-action-type: page;
-		--web-action-target: Portfolio___10.html;
-		cursor: pointer;
-		
-	}
-		
-	
+        .zoomable {
+            width: 200px;
+            height: 200px;
+            cursor: pointer;
+            border-radius: 10px;
+            cursor: pointer;
+        }
 
-	a:hover{
-		opacity:0.5;
-		filter:alpha(opacity=50);
-		
-	}
-	
-	@font-face {
-		font-family:krungthep;
-		src:url(font/Krungthep.ttf)
-	}
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.8);
+            align-items: center;
+            justify-content: center;
+        }
 
-</style>
+        /* 模态框中的图片 */
+        .modal-content {
+            max-width: 90%;
+            max-height: 90%;
+            margin: auto;
+            display: block;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .modal-close {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            font-size: 30px;
+            color: white;
+            cursor: pointer;
+        }
+
+        
+    </style>
 </head>
+
 <body>
-<div id="Portfolio1">
-	
-		
-	<img id="PORT_FO_LIO_FO_LIO" src="PORT_FO_LIO_FO_LIO.png" srcset="PORT_FO_LIO_FO_LIO.png 1x, PORT_FO_LIO_FO_LIO@2x.png 2x">
-		
-	<div id="PORT_FO_LIO_FO_LIO_m">
-		<span>PORT</span><br/><span>FO</span><br/><span>LIO</span><br/><span>FO</span><br/><span>LIO</span>
-	</div>
-	
+    <div id="Portfolio1">
+        <p style="font-family: Urbanist; position: fixed; font-size: 16px; top: 40vh; right: 0.05vw; color: rgb(116, 116, 116); text-align: center; letter-spacing: 10px; writing-mode: vertical-lr; z-index: 1000">2019-2024</p>
+        
+        <div id="container">
+            <div class="section" id="section1">
+                <div>
+                    <img id="PORT_FO_LIO_FO_LIO" src="PORT_FO_LIO_FO_LIO.png" srcset="PORT_FO_LIO_FO_LIO.png 1x, PORT_FO_LIO_FO_LIO@2x.png 2x">
+                    <div id="PORT_FO_LIO_FO_LIO_m">
+                        <span>PORT</span><br/><span>FO</span><br/><span>LIO</span><br/><span>FO</span><br/><span>LIO</span>
+                    </div>
+                </div>
+            </div>
 
-	<a><img onclick="application.goToTargetView(event)" id="zine_mock_up3" src="zine/zine_mock_up3@2x.png"></a>
-		
-	<a><img onclick="application.goToTargetView(event)" id="design_practice_collection_boo" src="chinese new year collection book/design_practice_collection_boo@2x.png"></a>
-		
-	<a><img onclick="application.goToTargetView(event)" id="Rectangle" src="resource/core 4 kim/Rectangle@2x.jpg"></a>
-		
-	<a><img onclick="application.goToTargetView(event)" id="coreiii" src="coreIII/core 3-exhibition brochure 2.jpg"></a>
-		
-	<a><img onclick="application.goToTargetView(event)" id="陷落星河" src="淘宝/手打效果图.jpg"></a>
-	
-	<a><img onclick="application.goToTargetView(event)" id="multiweb" src="multi website img/multi 1 - Google Chrome 2021_12_10 15_12_34.png"></a>
+            <div class="section" id="section2">
+                <div style="width: 100vw; height: 100vh; position: relative;">
+                    <a href="Portfolio___19.html" target="_blank"><img id="synthesis" src="Synthesis/ps/1.png"></a>
+                    <a href="Portfolio___17.html" target="_blank"><img id="bedroom" src="bedroom/2.jpg"></a>
+                    <a href="Portfolio___10.html" target="_blank"><img id="miya" src="miya/miya1.jpg"></a>
+                    <a href="Portfolio___18.html" target="_blank"><img id="flower" src="梦与花/4k荷花-1.jpg"></a>
+                </div> 
+            </div>
 
-	<a><img onclick="application.goToTargetView(event)" id="miyabrochure" src="miya/miya1.jpg"></a>
+            <div class="section" id="section3">
+                <div style="width: 100vw; height: 100vh; position: relative;">
+                    <div class="s3" id="s3">
+                        <div class="scroll-container" id="scrollContainer">
+                            <a href="Portfolio___16.html" target="_blank"><img src="exhibition_david/1.jpg" id="wayfinding"></a>
+                            <a href="Portfolio___12.html" target="_blank"><img src="critical writing/Spiral Notebook Mockup.jpg" id="roy"></a>
+                            <a href="Portfolio___11.html" target="_blank"><img src="淘宝/手打效果图.jpg" id="陷落星河"></a>
+                            <a href="Portfolio___14.html" target="_blank"><img src="web design/california.png" id="california"></a>
+							<a href="Portfolio___1.html" target="_blank"><img  id="zine" src="zine/zine_mock_up3@2x.png"></a>
+                            <a href="Portfolio___9.html" target="_blank"><img src="alec/1.png" id="alec"></a>
+							<a href="Portfolio___6.html" target="_blank"><img id="multiweb" src="multi website img/multi 1 - Google Chrome 2021_12_10 15_12_34.png"></a>
+							<a href="Portfolio___7.html" target="_blank"><img id="multi-memory" src="resource/multi calendar/title wall.jpg"></a>
+							<a href="Portfolio___8.html" arget="_blank"><img  id="multi-mapping" src="resource/multi mapping/cover-mapping.png"></a>
+                            <a href="Portfolio___4.html" target="_blank"><img id="Rectangle" src="resource/core 4 kim/Rectangle@2x.jpg"></a>
+							<a href="Portfolio___3.html" target="_blank"><img id="coreiii" src="coreIII/core 3-exhibition brochure 2.jpg"></a>
+							<a href="Portfolio___5.html" target="_blank"><img id="multig" src="multi (anthony)/0.jpg"></a>
+							<a href="Portfolio___13.html" target="_blank"><img id="web-accordin" src="web design/未标题-1.png"></a>
+							<a href="Portfolio___2.html" target="_blank"><img id="design_practice_collection_boo" src="chinese new year collection book/design_practice_collection_boo@2x.png"></a>
+							<a href="Portfolio___15.html" target="_blank"><img id="plant" src="plant/4-0-0.jpg"></a>
+                            
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-	<a><img onclick="application.goToTargetView(event)" id="multig" src="multi (anthony)/0.jpg"></a>
+            <div class="section" id="section4" style="background: #ffffff6a; overflow-y: auto; height: 100vh;">
+                <div style="width: 100vw; height: 100vh; position: relative;">
+                    <div class="lastpage"><p>Poster</p></div>
+                    
+                    <div class="posterimg">
+                        
+                        <a><img src="small project/mist_画板 1.png"  class="zoomable" data-src="small project/mist_画板 1.png" alt="Image description" style="width: 15vw; height:35vh; margin:2vh;"></a>
+                        <a><img src="small project/mist-02.png" class="zoomable" data-src="small project/mist-02.png" alt="Image description" style="width: 15vw; height:35vh; margin:2vh;"></a>
+                        <a><img src="small project/mist3.png"  class="zoomable" data-src="small project/mist3.png" alt="Image description" style="width: 15vw; height:35vh; margin:2vh;"></a>
+                        <a><img src="small project/4.png" class="zoomable" data-src="small project/4.png" alt="Image description" style="width: 15vw; height:35vh; margin:2vh;"></a>
+                        
+                        <a><img src="small project/winter.jpg" class="zoomable" data-src="small project/winter.jpg" alt="Image description" style="width: 15vw; height:35vh; margin:2vh;"></a>
+                        <a><img src="small project/1.png" class="zoomable" data-src="small project/1.png" alt="Image description" style="width: 15vw; height:35vh; margin:2vh;"></a>
+                        <a><img src="small project/荷花海报.jpg" class="zoomable" data-src="small project/荷花海报.jpg" alt="Image description" style="width: 15vw; height:35vh; margin:2vh;"></a>
+                        <a><img src="small project/Ikea.png" class="zoomable" data-src="small project/Ikea.png" alt="Image description" style="width: 15vw; height:35vh; margin:2vh;"></a>
 
-	<a><img onclick="application.goToTargetView(event)" id="multi-memory" src="resource/multi calendar/title wall.jpg"></a>
-
-	<a><img onclick="application.goToTargetView(event)" id="multi-mapping" src="resource/multi mapping/cover-mapping.png"></a>
-
-	<a><img onclick="application.goToTargetView(event)" id="ikea-poster" src="ikea-poster1.png"></a>
-
-	<a><img onclick="application.goToTargetView(event)" id="web-accordin" src="web design/未标题-1.png"></a>
-
-	<a><img onclick="application.goToTargetView(event)" id="california" src="web design/california.png"></a>
-
-	<a><img onclick="application.goToTargetView(event)" id="roy" src="critical writing/Spiral Notebook Mockup.jpg"></a>
+                        <a><img src="small project/2.png" class="zoomable" data-src="small project/2.png" alt="Image description" style="width: 15vw; height:35vh; margin:2vh;"></a>
+                        <a><img src="small project/haha.jpg" class="zoomable" data-src="small project/haha.jpg" alt="Image description" style="width: 15vw; height:35vh; margin:2vh;"></a>
 
 
 
+                    </div>
+
+                    
+
+                </div>
+            </div>
+        </div>
+
+        <div id="rec"></div>
+        <div id="nametitle"><img src="resource/2x/资源 1@2x.png" style="height:40px; width:140px"></div>
+
+        <div id="Portfolio">
+            <a href="Portfolio.html" style="text-decoration: none; color: black;"><span>Portfolio</span></a>
+        </div>
+        <div id="Main_Page">
+            <a href="Main_page.html" style="text-decoration: none; color: black;"><span>Main Page</span></a>
+        </div>
+        <div id="Contact">
+            <a href="archive.html" style="text-decoration: none; color: black;"><span>Contact</span></a>
+        </div>
+    </div>
+
+    <script>
+       
+
+        let currentSection = 0;
+        const sections = document.querySelectorAll('.section');
+        const totalSections = sections.length;
+        let isThrottled = false; // 滚动节流开关
+
+        function scrollSection(event) {
+            if (isThrottled) return; // 如果处于节流状态，直接返回
+
+            event.preventDefault();
+
+            // 设置节流时间
+            isThrottled = true;
+            setTimeout(() => {
+                isThrottled = false;
+            }, 1500); // 1500ms 的节流时间，根据需要调整
+
+            // 确定滚动方向
+            const delta = Math.sign(event.deltaY);
+
+            // 计算新的节数，并限制在有效范围内
+            currentSection = Math.min(Math.max(currentSection + delta, 0), totalSections - 1);
+            sections.forEach((section) => {
+                section.style.transform = `translateY(-${currentSection * 100}vh)`;
+            });
+
+            // 如果到达 section3，启动滚动动画
+            if (currentSection === 2) {
+                startScrolling();
+            } else {
+                stopScrolling();
+            }
+        }
+
+        window.addEventListener('wheel', scrollSection);
+
+        //控制s3的滚动图片
+        const scrollContainer = document.getElementById('scrollContainer');
+        let isPaused = false;
+        let animationPausedAt;
+
+        function startScrolling() {
+            scrollContainer.style.animationPlayState = 'running';
+        }
+
+        function stopScrolling() {
+            scrollContainer.style.animationPlayState = 'paused';
+        }
+
+        // 鼠标悬停时暂停动画
+        document.querySelector('.s3').addEventListener('mouseenter', () => {
+            isPaused = true;
+            stopScrolling();
+        });
+
+        // 鼠标移出时恢复动画
+        document.querySelector('.s3').addEventListener('mouseleave', () => {
+            isPaused = false;
+            if (currentSection === 2) {
+                startScrolling();
+            }
+        });
+
+        // 鼠标滚轮滚动时手动控制滚动
+        document.querySelector('.s3').addEventListener('wheel', (event) => {
+            stopScrolling(); // 停止自动滚动
+            const currentTransform = getComputedStyle(scrollContainer).transform;
+            const matrix = new WebKitCSSMatrix(currentTransform);
+            let scrollAmount = matrix.m41; // 获取当前的translateX值
+            scrollAmount -= event.deltaY * 0.5; // 根据滚轮滚动方向调整滚动距离
+
+            // 循环滚动
+            const containerWidth = scrollContainer.scrollWidth / 2;
+            if (scrollAmount <= -containerWidth) {
+                scrollAmount += containerWidth;
+            } else if (scrollAmount >= 0) {
+                scrollAmount -= containerWidth;
+            }
+
+            scrollContainer.style.transform = `translateX(${scrollAmount}px)`;
+        });
 
 
-	<div id="rec"></div>
-	<div id="nametitle"><img src="resource/2x/资源 1@2x.png" style="height:40px; width:140px"></div>
+            // 获取所有的可放大的图片
+            const zoomableImages = document.querySelectorAll('.zoomable');
 
-	<div id="Portfolio">
-		<a href="Portfolio.html" style="text-decoration: none; color: black;"><span>Portfolio</span></a>
-	</div>
-	<div id="Main_Page">
-		<a href="Main_page.html" style="text-decoration: none; color: black;"><span>Main Page</span></a>
-	</div>
-	<div id="Contact">
-		<a href="archive.html" style="text-decoration: none; color: black;"><span>Contact</span></a>
-	</div>
+            // 创建模态框元素
+            const modal = document.createElement('div');
+            modal.className = 'modal';
+            document.body.appendChild(modal);
+
+            // 创建模态框关闭按钮
+            const closeBtn = document.createElement('span');
+            closeBtn.className = 'modal-close';
+            closeBtn.innerHTML = '&times;';
+            modal.appendChild(closeBtn);
+
+            // 创建模态框图片元素
+            const modalImg = document.createElement('img');
+            modalImg.className = 'modal-content';
+            modal.appendChild(modalImg);
+
+            // 点击图片时显示模态框
+            zoomableImages.forEach(img => {
+                img.addEventListener('click', function() {
+                    modal.style.display = 'flex';
+                    modalImg.src = this.getAttribute('data-src');
+                });
+            });
+
+            // 点击关闭按钮时隐藏模态框
+            closeBtn.addEventListener('click', function() {
+                modal.style.display = 'none';
+            });
+
+            // 点击模态框背景时隐藏模态框
+            modal.addEventListener('click', function(e) {
+                if (e.target === modal) {
+                    modal.style.display = 'none';
+                }
+            });
+
+            let isMouseInPosterImg = false;
+
+            // 监听鼠标进入 .posterimg 的事件
+            document.querySelector('.posterimg').addEventListener('mouseenter', () => {
+                isMouseInPosterImg = true;
+            });
+
+            // 监听鼠标离开 .posterimg 的事件
+            document.querySelector('.posterimg').addEventListener('mouseleave', () => {
+                isMouseInPosterImg = false;
+            });
+
+            function scrollSection(event) {
+                if (isMouseInPosterImg || isThrottled) return; // 如果鼠标在 .posterimg 内或者处于节流状态，直接返回
+
+                event.preventDefault();
+
+                // 设置节流时间
+                isThrottled = true;
+                setTimeout(() => {
+                    isThrottled = false;
+                }, 1500); // 1500ms 的节流时间，根据需要调整
+
+                // 确定滚动方向
+                const delta = Math.sign(event.deltaY);
+
+                // 计算新的节数，并限制在有效范围内
+                currentSection = Math.min(Math.max(currentSection + delta, 0), totalSections - 1);
+                sections.forEach((section) => {
+                    section.style.transform = `translateY(-${currentSection * 100}vh)`;
+                });
+
+                // 如果到达 section3，启动滚动动画
+                if (currentSection === 2) {
+                    startScrolling();
+                } else {
+                    stopScrolling();
+                }
+            }
+
+            window.addEventListener('wheel', scrollSection);
+                </script>
 </body>
 </html>
