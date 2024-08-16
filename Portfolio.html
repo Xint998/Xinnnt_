@@ -198,6 +198,11 @@
             -webkit-overflow-scrolling: touch; /* 允许在iOS设备上平滑滚动 */
             scroll-snap-align: start; /* 每个部分对齐顶部 */
         }
+        @media (max-width: 600px) {
+            section {
+                transition: all 0.4s ease;
+            }
+        }
 
         #PORT_FO_LIO_FO_LIO {
             position: absolute;
