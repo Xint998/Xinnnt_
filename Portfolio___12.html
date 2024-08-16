@@ -33,6 +33,11 @@
 		--web-scale-on-resize: true;
 		--web-enable-deep-linking: true;
 	}
+	@media screen and (max-width:600px) {
+		#Portfolio__1 {
+			height: 350vh;
+		}
+		}
 	
 	
 	#nametitle {
@@ -42,6 +47,15 @@
         z-index: 1000;
         
     }
+	@media screen and (max-width:600px) {
+		#nametitle {
+			position: fixed;
+            left: 10px;
+            top: 13px;
+            z-index: 10000;
+		}
+		}
+
     #rec {
         position:fixed;
         width:100vw;
@@ -53,72 +67,145 @@
     }
 
     #Portfolio {
-        right:17.5vw;
-        top: 25px;
-        position: fixed;
-        overflow: visible;
-        width: 66.128px;
-        height: 28.681869506835938px;
-        --web-animation: fadein undefineds undefined;
-        --web-action-type: page;
-        --web-action-target: Portfolio.html;
-        cursor: pointer;
-        line-height: 999.9998168945312px;
-        margin-top: -492.9999084472656px;
-        text-align: center;
-        font-family: Bangla MN;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 17px;
-        color: rgb(128, 128, 128);
-        text-decoration-line:underline;
-        text-underline-offset: 8px;
-        z-index: 1000;
-        
-    }
+            right: 17.5vw;
+            top: 25px;
+            position: fixed;
+            overflow: visible;
+            width: 66.128px;
+            height: 28.681869506835938px;
+            --web-animation: fadein undefineds undefined;
+            --web-action-type: page;
+            --web-action-target: Portfolio.html;
+            cursor: pointer;
+            line-height: 999.9998168945312px;
+            margin-top: -492.9999084472656px;
+            text-align: center;
+            font-family: Bangla MN;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 17px;
+            color: rgb(128, 128, 128);
+            
+            z-index: 10000;
+        }
+		@media screen and (max-width:600px) {
+		#Portfolio {
+			right: 15vw;
+            top: 25px;
+            position: fixed;
+            overflow: visible;
+            width: 94.128px;
+            height: 28.681869506835938px;
+            --web-animation: fadein undefineds undefined;
+            --web-action-type: page;
+            --web-action-target: Main_page.html;
+            cursor: pointer;
+            line-height: 999.9998168945312px;
+            margin-top: -492.9999084472656px;
+            text-align: center;
+            font-family: Bangla MN;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 9px;
+            color: rgba(3, 0, 0, 1);
+            z-index: 10000;
+			text-decoration-line: underline;
+            text-underline-offset: 5px;
+            
+		}
+		}
 
-    #Main_Page {
-        right: 27vw;
-        top: 25px;
-        position: fixed;
-        overflow: visible;
-        width: 94.128px;
-        height: 28.681869506835938px;
-        --web-animation: fadein undefineds undefined;
-        --web-action-type: page;
-        --web-action-target: Main_page.html;
-        cursor: pointer;
-        line-height: 999.9998168945312px;
-        margin-top: -492.9999084472656px;
-        text-align: center;
-        font-family: Bangla MN;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 17px;
-        color: rgba(3,0,0,1);
-        z-index: 1000;
-        
-    }
-    #Contact {
-        right: 7vw;
-        top: 25px;
-        position: fixed;
-        overflow: visible;
-        width: 72.509px;
-        height: 28.681869506835938px;
-        --web-animation: fadein undefineds undefined;
-        --web-action-type: page;
-        --web-action-target: archive.html;
-        cursor: pointer;
-        line-height: 999.9998168945312px;
-        margin-top: -492.9999084472656px;
-        text-align: center;
-        font-family: Bangla MN;
-        font-weight: normal;
-        font-size: 17px;
-        color: rgba(3,0,0,1);
-        z-index: 1000;
-    }
+        #Main_Page {
+            right: 27vw;
+            top: 25px;
+            position: fixed;
+            overflow: visible;
+            width: 94.128px;
+            height: 28.681869506835938px;
+            --web-animation: fadein undefineds undefined;
+            --web-action-type: page;
+            --web-action-target: Main_page.html;
+            cursor: pointer;
+            line-height: 999.9998168945312px;
+            margin-top: -492.9999084472656px;
+            text-align: center;
+            font-family: Bangla MN;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 17px;
+            color: rgba(3, 0, 0, 1);
+            z-index: 10000;
+			
+        }
+		@media screen and (max-width:600px) {
+		#Main_Page {
+			right: 30vw;
+            top: 25px;
+            position: fixed;
+            overflow: visible;
+            width: 94.128px;
+            height: 28.681869506835938px;
+            --web-animation: fadein undefineds undefined;
+            --web-action-type: page;
+            --web-action-target: Main_page.html;
+            cursor: pointer;
+            line-height: 999.9998168945312px;
+            margin-top: -492.9999084472656px;
+            text-align: center;
+            font-family: Bangla MN;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 9px;
+            color: rgba(3, 0, 0, 1);
+            z-index: 10000;
+			
+		}
+		}
+
+        #Contact {
+            right: 7vw;
+            top: 25px;
+            position: fixed;
+            overflow: visible;
+            width: 72.509px;
+            height: 28.681869506835938px;
+            --web-animation: fadein undefineds undefined;
+            --web-action-type: page;
+            --web-action-target: archive.html;
+            cursor: pointer;
+            line-height: 999.9998168945312px;
+            margin-top: -492.9999084472656px;
+            text-align: center;
+            font-family: Bangla MN;
+            font-weight: normal;
+            font-size: 17px;
+            color: rgba(3, 0, 0, 1);
+            z-index: 10000;
+        }
+		@media screen and (max-width:600px) {
+		#Contact {
+			right: 1vw;
+            top: 25px;
+            position: fixed;
+            overflow: visible;
+            width: 94.128px;
+            height: 28.681869506835938px;
+            --web-animation: fadein undefineds undefined;
+            --web-action-type: page;
+            --web-action-target: Main_page.html;
+            cursor: pointer;
+            line-height: 999.9998168945312px;
+            margin-top: -492.9999084472656px;
+            text-align: center;
+            font-family: Bangla MN;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 9px;
+            color: rgba(3, 0, 0, 1);
+            z-index: 10000;
+            
+		}
+		}
 
 
 	#main_pic {
@@ -131,6 +218,18 @@
 		
 	
 	}
+	@media screen and (max-width:600px){
+        #main_pic {
+		position: absolute;
+		width: 75vw;
+		height: auto;
+		left: 12.5vw;
+		top: 12vh;
+		overflow: hidden;
+		
+	
+	}
+    }
 
 	
 	.box {
@@ -234,13 +333,27 @@
 		position:absolute;
 		right:8vw;
 		width:23vw;
-		top:70vh;
+		top:60vh;
 		text-align: left;
 		font-family: Noto;
 		font-size: 6px;
 		letter-spacing: 1px;
 		line-height: 24px;
 		color:rgb(151, 151, 151);
+	}
+	@media screen and (max-width:600px) {
+		.description {
+		position:absolute;
+		left:12.5vw;
+		width:75vw;
+		top:55vh;
+		text-align: left;
+		font-family: Noto;
+		font-size: 9px;
+		letter-spacing: 1px;
+		line-height: 24px;
+		color:rgb(151, 151, 151);
+		}
 	}
 
 	.title{
@@ -259,18 +372,7 @@
     	width: 658px;   
 		z-index: 1; 
 	}
-	.description {
-		position:absolute;
-		right:8vw;
-		width:20vw;
-		top:50vh;
-		text-align: left;
-		font-family: Noto;
-		font-size: 10px;
-		letter-spacing: 1px;
-		line-height: 24px;
-		color:rgb(151, 151, 151);
-	}
+	
 	@font-face {
 		font-family:PlayfairDisplay-Regular;
 		src:url(font/PlayfairDisplay-VariableFont_wght.ttf);
@@ -377,12 +479,30 @@
 		z-index: 1;
 
 	}
+	@media screen and (max-width:600px){
+        .img1 {
+		position:absolute;
+		top: 110vh;
+		left:12.5vw;
+		z-index: 1;
+
+	}
+    }
 	.img2 {
 		position:absolute;
 		top: 220vh;
 		left:17vw;
 		z-index: 1;
 	}
+	@media screen and (max-width:600px){
+        .img2 {
+		position:absolute;
+		top: 140vh;
+		left:12.5vw;
+		z-index: 1;
+
+	}
+    }
 
 	.img3 {
 		position:absolute;
@@ -390,13 +510,30 @@
 		left:17vw;
 		z-index: 1;
 	}
+	@media screen and (max-width:600px){
+        .img3 {
+		position:absolute;
+		top: 170vh;
+		left:12.5vw;
+		z-index: 1;
 
+	}
+    }
 	.img4 {
 		position:absolute;
 		top: 420vh;
 		left:17vw;
 		z-index: 1;
 	}
+	@media screen and (max-width:600px){
+        .img4 {
+		position:absolute;
+		top: 200vh;
+		left:12.5vw;
+		z-index: 1;
+
+	}
+    }
 
 	.img5 {
 		position:absolute;
@@ -404,6 +541,15 @@
 		left:17vw;
 		z-index: 1;
 	}
+	@media screen and (max-width:600px){
+        .img5 {
+		position:absolute;
+		top: 230vh;
+		left:12.5vw;
+		z-index: 1;
+
+	}
+    }
 
 	.img6 {
 		position:absolute;
@@ -411,6 +557,15 @@
 		left:17vw;
 		z-index: 1;
 	}
+	@media screen and (max-width:600px){
+        .img6 {
+		position:absolute;
+		top: 260vh;
+		left:12.5vw;
+		z-index: 1;
+
+	}
+    }
 
 	.img7 {
 		position:absolute;
@@ -418,6 +573,15 @@
 		left:17vw;
 		z-index: 1;
 	}
+	@media screen and (max-width:600px){
+        .img7 {
+		position:absolute;
+		top: 290vh;
+		left:12.5vw;
+		z-index: 1;
+
+	}
+    }
 
 	.img8 {
 		position:absolute;
@@ -426,11 +590,32 @@
 		z-index: 1;
 	}
 
+	@media screen and (max-width:600px){
+        .img8 {
+		position:absolute;
+		top: 320vh;
+		left:12.5vw;
+		z-index: 1;
+
+	}
+    }
+
 	a:hover {
 		opacity:0.5;
 		filter:alpha(opacity=50);
 		
 	}
+	#bigimg {
+		width:65vw; 
+		height:auto;
+	}
+	@media screen and (max-width:600px){
+		#bigimg {
+		width:75vw; 
+		height:auto;
+	}
+	}
+
 </style>
 
 </head>
@@ -451,37 +636,37 @@
 	</div>
 
 	<div class ="box">
-		<img id="main_pic" src="critical writing/Spiral Notebook Mockup.jpg" style="width: 658px; height:658px; object-fit: cover;">
+		<img id="main_pic" src="critical writing/Spiral Notebook Mockup.jpg" style="object-fit: cover;">
 	</div>
 	<div class="img1">
-		<img src="critical writing/ps/p1.jpg" style="width:65vw; height:auto">
+		<img src="critical writing/ps/p1.jpg" id="bigimg">
 	</div>
 	<div class="img2">
-		<img src="critical writing/ps/7.jpg" style="width:65vw; height:auto"></div>
+		<img src="critical writing/ps/7.jpg" id="bigimg"></div>
 
 	
 	<div class="img3">
-		<img src="critical writing/ps/2.jpg" style="width:65vw; height:auto">
+		<img src="critical writing/ps/2.jpg" id="bigimg">
 	</div>
 
 	<div class="img4">
-		<img src="critical writing/ps/4.jpg" style="width:65vw; height:auto"></div>
+		<img src="critical writing/ps/4.jpg" id="bigimg"></div>
 	</div>
 	
 	<div class="img5">
-		<img src="critical writing/ps/5.jpg" style="width:65vw; height:auto"></div>
+		<img src="critical writing/ps/5.jpg" id="bigimg"></div>
 	</div>
 
 	<div class="img6">
-		<img src="critical writing/ps/6.jpg" style="width:65vw; height:auto"></div>
+		<img src="critical writing/ps/6.jpg" id="bigimg"></div>
 	</div>
 
 	<div class="img7">
-		<img src="critical writing/ps/8.jpg" style="width:65vw; height:auto"></div>
+		<img src="critical writing/ps/8.jpg" id="bigimg"></div>
 	</div>
 
 	<div class="img8">
-		<img src="critical writing/ps/10.jpg" style="width:65vw; height:auto"></div>
+		<img src="critical writing/ps/10.jpg" id="bigimg"></div>
 	</div>
 
 

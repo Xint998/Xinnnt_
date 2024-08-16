@@ -29,6 +29,7 @@
             height: 100vh;
             overflow: hidden;
             scroll-behavior: smooth;
+            scroll-snap-type: y mandatory; /* 添加滚动捕捉 */
             
         }
 
@@ -38,6 +39,14 @@
             top: 20px;
             z-index: 1000;
         }
+        @media screen and (max-width:600px) {
+		#nametitle {
+			position: fixed;
+            left: 10px;
+            top: 13px;
+            z-index: 10000;
+		}
+		}
         
         #rec {
             position: fixed;
@@ -72,6 +81,31 @@
             text-underline-offset: 8px;
             z-index: 1000;
         }
+
+        @media screen and (max-width:600px) {
+		#Portfolio {
+			right: 15vw;
+            top: 25px;
+            position: fixed;
+            overflow: visible;
+            width: 94.128px;
+            height: 28.681869506835938px;
+            --web-animation: fadein undefineds undefined;
+            --web-action-type: page;
+            --web-action-target: Main_page.html;
+            cursor: pointer;
+            line-height: 999.9998168945312px;
+            margin-top: -492.9999084472656px;
+            text-align: center;
+            font-family: Bangla MN;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 9px;
+            color: rgba(3, 0, 0, 1);
+            z-index: 10000;
+            text-underline-offset: 5px;
+		}
+		}
         
         #Main_Page {
             right: 27vw;
@@ -95,6 +129,18 @@
             z-index: 1000;
         }
 
+        @media screen and (max-width:600px) {
+		#Main_Page {
+			right: 30vw;
+            top: 25px;
+            position: fixed;
+            z-index: 10000;
+            font-size: 9px;
+			
+		}
+		}
+
+
         #Contact {
             right: 7vw;
             top: 25px;
@@ -116,6 +162,31 @@
             color: rgba(3,0,0,1);
             z-index: 1000;
         }
+        @media screen and (max-width:600px) {
+		#Contact {
+			right: 1vw;
+            top: 25px;
+            position: fixed;
+            overflow: visible;
+            width: 94.128px;
+            height: 28.681869506835938px;
+            --web-animation: fadein undefineds undefined;
+            --web-action-type: page;
+            --web-action-target: Main_page.html;
+            cursor: pointer;
+            line-height: 999.9998168945312px;
+            margin-top: -492.9999084472656px;
+            text-align: center;
+            font-family: Bangla MN;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 9px;
+            color: rgba(3, 0, 0, 1);
+            z-index: 10000;
+            
+		}
+		}
+
 
         .section {
             width: 100vw;
@@ -123,6 +194,7 @@
             display: flex;
             transition: transform 1.5s ease-in-out;
             -webkit-overflow-scrolling: touch; /* 允许在iOS设备上平滑滚动 */
+            scroll-snap-align: start; /* 每个部分对齐顶部 */
         }
 
         #PORT_FO_LIO_FO_LIO {
@@ -134,6 +206,18 @@
             overflow: hidden;
             animation: slidein 4s infinite alternate ease-in-out;
         }
+
+        @media screen and (max-width:600px) {
+		#PORT_FO_LIO_FO_LIO {
+			position: absolute;
+            width: 70vw;
+            height: 80vh;
+            left: 9vw;
+            top: 12vh;
+            overflow: hidden;
+            animation: slidein 4s infinite alternate ease-in-out;
+		}
+		}
 
         @keyframes slidein {
             from {
@@ -162,6 +246,43 @@
             letter-spacing: 0.5px;
         }
 
+        @media screen and (max-width:600px) {
+		#PORT_FO_LIO_FO_LIO_m {
+			left: 8vw;
+            top: 7vh;
+            position: absolute;
+            overflow: hidden;
+            width: 70vw;
+            height: 90vh;
+            line-height: 30vh;
+            margin-top: -25px;
+            text-align: left;
+            font-family: PlayfairDisplay-Regular;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 23vw;
+            color: rgba(3,0,0,1);
+            letter-spacing: 0.5px;
+		}
+		}
+        #year {
+			font-family: Urbanist; 
+			position: fixed; 
+			font-size: 16px; 
+			top:40vh; 
+			right: 1vw; 
+			color: rgb(116, 116, 116); 
+			text-align: center; 
+			letter-spacing: 10px; 
+			writing-mode: vertical-lr; 
+			z-index:1000;
+		}
+        @media screen and (max-width:600px) {
+		#year {
+			font-size: 9px;
+		}
+		}
+
         #section2 {
             background: #ffffff3c;
            
@@ -175,6 +296,16 @@
             top: 23vh;
         }
 
+        @media screen and (max-width:600px) {
+		#synthesis {
+			width: 40vw;
+            height: 40vw;
+            position: absolute;
+            left: 5vw;
+            top: 40vh;
+		}
+		}
+
         #flower {
             width: 29vh;
             height: 29vh;
@@ -182,6 +313,15 @@
             left: 49vw;
             top: 23vh;
         }
+        @media screen and (max-width:600px) {
+		#flower {
+			width: 40vw;
+            height: 40vw;
+            position: absolute;
+            right: 0vw;
+            top: 40vh;
+		}
+		}
 
         #miya {
             width: 29vh;
@@ -191,6 +331,17 @@
             top: 23vh;
         }
 
+        @media screen and (max-width:600px) {
+		#miya {
+			width: 40vw;
+            height: 40vw;
+            position:absolute;
+            left: 49vw;
+            top: 60vh;
+            
+		}
+		}
+
         #bedroom {
             width: 29vh;
             height: 29vh;
@@ -198,6 +349,15 @@
             left: 49vw;
             top: 54vh;
         }
+        @media screen and (max-width:600px) {
+		#bedroom {
+			width: 40vw;
+            height: 40vw;
+            position: absolute;
+            right: 0vw;
+            top: 20vh;
+		}
+		}
         
         
 
@@ -216,6 +376,17 @@
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
+
+        @media screen and (max-width:600px){
+            .scroll-container img {
+            width: 75vw;
+            height: 75vw;
+            object-fit: cover;
+            margin-right: 2vw;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+    }
 
         @keyframes scroll {
             0% {
@@ -242,6 +413,16 @@
             
             position: relative;
         }
+        @media screen and (max-width:600px){
+            .s3 {
+            left: 12.5vw;
+            top: 32vh;
+            width: 75vw;
+            height: 75vw;
+            overflow: hidden;
+            
+        }
+    }
 
         #section4 {
             background: #ffffff6a;
@@ -276,6 +457,20 @@
             overflow: auto;
         }
 
+        #img11 {
+            width: 15vw; 
+            height:35vh; 
+            margin:2vh;
+        }
+
+
+        @media screen and (max-width:600px) {
+		 #img11 {
+			width: 30vw; 
+            height:50vw; 
+            margin:1vw;
+		}
+		}
         
         
         
@@ -327,7 +522,7 @@
 
 <body>
     <div id="Portfolio1">
-        <p style="font-family: Urbanist; position: fixed; font-size: 16px; top: 40vh; right: 0.05vw; color: rgb(116, 116, 116); text-align: center; letter-spacing: 10px; writing-mode: vertical-lr; z-index: 1000">2019-2024</p>
+        <p id="year">2019-2024</p>
         
         <div id="container">
             <div class="section" id="section1">
@@ -380,18 +575,18 @@
                     
                     <div class="posterimg">
                         
-                        <a><img src="small project/mist_画板 1.png"  class="zoomable" data-src="small project/mist_画板 1.png" alt="Image description" style="width: 15vw; height:35vh; margin:2vh;"></a>
-                        <a><img src="small project/mist-02.png" class="zoomable" data-src="small project/mist-02.png" alt="Image description" style="width: 15vw; height:35vh; margin:2vh;"></a>
-                        <a><img src="small project/mist3.png"  class="zoomable" data-src="small project/mist3.png" alt="Image description" style="width: 15vw; height:35vh; margin:2vh;"></a>
-                        <a><img src="small project/4.png" class="zoomable" data-src="small project/4.png" alt="Image description" style="width: 15vw; height:35vh; margin:2vh;"></a>
+                        <a><img src="small project/mist_画板 1.png"  id="img11" class="zoomable" data-src="small project/mist_画板 1.png" alt="Image description" ></a>
+                        <a><img src="small project/mist-02.png" id="img11"  class="zoomable" data-src="small project/mist-02.png" alt="Image description" ></a>
+                        <a><img src="small project/mist3.png"  id="img11" class="zoomable" data-src="small project/mist3.png" alt="Image description" ></a>
+                        <a><img src="small project/4.png" id="img11" class="zoomable" data-src="small project/4.png" alt="Image description"></a>
                         
-                        <a><img src="small project/winter.jpg" class="zoomable" data-src="small project/winter.jpg" alt="Image description" style="width: 15vw; height:35vh; margin:2vh;"></a>
-                        <a><img src="small project/1.png" class="zoomable" data-src="small project/1.png" alt="Image description" style="width: 15vw; height:35vh; margin:2vh;"></a>
-                        <a><img src="small project/荷花海报.jpg" class="zoomable" data-src="small project/荷花海报.jpg" alt="Image description" style="width: 15vw; height:35vh; margin:2vh;"></a>
-                        <a><img src="small project/Ikea.png" class="zoomable" data-src="small project/Ikea.png" alt="Image description" style="width: 15vw; height:35vh; margin:2vh;"></a>
+                        <a><img src="small project/winter.jpg" id="img11" class="zoomable" data-src="small project/winter.jpg" alt="Image description" ></a>
+                        <a><img src="small project/1.png" id="img11" class="zoomable" data-src="small project/1.png" alt="Image description" ></a>
+                        <a><img src="small project/荷花海报.jpg" id="img11" class="zoomable" data-src="small project/荷花海报.jpg" alt="Image description" ></a>
+                        <a><img src="small project/Ikea.png" id="img11" class="zoomable" data-src="small project/Ikea.png" alt="Image description" ></a>
 
-                        <a><img src="small project/2.png" class="zoomable" data-src="small project/2.png" alt="Image description" style="width: 15vw; height:35vh; margin:2vh;"></a>
-                        <a><img src="small project/haha.jpg" class="zoomable" data-src="small project/haha.jpg" alt="Image description" style="width: 15vw; height:35vh; margin:2vh;"></a>
+                        <a><img src="small project/2.png" id="img11" class="zoomable" data-src="small project/2.png" alt="Image description" ></a>
+                        <a><img src="small project/haha.jpg" id="img11" class="zoomable" data-src="small project/haha.jpg" alt="Image description"></a>
 
 
 
@@ -582,6 +777,40 @@
             }
 
             window.addEventListener('wheel', scrollSection);
-                </script>
+
+
+            let startY, endY;
+            let isScrolling = false;
+
+            function handleTouchStart(event) {
+                startY = event.touches[0].clientY;
+            }
+
+            function handleTouchMove(event) {
+                if (!isScrolling) {
+                    endY = event.touches[0].clientY;
+                    let deltaY = startY - endY;
+
+                    if (Math.abs(deltaY) > 20) {
+                        isScrolling = true;
+                        window.scrollBy({
+                            top: deltaY, // 根据手指滑动的距离滚动页面
+                            behavior: 'smooth'
+                        });
+                    }
+                }
+            }
+
+            function handleTouchEnd() {
+                isScrolling = false;
+            }
+
+            // 绑定触摸事件
+            window.addEventListener('touchstart', handleTouchStart, false);
+            window.addEventListener('touchmove', handleTouchMove, false);
+            window.addEventListener('touchend', handleTouchEnd, false);
+                        
+                        
+    </script>
 </body>
 </html>

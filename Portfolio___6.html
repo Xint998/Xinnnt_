@@ -21,6 +21,7 @@
 		box-sizing: border-box;
 		border: none;
 	}
+
 	#Portfolio__1 {
 		position: absolute;
 		display:flex;
@@ -33,6 +34,12 @@
 		--web-scale-on-resize: true;
 		--web-enable-deep-linking: true;
 	}
+
+	@media screen and (max-width:600px) {
+		#Portfolio__1 {
+			height: 175vh;
+		}
+		}
 	
 	a:hover {
 		opacity:0.5;
@@ -47,6 +54,14 @@
         z-index: 1000;
         
     }
+	@media screen and (max-width:600px) {
+		#nametitle {
+			position: fixed;
+            left: 10px;
+            top: 13px;
+            z-index: 10000;
+		}
+		}
     #rec {
         position:fixed;
         width:100vw;
@@ -57,85 +72,169 @@
         z-index:1000;
     }
 
-    #Portfolio {
-        right:17.5vw;
-        top: 25px;
-        position: fixed;
-        overflow: visible;
-        width: 66.128px;
-        height: 28.681869506835938px;
-        --web-animation: fadein undefineds undefined;
-        --web-action-type: page;
-        --web-action-target: Portfolio.html;
-        cursor: pointer;
-        line-height: 999.9998168945312px;
-        margin-top: -492.9999084472656px;
-        text-align: center;
-        font-family: Bangla MN;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 17px;
-        color: rgb(128, 128, 128);
-        text-decoration-line:underline;
-        text-underline-offset: 8px;
-        z-index: 1000;
-        
-    }
+	#Portfolio {
+            right: 17.5vw;
+            top: 25px;
+            position: fixed;
+            overflow: visible;
+            width: 66.128px;
+            height: 28.681869506835938px;
+            --web-animation: fadein undefineds undefined;
+            --web-action-type: page;
+            --web-action-target: Portfolio.html;
+            cursor: pointer;
+            line-height: 999.9998168945312px;
+            margin-top: -492.9999084472656px;
+            text-align: center;
+            font-family: Bangla MN;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 17px;
+            color: rgb(128, 128, 128);
+            
+            z-index: 10000;
+        }
+		@media screen and (max-width:600px) {
+		#Portfolio {
+			right: 15vw;
+            top: 25px;
+            position: fixed;
+            overflow: visible;
+            width: 94.128px;
+            height: 28.681869506835938px;
+            --web-animation: fadein undefineds undefined;
+            --web-action-type: page;
+            --web-action-target: Main_page.html;
+            cursor: pointer;
+            line-height: 999.9998168945312px;
+            margin-top: -492.9999084472656px;
+            text-align: center;
+            font-family: Bangla MN;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 9px;
+            color: rgba(3, 0, 0, 1);
+            z-index: 10000;
+			text-decoration-line: underline;
+            text-underline-offset: 5px;
+            
+		}
+		}
 
-    #Main_Page {
-        right: 27vw;
-        top: 25px;
-        position: fixed;
-        overflow: visible;
-        width: 94.128px;
-        height: 28.681869506835938px;
-        --web-animation: fadein undefineds undefined;
-        --web-action-type: page;
-        --web-action-target: Main_page.html;
-        cursor: pointer;
-        line-height: 999.9998168945312px;
-        margin-top: -492.9999084472656px;
-        text-align: center;
-        font-family: Bangla MN;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 17px;
-        color: rgba(3,0,0,1);
-        z-index: 1000;
-        
-    }
-    #Contact {
-        right: 7vw;
-        top: 25px;
-        position: fixed;
-        overflow: visible;
-        width: 72.509px;
-        height: 28.681869506835938px;
-        --web-animation: fadein undefineds undefined;
-        --web-action-type: page;
-        --web-action-target: archive.html;
-        cursor: pointer;
-        line-height: 999.9998168945312px;
-        margin-top: -492.9999084472656px;
-        text-align: center;
-        font-family: Bangla MN;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 17px;
-        color: rgba(3,0,0,1);
-        z-index: 1000;
-    }
+        #Main_Page {
+            right: 27vw;
+            top: 25px;
+            position: fixed;
+            overflow: visible;
+            width: 94.128px;
+            height: 28.681869506835938px;
+            --web-animation: fadein undefineds undefined;
+            --web-action-type: page;
+            --web-action-target: Main_page.html;
+            cursor: pointer;
+            line-height: 999.9998168945312px;
+            margin-top: -492.9999084472656px;
+            text-align: center;
+            font-family: Bangla MN;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 17px;
+            color: rgba(3, 0, 0, 1);
+            z-index: 10000;
+			
+        }
+		@media screen and (max-width:600px) {
+		#Main_Page {
+			right: 30vw;
+            top: 25px;
+            position: fixed;
+            overflow: visible;
+            width: 94.128px;
+            height: 28.681869506835938px;
+            --web-animation: fadein undefineds undefined;
+            --web-action-type: page;
+            --web-action-target: Main_page.html;
+            cursor: pointer;
+            line-height: 999.9998168945312px;
+            margin-top: -492.9999084472656px;
+            text-align: center;
+            font-family: Bangla MN;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 9px;
+            color: rgba(3, 0, 0, 1);
+            z-index: 10000;
+			
+		}
+		}
+
+        #Contact {
+            right: 7vw;
+            top: 25px;
+            position: fixed;
+            overflow: visible;
+            width: 72.509px;
+            height: 28.681869506835938px;
+            --web-animation: fadein undefineds undefined;
+            --web-action-type: page;
+            --web-action-target: archive.html;
+            cursor: pointer;
+            line-height: 999.9998168945312px;
+            margin-top: -492.9999084472656px;
+            text-align: center;
+            font-family: Bangla MN;
+            font-weight: normal;
+            font-size: 17px;
+            color: rgba(3, 0, 0, 1);
+            z-index: 10000;
+        }
+		@media screen and (max-width:600px) {
+		#Contact {
+			right: 1vw;
+            top: 25px;
+            position: fixed;
+            overflow: visible;
+            width: 94.128px;
+            height: 28.681869506835938px;
+            --web-animation: fadein undefineds undefined;
+            --web-action-type: page;
+            --web-action-target: Main_page.html;
+            cursor: pointer;
+            line-height: 999.9998168945312px;
+            margin-top: -492.9999084472656px;
+            text-align: center;
+            font-family: Bangla MN;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 9px;
+            color: rgba(3, 0, 0, 1);
+            z-index: 10000;
+            
+		}
+		}
 
 
 	#multiweb{
 		position: absolute;
-		width: 658px;
-		height: 658px;
+		width: 800px; 
+		height:580px;
 		left: 127px;
 		top: 200px;
 		overflow: hidden;
 		z-index: 1;
 		
+	}
+	@media screen and (max-width:600px){
+		#multiweb {
+		position: absolute;
+		width: 75vw;
+		height: auto;
+		left: 12.5vw;
+		top: 12vh;
+		overflow: hidden;
+		z-index: 1;
+		
+	}
 	}
 
 	.multiweb1 {
@@ -145,12 +244,31 @@
 		z-index: 1;
 
 	}
+	@media screen and (max-width:600px){
+		.multiweb1 {
+		position:absolute;
+		top: 110vh;
+		left:12.5vw;
+		z-index: 1;
+
+	}
+	}
+
 	.multiweb2 {
 		position:absolute;
 		top: 200vh;
 		left:17vw;
 		z-index: 1;
 	}
+	@media screen and (max-width:600px){
+        .multiweb2 {
+		position:absolute;
+		top: 140vh;
+		left:12.5vw;
+		z-index: 1;
+	}
+    }
+
 
 	.multiweb3 {
 		position:absolute;
@@ -158,6 +276,15 @@
 		left:17vw;
 		z-index: 1;
 	}
+	@media screen and (max-width:600px){
+        .multiweb3 {
+		position:absolute;
+		top: 170vh;
+		left:12.5vw;
+		z-index: 1;
+	}
+    }
+
 
 	.multiweb4 {
 		position:absolute;
@@ -165,6 +292,15 @@
 		left:17vw;
 		z-index: 1;
 	}
+	@media screen and (max-width:600px){
+        .multiweb4 {
+		position:absolute;
+		top: 200vh;
+		left:12.5vw;
+		z-index: 1;
+	}
+    }
+
 
 	.multiweb5 {
 		position:absolute;
@@ -172,6 +308,15 @@
 		left:17vw;
 		z-index: 1;
 	}
+	@media screen and (max-width:600px){
+        .multiweb5 {
+		position:absolute;
+		top: 230vh;
+		left:12.5vw;
+		z-index: 1;
+	}
+    }
+
 
 	.multiweb6 {
 		position:absolute;
@@ -179,6 +324,15 @@
 		left:17vw;
 		z-index: 1;
 	}
+	@media screen and (max-width:600px){
+        .multiweb6 {
+		position:absolute;
+		top: 260vh;
+		left:12.5vw;
+		z-index: 1;
+	}
+    }
+
 
 	.multiweb7 {
 		position:absolute;
@@ -186,13 +340,29 @@
 		left:17vw;
 		z-index: 1;
 	}
+	@media screen and (max-width:600px){
+        .multiweb7 {
+		position:absolute;
+		top: 290vh;
+		left:12.5vw;
+		z-index: 1;
+	}
+    }
+
 	.multiweb8 {
 		position:absolute;
 		top: 740vh;
 		left:17vw;
 		z-index: 1;
 	}
-
+	@media screen and (max-width:600px){
+        .multiweb8 {
+		position:absolute;
+		top: 320vh;
+		left:12.5vw;
+		z-index: 1;
+	}
+    }
 	.multiweb9 {
 		position:absolute;
 		top: 830vh;
@@ -200,7 +370,14 @@
 		z-index: 1;
 	}
 
-
+	@media screen and (max-width:600px){
+        .multiweb9 {
+		position:absolute;
+		top: 350vh;
+		left:12.5vw;
+		z-index: 1;
+	}
+    }
 	.box {
     	height: 658px;
     	width: 658px;    
@@ -218,6 +395,21 @@
 		line-height: 24px;
 		color:rgb(151, 151, 151);
 	}
+	@media screen and (max-width:600px) {
+		.description {
+		position:absolute;
+		left:12.5vw;
+		width:75vw;
+		top:40vh;
+		text-align: left;
+		font-family: Noto;
+		font-size: 9px;
+		letter-spacing: 1px;
+		line-height: 24px;
+		color:rgb(151, 151, 151);
+		}
+	}
+
 
 	@font-face {
 		font-family:PlayfairDisplay-Regular;
@@ -237,6 +429,16 @@
 		text-align: left;
 		text-decoration: underline ;
 		text-underline-offset: 3px;
+	}
+	#bigimg {
+		width:65vw;
+		height:auto;
+	}
+	@media screen and (max-width:600px){
+		#bigimg {
+		width:75vw; 
+		height:auto;
+	}
 	}
 
 
@@ -258,7 +460,7 @@
 	</div>
 
 	<div class ="box">
-		<img id="multiweb" src="multi website img/multi 1 - Google Chrome 2021_12_10 15_12_34.png" style="width: 800px; height:580px;"></div>
+		<img id="multiweb" src="multi website img/multi 1 - Google Chrome 2021_12_10 15_12_34.png"></div>
 		<div class="description">
 			<div class="title">
 				<p>MEMORY FO(U)R SEASONS</p>
@@ -272,19 +474,19 @@
 			</div>
 		
 	</div>
-	<div class="multiweb1"><img src="multi website img/multi 1 - Google Chrome 2021_12_10 15_10_18.png" style="width:65vw; height:auto"></div>
+	<div class="multiweb1"><img src="multi website img/multi 1 - Google Chrome 2021_12_10 15_10_18.png" id="bigimg"></div>
 	<div class="imagedescription">
 		<p>Four Seasons Cover Pages</p>
 	</div>
-	<div class="multiweb2"><img src="multi website img/multi 1 - Google Chrome 2021_12_10 15_12_16.png" style="width:65vw; height:auto"></div>
-	<div class="multiweb3"><img src="multi website img/multi 1 - Google Chrome 2021_12_10 15_12_40.png" style="width:65vw; height:auto"></div>
+	<div class="multiweb2"><img src="multi website img/multi 1 - Google Chrome 2021_12_10 15_12_16.png" id="bigimg"></div>
+	<div class="multiweb3"><img src="multi website img/multi 1 - Google Chrome 2021_12_10 15_12_40.png" id="bigimg"></div>
 	
-	<div class="multiweb4"><img src="multi website img/multi 1 - Google Chrome 2021_12_10 15_12_44.png" style="width:65vw; height:auto"></div>
-	<div class="multiweb5"><img src="multi website img/multi 1 - Google Chrome 2021_12_10 15_12_50.png" style="width:65vw; height:auto"></div>
-	<div class="multiweb6"><img src="multi website img/multi 1 - Google Chrome 2021_12_10 15_12_54.png" style="width:65vw; height:auto"></div>
-	<div class="multiweb7"><img src="multi website img/multi 1 - Google Chrome 2021_12_10 15_12_58.png" style="width:65vw; height:auto"></div>
-	<div class="multiweb8"><img src="multi website img/The little prince - multi 1 - Google Chrome 2021_12_10 15_13_16.png" style="width:65vw; height:auto"></div>
-	<div class="multiweb9"><img src="multi website img/1.png" style="width:65vw; height:auto"></div>
+	<div class="multiweb4"><img src="multi website img/multi 1 - Google Chrome 2021_12_10 15_12_44.png" id="bigimg"></div>
+	<div class="multiweb5"><img src="multi website img/multi 1 - Google Chrome 2021_12_10 15_12_50.png" id="bigimg"></div>
+	<div class="multiweb6"><img src="multi website img/multi 1 - Google Chrome 2021_12_10 15_12_54.png" id="bigimg"></div>
+	<div class="multiweb7"><img src="multi website img/multi 1 - Google Chrome 2021_12_10 15_12_58.png" id="bigimg"></div>
+	<div class="multiweb8"><img src="multi website img/The little prince - multi 1 - Google Chrome 2021_12_10 15_13_16.png" id="bigimg"></div>
+	<div class="multiweb9"><img src="multi website img/1.png" id="bigimg" ></div>
 </div>
 </body>
 </html>

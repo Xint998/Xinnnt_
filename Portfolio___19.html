@@ -33,6 +33,13 @@
 		--web-scale-on-resize: true;
 		--web-enable-deep-linking: true;
 	}
+
+	@media screen and (max-width:600px) {
+		#Portfolio__1 {
+			height: 790vh;
+		}
+		}
+
 	a:hover {
 		opacity:0.5;
 		filter:alpha(opacity=50);
@@ -47,6 +54,16 @@
         z-index: 1000;
         
     }
+
+	@media screen and (max-width:600px) {
+		#nametitle {
+			position: fixed;
+            left: 10px;
+            top: 13px;
+            z-index: 10000;
+		}
+		}
+
     #rec {
         position:fixed;
         width:100vw;
@@ -58,72 +75,146 @@
     }
 
     #Portfolio {
-        right:17.5vw;
-        top: 25px;
-        position: fixed;
-        overflow: visible;
-        width: 66.128px;
-        height: 28.681869506835938px;
-        --web-animation: fadein undefineds undefined;
-        --web-action-type: page;
-        --web-action-target: Portfolio.html;
-        cursor: pointer;
-        line-height: 999.9998168945312px;
-        margin-top: -492.9999084472656px;
-        text-align: center;
-        font-family: Bangla MN;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 17px;
-        color: rgb(128, 128, 128);
-        text-decoration-line:underline;
-        text-underline-offset: 8px;
-        z-index: 1000;
-        
-    }
+            right: 17.5vw;
+            top: 25px;
+            position: fixed;
+            overflow: visible;
+            width: 66.128px;
+            height: 28.681869506835938px;
+            --web-animation: fadein undefineds undefined;
+            --web-action-type: page;
+            --web-action-target: Portfolio.html;
+            cursor: pointer;
+            line-height: 999.9998168945312px;
+            margin-top: -492.9999084472656px;
+            text-align: center;
+            font-family: Bangla MN;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 17px;
+            color: rgb(128, 128, 128);
+            
+            z-index: 10000;
+        }
+		@media screen and (max-width:600px) {
+		#Portfolio {
+			right: 15vw;
+            top: 25px;
+            position: fixed;
+            overflow: visible;
+            width: 94.128px;
+            height: 28.681869506835938px;
+            --web-animation: fadein undefineds undefined;
+            --web-action-type: page;
+            --web-action-target: Main_page.html;
+            cursor: pointer;
+            line-height: 999.9998168945312px;
+            margin-top: -492.9999084472656px;
+            text-align: center;
+            font-family: Bangla MN;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 9px;
+            color: rgba(3, 0, 0, 1);
+            z-index: 10000;
+			text-decoration-line: underline;
+            text-underline-offset: 5px;
+            
+		}
+		}
 
-    #Main_Page {
-        right: 27vw;
-        top: 25px;
-        position: fixed;
-        overflow: visible;
-        width: 94.128px;
-        height: 28.681869506835938px;
-        --web-animation: fadein undefineds undefined;
-        --web-action-type: page;
-        --web-action-target: Main_page.html;
-        cursor: pointer;
-        line-height: 999.9998168945312px;
-        margin-top: -492.9999084472656px;
-        text-align: center;
-        font-family: Bangla MN;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 17px;
-        color: rgba(3,0,0,1);
-        z-index: 1000;
-        
-    }
-    #Contact {
-        right: 7vw;
-        top: 25px;
-        position: fixed;
-        overflow: visible;
-        width: 72.509px;
-        height: 28.681869506835938px;
-        --web-animation: fadein undefineds undefined;
-        --web-action-type: page;
-        --web-action-target: archive.html;
-        cursor: pointer;
-        line-height: 999.9998168945312px;
-        margin-top: -492.9999084472656px;
-        text-align: center;
-        font-family: Bangla MN;
-        font-weight: normal;
-        font-size: 17px;
-        color: rgba(3,0,0,1);
-        z-index: 1000;
-    }
+        #Main_Page {
+            right: 27vw;
+            top: 25px;
+            position: fixed;
+            overflow: visible;
+            width: 94.128px;
+            height: 28.681869506835938px;
+            --web-animation: fadein undefineds undefined;
+            --web-action-type: page;
+            --web-action-target: Main_page.html;
+            cursor: pointer;
+            line-height: 999.9998168945312px;
+            margin-top: -492.9999084472656px;
+            text-align: center;
+            font-family: Bangla MN;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 17px;
+            color: rgba(3, 0, 0, 1);
+            z-index: 10000;
+			
+        }
+		@media screen and (max-width:600px) {
+		#Main_Page {
+			right: 30vw;
+            top: 25px;
+            position: fixed;
+            overflow: visible;
+            width: 94.128px;
+            height: 28.681869506835938px;
+            --web-animation: fadein undefineds undefined;
+            --web-action-type: page;
+            --web-action-target: Main_page.html;
+            cursor: pointer;
+            line-height: 999.9998168945312px;
+            margin-top: -492.9999084472656px;
+            text-align: center;
+            font-family: Bangla MN;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 9px;
+            color: rgba(3, 0, 0, 1);
+            z-index: 10000;
+			
+		}
+		}
+
+        #Contact {
+            right: 7vw;
+            top: 25px;
+            position: fixed;
+            overflow: visible;
+            width: 72.509px;
+            height: 28.681869506835938px;
+            --web-animation: fadein undefineds undefined;
+            --web-action-type: page;
+            --web-action-target: archive.html;
+            cursor: pointer;
+            line-height: 999.9998168945312px;
+            margin-top: -492.9999084472656px;
+            text-align: center;
+            font-family: Bangla MN;
+            font-weight: normal;
+            font-size: 17px;
+            color: rgba(3, 0, 0, 1);
+            z-index: 10000;
+        }
+		@media screen and (max-width:600px) {
+		#Contact {
+			right: 1vw;
+            top: 25px;
+            position: fixed;
+            overflow: visible;
+            width: 94.128px;
+            height: 28.681869506835938px;
+            --web-animation: fadein undefineds undefined;
+            --web-action-type: page;
+            --web-action-target: Main_page.html;
+            cursor: pointer;
+            line-height: 999.9998168945312px;
+            margin-top: -492.9999084472656px;
+            text-align: center;
+            font-family: Bangla MN;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 9px;
+            color: rgba(3, 0, 0, 1);
+            z-index: 10000;
+            
+		}
+		}
+
 
 
 	#main_pic {
@@ -136,6 +227,19 @@
 		
 	
 	}
+
+	@media screen and (max-width:600px){
+        #main_pic {
+		position: absolute;
+		width: 75vw;
+		height: auto;
+		left: 12.5vw;
+		top: 12vh;
+		overflow: hidden;
+		
+	
+	}
+    }
 
 	.box {
     	height: 658px;
@@ -154,6 +258,23 @@
 		line-height: 24px;
 		color:rgb(151, 151, 151);
 	}
+
+	@media screen and (max-width:600px) {
+		.description {
+		position:absolute;
+		left:12.5vw;
+		width:75vw;
+		top:55vh;
+		text-align: left;
+		font-family: Noto;
+		font-size: 9px;
+		letter-spacing: 1px;
+		line-height: 24px;
+		color:rgb(151, 151, 151);
+		}
+	}
+
+
 	@font-face {
 		font-family:PlayfairDisplay-Regular;
 		src:url(font/PlayfairDisplay-VariableFont_wght.ttf);
@@ -173,78 +294,6 @@
 		text-underline-offset: 3px;
 	}
 
-	.imagedescription {
-		position: relative;
-		font-size: 6px;
-		letter-spacing: 1px;
-		line-height: 30px;
-		font-family:Noto;
-		text-align: left;
-		color:rgb(151, 151, 151);
-		top:127vh;
-		text-align: center;
-		
-	}
-
-	.imagedescription2 {
-		position: relative;
-		font-size: 6px;
-		letter-spacing: 1px;
-		line-height: 30px;
-		font-family:Noto;
-		text-align: left;
-		color:rgb(151, 151, 151);
-		top:215vh;
-		text-align: center;
-		
-	}
-	.box2 {
-		position:absolute;
-		height:500px;
-		width:500px;
-		top:1100px;
-		left:150px;
-		z-index:1;
-	}
-
-	nav {
-        width: 90vw;
-        height: 600px;
-		top:1300px;
-		left:80px;
-		display:flex;
-		flex-direction: row;
-		position:absolute;
-		overflow:hidden;
-	}
-
-	ul {
-     width: 100vw;
-     height: 100%;
-     animation: picmove 15s linear infinite alternate ;
-	 display:flex;
-	flex-direction: row;
-    }
-
-	@keyframes picmove {
-        from {
-             transform: translate(200px);
-           }
-           to {
-            transform: translate(-1700px);
-        }
-    }
-
-	ul:hover {
-            animation-play-state: paused;
-			
-    }
-
-	li {
-		list-style:none;
-	}
-
-
 
 	@font-face {
 		font-family:PlayfairDisplay-Regular;
@@ -260,12 +309,31 @@
 		z-index: 1;
 
 	}
+	@media screen and (max-width:600px){
+        .img1 {
+		position:absolute;
+		top: 125vh;
+		left:12.5vw;
+		z-index: 1;
+
+	}
+    }
+
 	.img2 {
 		position:absolute;
 		top: 200vh;
 		left:17vw;
 		z-index: 1;
 	}
+	@media screen and (max-width:600px){
+        .img2 {
+		position:absolute;
+		top: 150vh;
+		left:12.5vw;
+		z-index: 1;
+
+	}
+    }
 
 	.img3 {
 		position:absolute;
@@ -273,6 +341,15 @@
 		left:17vw;
 		z-index: 1;
 	}
+	@media screen and (max-width:600px){
+        .img3 {
+		position:absolute;
+		top: 190vh;
+		left:12.5vw;
+		z-index: 1;
+
+	}
+    }
 
 	.img4 {
 		position:absolute;
@@ -280,6 +357,15 @@
 		left:17vw;
 		z-index: 1;
 	}
+	@media screen and (max-width:600px){
+        .img4 {
+		position:absolute;
+		top: 230vh;
+		left:12.5vw;
+		z-index: 1;
+
+	}
+    }
 
 	.img5 {
 		position:absolute;
@@ -287,26 +373,62 @@
 		left:17vw;
 		z-index: 1;
 	}
+	@media screen and (max-width:600px){
+        .img5 {
+		position:absolute;
+		top: 270vh;
+		left:12.5vw;
+		z-index: 1;
 
+	}
+    }
 	.img6 {
 		position:absolute;
 		top: 670vh;
 		left:17vw;
 		z-index: 1;
 	}
+	@media screen and (max-width:600px){
+        .img6 {
+		position:absolute;
+		top: 300vh;
+		left:12.5vw;
+		z-index: 1;
 
+	}
+    }
 	.img7 {
 		position:absolute;
 		top: 760vh;
 		left:17vw;
 		z-index: 1;
 	}
+	@media screen and (max-width:600px){
+        .img7 {
+		position:absolute;
+		top: 330vh;
+		left:12.5vw;
+		z-index: 1;
+
+	}
+    }
+
 	.img8 {
 		position:absolute;
 		top: 850vh;
 		left:17vw;
 		z-index: 1;
 	}
+	@media screen and (max-width:600px){
+        .img8 {
+		position:absolute;
+		top: 360vh;
+		left:12.5vw;
+		z-index: 1;
+
+	}
+    }
+
 
 	.img9 {
 		position:absolute;
@@ -314,6 +436,15 @@
 		left:17vw;
 		z-index: 1;
 	}
+	@media screen and (max-width:600px){
+        .img9 {
+		position:absolute;
+		top: 390vh;
+		left:12.5vw;
+		z-index: 1;
+
+	}
+    }
 
     .img10 {
 		position:absolute;
@@ -321,6 +452,16 @@
 		left:17vw;
 		z-index: 1;
 	}
+	@media screen and (max-width:600px){
+        .img10 {
+		position:absolute;
+		top:420vh;
+		left:12.5vw;
+		z-index: 1;
+
+	}
+    }
+
 
     .img11 {
 		position:absolute;
@@ -328,6 +469,15 @@
 		left:17vw;
 		z-index: 1;
 	}
+	@media screen and (max-width:600px){
+        .img11 {
+		position:absolute;
+		top:450vh;
+		left:12.5vw;
+		z-index: 1;
+
+	}
+    }
 
     .img12 {
 		position:absolute;
@@ -336,19 +486,46 @@
 		z-index: 1;
 	}
 
+	@media screen and (max-width:600px){
+        .img12 {
+		position:absolute;
+		top:480vh;
+		left:12.5vw;
+		z-index: 1;
+
+	}
+    }
+
     .img13 {
 		position:absolute;
 		top: 1300vh;
 		left:17vw;
 		z-index: 1;
 	}
+	@media screen and (max-width:600px){
+        .img13 {
+		position:absolute;
+		top:510vh;
+		left:12.5vw;
+		z-index: 1;
 
+	}
+    }
     .img14 {
 		position:absolute;
 		top: 1390vh;
 		left:17vw;
 		z-index: 1;
 	}
+	@media screen and (max-width:600px){
+        .img14 {
+		position:absolute;
+		top:540vh;
+		left:12.5vw;
+		z-index: 1;
+
+	}
+    }
 
     .img15 {
 		position:absolute;
@@ -356,13 +533,30 @@
 		left:17vw;
 		z-index: 1;
 	}
+	@media screen and (max-width:600px){
+        .img15 {
+		position:absolute;
+		top:570vh;
+		left:12.5vw;
+		z-index: 1;
 
+	}
+    }
     .img16 {
 		position:absolute;
 		top: 1570vh;
 		left:17vw;
 		z-index: 1;
 	}
+	@media screen and (max-width:600px){
+        .img16 {
+		position:absolute;
+		top:600vh;
+		left:12.5vw;
+		z-index: 1;
+
+	}
+    }
 
     .img17 {
 		position:absolute;
@@ -370,6 +564,15 @@
 		left:17vw;
 		z-index: 1;
 	}
+	@media screen and (max-width:600px){
+        .img17 {
+		position:absolute;
+		top:630vh;
+		left:12.5vw;
+		z-index: 1;
+
+	}
+    }
 
     .img18 {
 		position:absolute;
@@ -377,6 +580,15 @@
 		left:17vw;
 		z-index: 1;
 	}
+	@media screen and (max-width:600px){
+        .img18 {
+		position:absolute;
+		top:660vh;
+		left:12.5vw;
+		z-index: 1;
+
+	}
+    }
 
     .img19 {
 		position:absolute;
@@ -384,6 +596,15 @@
 		left:17vw;
 		z-index: 1;
 	}
+	@media screen and (max-width:600px){
+        .img19 {
+		position:absolute;
+		top:690vh;
+		left:12.5vw;
+		z-index: 1;
+
+	}
+    }
 
     .img20 {
 		position:absolute;
@@ -391,8 +612,29 @@
 		left:17vw;
 		z-index: 1;
 	}
-	
 
+	@media screen and (max-width:600px){
+        .img20 {
+		position:absolute;
+		top:740vh;
+		left:12.5vw;
+		z-index: 1;
+
+	}
+    }
+
+
+	
+	#bigimg {
+		width:65vw; 
+		height:auto;
+	}
+	@media screen and (max-width:600px){
+		#bigimg {
+		width:75vw; 
+		height:auto;
+	}
+	}
 </style>
 </head>
 <body>
@@ -411,7 +653,7 @@
 	</div>
     
 	<div class ="box">
-		<img id="main_pic" src="Synthesis/ps/Wu,Xintong_Project 1_04.jpg" style="width: 658px; height:658px; object-fit: cover;"></div>
+		<img id="main_pic" src="Synthesis/ps/Wu,Xintong_Project 1_04.jpg" style="object-fit: cover;"></div>
 		
 		<div class="description">
             <div class="title">
@@ -424,26 +666,26 @@
 		
         </div>
         
-        <div class="img1"><img src="Synthesis/ps/web.png" style="width:65vw; height:auto"></div>
-		<div class="img2"><img src="Synthesis/ps/Wu,Xintong_Project 1_01.jpg" style="width:65vw; height:auto"></div>
-		<div class="img3"><img src="Synthesis/ps/Wu,Xintong_Project 1_02.jpg" style="width:65vw; height:auto"></div>
-		<div class="img4"><img src="Synthesis/ps/Wu,Xintong_Project 1_03.jpg" style="width:65vw; height:auto"></div>
-		<div class="img5"><img src="Synthesis/ps/Wu,Xintong_Project 1_05.jpg" style="width:65vw; height:auto"></div>
-		<div class="img6"><img src="Synthesis/ps/Wu,Xintong_Project 1_06.jpg" style="width:65vw; height:auto"></div>
-		<div class="img7"><img src="Synthesis/ps/Wu,Xintong_Project 1_07.jpg" style="width:65vw; height:auto"></div>
-        <div class="img8"><img src="Synthesis/ps/Wu,Xintong_Project 1_08.jpg" style="width:65vw; height:auto"></div>
-        <div class="img9"><img src="Synthesis/ps/Wu,Xintong_Project 1_09.jpg" style="width:65vw; height:auto"></div>
-        <div class="img10"><img src="Synthesis/ps/Wu,Xintong_Project 1_10.jpg" style="width:65vw; height:auto"></div>
-        <div class="img11"><img src="Synthesis/ps/Wu,Xintong_Project 1_11.jpg" style="width:65vw; height:auto"></div>
-        <div class="img12"><img src="Synthesis/ps/Wu,Xintong_Project 1_12.jpg" style="width:65vw; height:auto"></div>
-        <div class="img13"><img src="Synthesis/ps/Wu,Xintong_Project 1_13.jpg" style="width:65vw; height:auto"></div>
-        <div class="img14"><img src="Synthesis/ps/Wu,Xintong_Project 1_14.jpg" style="width:65vw; height:auto"></div>
-        <div class="img15"><img src="Synthesis/ps/Wu,Xintong_Project 1_15.jpg" style="width:65vw; height:auto"></div>
-        <div class="img16"><img src="Synthesis/ps/Wu,Xintong_Project 1_16.jpg" style="width:65vw; height:auto"></div>
-        <div class="img17"><img src="Synthesis/ps/Wu,Xintong_Project 1_17.jpg" style="width:65vw; height:auto"></div>
-		<div class="img18"><img src="Synthesis/ps/Wu,Xintong_Project 1_18.jpg" style="width:65vw; height:auto"></div>
-        <div class="img19"><img src="Synthesis/ps/Wu,Xintong_Project 1_19.jpg" style="width:65vw; height:auto"></div>
-        <div class="img20"><img src="Synthesis/ps/Wu,Xintong_Project 1_20.jpg" style="width:65vw; height:auto"></div>
+        <div class="img1"><img src="Synthesis/ps/web.png" id="bigimg"></div>
+		<div class="img2"><img src="Synthesis/ps/Wu,Xintong_Project 1_01.jpg" id="bigimg"></div>
+		<div class="img3"><img src="Synthesis/ps/Wu,Xintong_Project 1_02.jpg" id="bigimg"></div>
+		<div class="img4"><img src="Synthesis/ps/Wu,Xintong_Project 1_03.jpg" id="bigimg"></div>
+		<div class="img5"><img src="Synthesis/ps/Wu,Xintong_Project 1_05.jpg" id="bigimg"></div>
+		<div class="img6"><img src="Synthesis/ps/Wu,Xintong_Project 1_06.jpg" id="bigimg"></div>
+		<div class="img7"><img src="Synthesis/ps/Wu,Xintong_Project 1_07.jpg" id="bigimg"></div>
+        <div class="img8"><img src="Synthesis/ps/Wu,Xintong_Project 1_08.jpg" id="bigimg"></div>
+        <div class="img9"><img src="Synthesis/ps/Wu,Xintong_Project 1_09.jpg" id="bigimg"></div>
+        <div class="img10"><img src="Synthesis/ps/Wu,Xintong_Project 1_10.jpg" id="bigimg"></div>
+        <div class="img11"><img src="Synthesis/ps/Wu,Xintong_Project 1_11.jpg" id="bigimg"></div>
+        <div class="img12"><img src="Synthesis/ps/Wu,Xintong_Project 1_12.jpg" id="bigimg"></div>
+        <div class="img13"><img src="Synthesis/ps/Wu,Xintong_Project 1_13.jpg" id="bigimg"></div>
+        <div class="img14"><img src="Synthesis/ps/Wu,Xintong_Project 1_14.jpg" id="bigimg"></div>
+        <div class="img15"><img src="Synthesis/ps/Wu,Xintong_Project 1_15.jpg" id="bigimg"></div>
+        <div class="img16"><img src="Synthesis/ps/Wu,Xintong_Project 1_16.jpg" id="bigimg"></div>
+        <div class="img17"><img src="Synthesis/ps/Wu,Xintong_Project 1_17.jpg" id="bigimg"></div>
+		<div class="img18"><img src="Synthesis/ps/Wu,Xintong_Project 1_18.jpg" id="bigimg"></div>
+        <div class="img19"><img src="Synthesis/ps/Wu,Xintong_Project 1_19.jpg" id="bigimg"></div>
+        <div class="img20"><img src="Synthesis/ps/Wu,Xintong_Project 1_20.jpg" id="bigimg"></div>
 
     
     

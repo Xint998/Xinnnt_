@@ -33,6 +33,12 @@
 		--web-scale-on-resize: true;
 		--web-enable-deep-linking: true;
 	}
+	@media screen and (max-width:600px) {
+		#Portfolio__1 {
+			height: 100vh;
+		}
+		}
+
 	
 	a:hover {
 		opacity:0.5;
@@ -55,74 +61,156 @@
         background-color: rgba(255, 255, 255, 0.809);
         z-index:1000;
     }
+	@media screen and (max-width:600px) {
+		#nametitle {
+			position: fixed;
+            left: 10px;
+            top: 13px;
+            z-index: 10000;
+		}
+		}
+
 
     #Portfolio {
-        right:17.5vw;
-        top: 25px;
-        position: fixed;
-        overflow: visible;
-        width: 66.128px;
-        height: 28.681869506835938px;
-        --web-animation: fadein undefineds undefined;
-        --web-action-type: page;
-        --web-action-target: Portfolio.html;
-        cursor: pointer;
-        line-height: 999.9998168945312px;
-        margin-top: -492.9999084472656px;
-        text-align: center;
-        font-family: Bangla MN;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 17px;
-        color: rgb(128, 128, 128);
-        text-decoration-line:underline;
-        text-underline-offset: 8px;
-        z-index: 1000;
-        
-    }
+            right: 17.5vw;
+            top: 25px;
+            position: fixed;
+            overflow: visible;
+            width: 66.128px;
+            height: 28.681869506835938px;
+            --web-animation: fadein undefineds undefined;
+            --web-action-type: page;
+            --web-action-target: Portfolio.html;
+            cursor: pointer;
+            line-height: 999.9998168945312px;
+            margin-top: -492.9999084472656px;
+            text-align: center;
+            font-family: Bangla MN;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 17px;
+            color: rgb(128, 128, 128);
+            
+            z-index: 10000;
+        }
+		@media screen and (max-width:600px) {
+		#Portfolio {
+			right: 15vw;
+            top: 25px;
+            position: fixed;
+            overflow: visible;
+            width: 94.128px;
+            height: 28.681869506835938px;
+            --web-animation: fadein undefineds undefined;
+            --web-action-type: page;
+            --web-action-target: Main_page.html;
+            cursor: pointer;
+            line-height: 999.9998168945312px;
+            margin-top: -492.9999084472656px;
+            text-align: center;
+            font-family: Bangla MN;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 9px;
+            color: rgba(3, 0, 0, 1);
+            z-index: 10000;
+			text-decoration-line: underline;
+            text-underline-offset: 5px;
+            
+		}
+		}
 
-    #Main_Page {
-        right: 27vw;
-        top: 25px;
-        position: fixed;
-        overflow: visible;
-        width: 94.128px;
-        height: 28.681869506835938px;
-        --web-animation: fadein undefineds undefined;
-        --web-action-type: page;
-        --web-action-target: Main_page.html;
-        cursor: pointer;
-        line-height: 999.9998168945312px;
-        margin-top: -492.9999084472656px;
-        text-align: center;
-        font-family: Bangla MN;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 17px;
-        color: rgba(3,0,0,1);
-        z-index: 1000;
-        
-    }
-    #Contact {
-        right: 7vw;
-        top: 25px;
-        position: fixed;
-        overflow: visible;
-        width: 72.509px;
-        height: 28.681869506835938px;
-        --web-animation: fadein undefineds undefined;
-        --web-action-type: page;
-        --web-action-target: archive.html;
-        cursor: pointer;
-        line-height: 999.9998168945312px;
-        margin-top: -492.9999084472656px;
-        text-align: center;
-        font-family: Bangla MN;
-        font-weight: normal;
-        font-size: 17px;
-        color: rgba(3,0,0,1);
-        z-index: 1000;
-    }
+        #Main_Page {
+            right: 27vw;
+            top: 25px;
+            position: fixed;
+            overflow: visible;
+            width: 94.128px;
+            height: 28.681869506835938px;
+            --web-animation: fadein undefineds undefined;
+            --web-action-type: page;
+            --web-action-target: Main_page.html;
+            cursor: pointer;
+            line-height: 999.9998168945312px;
+            margin-top: -492.9999084472656px;
+            text-align: center;
+            font-family: Bangla MN;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 17px;
+            color: rgba(3, 0, 0, 1);
+            z-index: 10000;
+			
+        }
+		@media screen and (max-width:600px) {
+		#Main_Page {
+			right: 30vw;
+            top: 25px;
+            position: fixed;
+            overflow: visible;
+            width: 94.128px;
+            height: 28.681869506835938px;
+            --web-animation: fadein undefineds undefined;
+            --web-action-type: page;
+            --web-action-target: Main_page.html;
+            cursor: pointer;
+            line-height: 999.9998168945312px;
+            margin-top: -492.9999084472656px;
+            text-align: center;
+            font-family: Bangla MN;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 9px;
+            color: rgba(3, 0, 0, 1);
+            z-index: 10000;
+			
+		}
+		}
+
+        #Contact {
+            right: 7vw;
+            top: 25px;
+            position: fixed;
+            overflow: visible;
+            width: 72.509px;
+            height: 28.681869506835938px;
+            --web-animation: fadein undefineds undefined;
+            --web-action-type: page;
+            --web-action-target: archive.html;
+            cursor: pointer;
+            line-height: 999.9998168945312px;
+            margin-top: -492.9999084472656px;
+            text-align: center;
+            font-family: Bangla MN;
+            font-weight: normal;
+            font-size: 17px;
+            color: rgba(3, 0, 0, 1);
+            z-index: 10000;
+        }
+		@media screen and (max-width:600px) {
+		#Contact {
+			right: 1vw;
+            top: 25px;
+            position: fixed;
+            overflow: visible;
+            width: 94.128px;
+            height: 28.681869506835938px;
+            --web-animation: fadein undefineds undefined;
+            --web-action-type: page;
+            --web-action-target: Main_page.html;
+            cursor: pointer;
+            line-height: 999.9998168945312px;
+            margin-top: -492.9999084472656px;
+            text-align: center;
+            font-family: Bangla MN;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 9px;
+            color: rgba(3, 0, 0, 1);
+            z-index: 10000;
+            
+		}
+		}
 
 
 	#main_pic {
@@ -135,7 +223,18 @@
 		
 	
 	}
-
+	@media screen and (max-width:600px){
+        #main_pic {
+		position: absolute;
+		width: 75vw;
+		height: auto;
+		left: 12.5vw;
+		top: 12vh;
+		overflow: hidden;
+		
+	
+	}
+    }
 	.box {
     	height: 658px;
     	width: 658px;   
@@ -152,6 +251,21 @@
 		letter-spacing: 1px;
 		line-height: 24px;
 		color:rgb(151, 151, 151);
+	}
+
+	@media screen and (max-width:600px) {
+		.description {
+		position:absolute;
+		left:12.5vw;
+		width:75vw;
+		top:55vh;
+		text-align: left;
+		font-family: Noto;
+		font-size: 9px;
+		letter-spacing: 1px;
+		line-height: 24px;
+		color:rgb(151, 151, 151);
+		}
 	}
 	@font-face {
 		font-family:PlayfairDisplay-Regular;
@@ -284,6 +398,25 @@
 		top: 120vh;
 		left:17vw;
 	}
+
+	@media screen and (max-width:600px){
+        .gif{
+		position: absolute;
+		top: 78vh;
+		left:12.5vw;
+	}
+    }
+
+	#bigimg {
+		width:65vw; 
+		height:auto;
+	}
+	@media screen and (max-width:600px){
+		#bigimg {
+		width:75vw; 
+		height:auto;
+	}
+	}
 </style>
 </head>
 <body>
@@ -303,7 +436,7 @@
 	</div>
 
 	<div class ="box">
-		<img id="main_pic" src="web design/未标题-1.png" style="width: 658px; height:658px; object-fit: cover;"></div>
+		<img id="main_pic" src="web design/未标题-1.png" style="object-fit: cover;"></div>
 	</div>
 
 	<div class="description">
@@ -316,7 +449,7 @@
 	
 	</div>
 
-	<div class="gif"><img src="web design/ezgif.com-gif-maker.gif" style="width:65vw; height:auto;"></div>
+	<div class="gif"><img src="web design/ezgif.com-gif-maker.gif" id="bigimg"></div>
 	
 </div>
 </body>

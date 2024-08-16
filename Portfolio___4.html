@@ -33,6 +33,11 @@
 		--web-scale-on-resize: true;
 		--web-enable-deep-linking: true;
 	}
+	@media screen and (max-width:600px) {
+		#Portfolio__1 {
+			height: 175vh;
+		}
+		}
 	
 	a:hover {
 		opacity:0.5;
@@ -47,75 +52,156 @@
 		z-index: 1000;
 		
 	}
+	@media screen and (max-width:600px) {
+		#nametitle {
+			position: fixed;
+            left: 10px;
+            top: 13px;
+            z-index: 10000;
+		}
+		}
 
-	#Portfolio {
-		right:17.5vw;
-		top: 25px;
-		position: fixed;
-		overflow: visible;
-		width: 66.128px;
-		height: 28.681869506835938px;
-		--web-animation: fadein undefineds undefined;
-		--web-action-type: page;
-		--web-action-target: Portfolio.html;
-		cursor: pointer;
-		line-height: 999.9998168945312px;
-		margin-top: -492.9999084472656px;
-		text-align: center;
-		font-family: Bangla MN;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 17px;
-		color: rgb(128, 128, 128);
-		text-decoration-line:underline;
-		text-underline-offset: 8px;
-		z-index: 1000;
-	}
+		#Portfolio {
+            right: 17.5vw;
+            top: 25px;
+            position: fixed;
+            overflow: visible;
+            width: 66.128px;
+            height: 28.681869506835938px;
+            --web-animation: fadein undefineds undefined;
+            --web-action-type: page;
+            --web-action-target: Portfolio.html;
+            cursor: pointer;
+            line-height: 999.9998168945312px;
+            margin-top: -492.9999084472656px;
+            text-align: center;
+            font-family: Bangla MN;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 17px;
+            color: rgb(128, 128, 128);
+            
+            z-index: 10000;
+        }
+		@media screen and (max-width:600px) {
+		#Portfolio {
+			right: 15vw;
+            top: 25px;
+            position: fixed;
+            overflow: visible;
+            width: 94.128px;
+            height: 28.681869506835938px;
+            --web-animation: fadein undefineds undefined;
+            --web-action-type: page;
+            --web-action-target: Main_page.html;
+            cursor: pointer;
+            line-height: 999.9998168945312px;
+            margin-top: -492.9999084472656px;
+            text-align: center;
+            font-family: Bangla MN;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 9px;
+            color: rgba(3, 0, 0, 1);
+            z-index: 10000;
+			text-decoration-line: underline;
+            text-underline-offset: 5px;
+            
+		}
+		}
 
-	
-	#Main_Page {
-		right: 27vw;
-		top: 25px;
-		position: fixed;
-		overflow: visible;
-		width: 94.128px;
-		height: 28.681869506835938px;
-		--web-animation: fadein undefineds undefined;
-		--web-action-type: page;
-		--web-action-target: Main_page.html;
-		cursor: pointer;
-		line-height: 999.9998168945312px;
-		margin-top: -492.9999084472656px;
-		text-align: center;
-		font-family: Bangla MN;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 17px;
-		color: rgba(3,0,0,1);
-		z-index: 1000;
-		
-	}
-	#Contact {
-		right: 7vw;
-		top: 25px;
-		position: fixed;
-		overflow: visible;
-		width: 72.509px;
-		height: 28.681869506835938px;
-		--web-animation: fadein undefineds undefined;
-		--web-action-type: page;
-		--web-action-target: archive.html;
-		cursor: pointer;
-		line-height: 999.9998168945312px;
-		margin-top: -492.9999084472656px;
-		text-align: center;
-		font-family: Bangla MN;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 17px;
-		color: rgba(3,0,0,1);
-		z-index: 1000;
-	}
+        #Main_Page {
+            right: 27vw;
+            top: 25px;
+            position: fixed;
+            overflow: visible;
+            width: 94.128px;
+            height: 28.681869506835938px;
+            --web-animation: fadein undefineds undefined;
+            --web-action-type: page;
+            --web-action-target: Main_page.html;
+            cursor: pointer;
+            line-height: 999.9998168945312px;
+            margin-top: -492.9999084472656px;
+            text-align: center;
+            font-family: Bangla MN;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 17px;
+            color: rgba(3, 0, 0, 1);
+            z-index: 10000;
+			
+        }
+		@media screen and (max-width:600px) {
+		#Main_Page {
+			right: 30vw;
+            top: 25px;
+            position: fixed;
+            overflow: visible;
+            width: 94.128px;
+            height: 28.681869506835938px;
+            --web-animation: fadein undefineds undefined;
+            --web-action-type: page;
+            --web-action-target: Main_page.html;
+            cursor: pointer;
+            line-height: 999.9998168945312px;
+            margin-top: -492.9999084472656px;
+            text-align: center;
+            font-family: Bangla MN;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 9px;
+            color: rgba(3, 0, 0, 1);
+            z-index: 10000;
+			
+		}
+		}
+
+        #Contact {
+            right: 7vw;
+            top: 25px;
+            position: fixed;
+            overflow: visible;
+            width: 72.509px;
+            height: 28.681869506835938px;
+            --web-animation: fadein undefineds undefined;
+            --web-action-type: page;
+            --web-action-target: archive.html;
+            cursor: pointer;
+            line-height: 999.9998168945312px;
+            margin-top: -492.9999084472656px;
+            text-align: center;
+            font-family: Bangla MN;
+            font-weight: normal;
+            font-size: 17px;
+            color: rgba(3, 0, 0, 1);
+            z-index: 10000;
+        }
+		@media screen and (max-width:600px) {
+		#Contact {
+			right: 1vw;
+            top: 25px;
+            position: fixed;
+            overflow: visible;
+            width: 94.128px;
+            height: 28.681869506835938px;
+            --web-animation: fadein undefineds undefined;
+            --web-action-type: page;
+            --web-action-target: Main_page.html;
+            cursor: pointer;
+            line-height: 999.9998168945312px;
+            margin-top: -492.9999084472656px;
+            text-align: center;
+            font-family: Bangla MN;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 9px;
+            color: rgba(3, 0, 0, 1);
+            z-index: 10000;
+            
+		}
+		}
+
 	#rec {
 		position:fixed;
 		width:100vw;
@@ -136,6 +222,16 @@
 		
 	
 	}
+	@media screen and (max-width:600px) {
+		#Rectangle {
+			position: absolute;
+			width: 75vw;
+			height: 75vw;
+			left: 12.5vw;
+		top: 12vh;
+		overflow: hidden;
+		}
+	}
 
 	.box {
     	height: 658px;
@@ -155,6 +251,20 @@
 		line-height: 24px;
 		color:rgb(151, 151, 151);
 	}
+	@media screen and (max-width:600px) {
+		.description {
+		position:absolute;
+		left:12.5vw;
+		width:75vw;
+		top:53vh;
+		text-align: left;
+		font-family: Noto;
+		font-size: 9px;
+		letter-spacing: 1px;
+		line-height: 24px;
+		color:rgb(151, 151, 151);
+		}
+	}
 
 	.title{
 		
@@ -165,6 +275,11 @@
 		text-align: left;
 		text-decoration: underline ;
 		text-underline-offset: 3px;
+	}
+	@media screen and (max-width:600px) {
+		.title {
+		font-size: 18px;
+		}
 	}
 
 	.imagedescription {
@@ -207,6 +322,23 @@
 		top: 120vh;
 		left:35vw;
 	}
+	@media screen and (max-width:600px) {
+		.gif{
+		position: absolute;
+		top: 120vh;
+		left:12.5vw;
+	}
+	}
+	#bigimg {
+		width:auto; 
+		height:70vh;
+	}
+	@media screen and (max-width:600px){
+		#bigimg {
+		width:75vw; 
+		height:auto;
+	}
+	}
 </style>
 
 </head>
@@ -230,7 +362,7 @@
 		<a href="archive.html" style="text-decoration: none; color: black;"><span>Contact</span></a>
 	</div>
 	<div class ="box">
-		<img id="Rectangle" src="resource/core 4 kim/Rectangle@2x.jpg" style="width: 658px; height:658px; object-fit: cover;">
+		<img id="Rectangle" src="resource/core 4 kim/Rectangle@2x.jpg" style="object-fit: cover;">
 	</div>
 
 	<div class="description">
@@ -245,7 +377,7 @@
 The project calls for a peaceful approach in handling conflicts of interest between nations, urging the world to consider the innocent civilians before declaring war. It emphasizes the importance of prioritizing peaceful relations and thoughtful consideration when resorting to armed conflicts.</p>
 	</div>
 
-	<div class="gif"><img src="resource/core 4 kim/ezgif.com-gif-maker.gif" style="width:auto; height:70vh;"></div>
+	<div class="gif"><img src="resource/core 4 kim/ezgif.com-gif-maker.gif" id="bigimg"></div>
 </div>
 </body>
 </html>

@@ -33,6 +33,11 @@
 		--web-scale-on-resize: true;
 		--web-enable-deep-linking: true;
 	}
+	@media screen and (max-width:600px) {
+		#Portfolio__1 {
+			height: 280vh;
+		}
+		}
 	
 	a:hover {
 		opacity:0.5;
@@ -47,75 +52,155 @@
 		z-index: 1000;
 		
 	}
+	@media screen and (max-width:600px) {
+		#nametitle {
+			position: fixed;
+            left: 10px;
+            top: 13px;
+            z-index: 10000;
+		}
+		}
 
-	#Portfolio {
-		right:17.5vw;
-		top: 25px;
-		position: fixed;
-		overflow: visible;
-		width: 66.128px;
-		height: 28.681869506835938px;
-		--web-animation: fadein undefineds undefined;
-		--web-action-type: page;
-		--web-action-target: Portfolio.html;
-		cursor: pointer;
-		line-height: 999.9998168945312px;
-		margin-top: -492.9999084472656px;
-		text-align: center;
-		font-family: Bangla MN;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 17px;
-		color: rgb(128, 128, 128);
-		text-decoration-line:underline;
-		text-underline-offset: 8px;
-		z-index: 1000;
-	}
+		#Portfolio {
+            right: 17.5vw;
+            top: 25px;
+            position: fixed;
+            overflow: visible;
+            width: 66.128px;
+            height: 28.681869506835938px;
+            --web-animation: fadein undefineds undefined;
+            --web-action-type: page;
+            --web-action-target: Portfolio.html;
+            cursor: pointer;
+            line-height: 999.9998168945312px;
+            margin-top: -492.9999084472656px;
+            text-align: center;
+            font-family: Bangla MN;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 17px;
+            color: rgb(128, 128, 128);
+            
+            z-index: 10000;
+        }
+		@media screen and (max-width:600px) {
+		#Portfolio {
+			right: 15vw;
+            top: 25px;
+            position: fixed;
+            overflow: visible;
+            width: 94.128px;
+            height: 28.681869506835938px;
+            --web-animation: fadein undefineds undefined;
+            --web-action-type: page;
+            --web-action-target: Main_page.html;
+            cursor: pointer;
+            line-height: 999.9998168945312px;
+            margin-top: -492.9999084472656px;
+            text-align: center;
+            font-family: Bangla MN;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 9px;
+            color: rgba(3, 0, 0, 1);
+            z-index: 10000;
+			text-decoration-line: underline;
+            text-underline-offset: 5px;
+            
+		}
+		}
 
-	
-	#Main_Page {
-		right: 27vw;
-		top: 25px;
-		position: fixed;
-		overflow: visible;
-		width: 94.128px;
-		height: 28.681869506835938px;
-		--web-animation: fadein undefineds undefined;
-		--web-action-type: page;
-		--web-action-target: Main_page.html;
-		cursor: pointer;
-		line-height: 999.9998168945312px;
-		margin-top: -492.9999084472656px;
-		text-align: center;
-		font-family: Bangla MN;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 17px;
-		color: rgba(3,0,0,1);
-		z-index: 1000;
-		
-	}
-	#Contact {
-		right: 7vw;
-		top: 25px;
-		position: fixed;
-		overflow: visible;
-		width: 72.509px;
-		height: 28.681869506835938px;
-		--web-animation: fadein undefineds undefined;
-		--web-action-type: page;
-		--web-action-target: archive.html;
-		cursor: pointer;
-		line-height: 999.9998168945312px;
-		margin-top: -492.9999084472656px;
-		text-align: center;
-		font-family: Bangla MN;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 17px;
-		color: rgba(3,0,0,1);
-		z-index: 1000;
-	}
+        #Main_Page {
+            right: 27vw;
+            top: 25px;
+            position: fixed;
+            overflow: visible;
+            width: 94.128px;
+            height: 28.681869506835938px;
+            --web-animation: fadein undefineds undefined;
+            --web-action-type: page;
+            --web-action-target: Main_page.html;
+            cursor: pointer;
+            line-height: 999.9998168945312px;
+            margin-top: -492.9999084472656px;
+            text-align: center;
+            font-family: Bangla MN;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 17px;
+            color: rgba(3, 0, 0, 1);
+            z-index: 10000;
+			
+        }
+		@media screen and (max-width:600px) {
+		#Main_Page {
+			right: 30vw;
+            top: 25px;
+            position: fixed;
+            overflow: visible;
+            width: 94.128px;
+            height: 28.681869506835938px;
+            --web-animation: fadein undefineds undefined;
+            --web-action-type: page;
+            --web-action-target: Main_page.html;
+            cursor: pointer;
+            line-height: 999.9998168945312px;
+            margin-top: -492.9999084472656px;
+            text-align: center;
+            font-family: Bangla MN;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 9px;
+            color: rgba(3, 0, 0, 1);
+            z-index: 10000;
+			
+		}
+		}
+
+        #Contact {
+            right: 7vw;
+            top: 25px;
+            position: fixed;
+            overflow: visible;
+            width: 72.509px;
+            height: 28.681869506835938px;
+            --web-animation: fadein undefineds undefined;
+            --web-action-type: page;
+            --web-action-target: archive.html;
+            cursor: pointer;
+            line-height: 999.9998168945312px;
+            margin-top: -492.9999084472656px;
+            text-align: center;
+            font-family: Bangla MN;
+            font-weight: normal;
+            font-size: 17px;
+            color: rgba(3, 0, 0, 1);
+            z-index: 10000;
+        }
+		@media screen and (max-width:600px) {
+		#Contact {
+			right: 1vw;
+            top: 25px;
+            position: fixed;
+            overflow: visible;
+            width: 94.128px;
+            height: 28.681869506835938px;
+            --web-animation: fadein undefineds undefined;
+            --web-action-type: page;
+            --web-action-target: Main_page.html;
+            cursor: pointer;
+            line-height: 999.9998168945312px;
+            margin-top: -492.9999084472656px;
+            text-align: center;
+            font-family: Bangla MN;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 9px;
+            color: rgba(3, 0, 0, 1);
+            z-index: 10000;
+            
+		}
+		}
 	#rec {
 		position:fixed;
 		width:100vw;
@@ -137,11 +222,22 @@
 		
 	
 	}
+	@media screen and (max-width:600px) {
+		#coreiii {
+		position: absolute;
+		width: 75vw;
+		height: 75vw;
+		left: 12.5vw;
+		top: 12vh;
+		overflow: hidden;
+		}
+		}
 
 	.box {
     	height: 658px;
     	width: 658px;    
 	}
+
 	.bigimg {
 		position:absolute;
 		top: 120vh;
@@ -149,22 +245,45 @@
 		z-index: 1;
 		
 	}
+	@media screen and (max-width:600px) {
+		.bigimg {
+		font-size: 12px;
+		position:absolute;
+		top: 120vh;
+		left:12.5vw;
+		z-index: 1;
+		}
+	}
 
 	.bigimg2 {
 		position:absolute;
-		
 		top:225vh;
 		left:20vw;
 		z-index: 1;
+	}
+	@media screen and (max-width:600px) {
+		.bigimg2 {
+			position:absolute;
+			top:204vh;
+			left:12.5vw;
+			z-index: 1;
+		}
 	}
 	
 
 	.bigimg3 {
 		position: absolute;
-		
 		top:335vh;
 		left:20vw;
 		z-index:1;
+	}
+	@media screen and (max-width:600px) {
+		.bigimg3 {
+			position:absolute;
+			top:245vh;
+			left:12.5vw;
+			z-index: 1;
+		}
 	}
 
 	.bigimg4 {
@@ -174,6 +293,14 @@
 		left:20vw;
 		z-index:1;
 	}
+	@media screen and (max-width:600px) {
+		.bigimg4 {
+			position:absolute;
+			top:160vh;
+			left:12.5vw;
+			z-index: 1;
+		}
+	}
 
 
 
@@ -181,13 +308,27 @@
 		position:absolute;
 		right:8vw;
 		width:20vw;
-		top:48vh;
+		top:66vh;
 		text-align: left;
 		font-family: Noto;
 		font-size: 6px;
 		letter-spacing: 1px;
 		line-height: 24px;
 		color:rgb(151, 151, 151);
+	}
+	@media screen and (max-width:600px) {
+		.description {
+		position:absolute;
+		left:12.5vw;
+		width:75vw;
+		top:55vh;
+		text-align: left;
+		font-family: Noto;
+		font-size: 10px;
+		letter-spacing: 1px;
+		line-height: 24px;
+		color:rgb(151, 151, 151);
+		}
 	}
 
 	.title{
@@ -199,6 +340,15 @@
 		text-align: left;
 		text-decoration: underline ;
 		text-underline-offset: 3px;
+	}
+	@media screen and (max-width:600px) {
+		.title {
+		font-size: 18px;
+		}
+	}
+	#bigimg1 {
+		width: 75vw;
+		height:auto;
 	}
 
 	.imagedescription {
@@ -214,6 +364,15 @@
 		width:40vw;
 		
 	}
+	@media screen and (max-width:600px) {
+		.imagedescription {
+		top:110vh;
+		width:75vw;
+		left: 12.5vw;
+		line-height: 15px;
+		font-size: 7px;
+		}
+	}
 
 	.imagedescription2 {
 		position: relative;
@@ -226,6 +385,15 @@
 		top:141vh;
 		width:40vw;
 		left: 30vw;
+	}
+	@media screen and (max-width:600px) {
+		.imagedescription2 {
+		top:75vh;
+		width:75vw;
+		left: 12.5vw;
+		line-height: 15px;
+		font-size: 7px;
+		}
 	}
 
 	.imagedescription3 {
@@ -240,6 +408,15 @@
 		width:40vw;
 		left:30vw;
 		
+	}
+	@media screen and (max-width:600px) {
+		.imagedescription3 {
+			top:146vh;
+		width:75vw;
+		left: 12.5vw;
+		line-height: 15px;
+		font-size: 7px;
+		}
 	}
 
 	@font-face {
@@ -270,7 +447,7 @@
 	</div>
 
 	<div class ="box">
-		<img id="coreiii" src="CoreIII/core 3-exhibition brochure 2.jpg" style="width: 658px; height:658px; object-fit: cover;"></div>
+		<img id="coreiii" src="CoreIII/core 3-exhibition brochure 2.jpg" style="object-fit: cover;"></div>
 		<div class="description">
 			<div class="title">
 				<p>UPCYCLING</p>
@@ -282,24 +459,24 @@
 			<p>Our project served as a call to action, urging everyone to pay attention to environmental protection issues and harness the power of materials in crafting sustainable designs in their own lives.</p>
 		</div>
 	<div class="bigimg">
-		<img src="CoreIII/1.jpg" style="width:60vw; height:auto">
+		<img src="CoreIII/1.jpg" id="bigimg1">
 	</div>
 	<div class="imagedescription2">
 		<p>Ying Ying utilized materials like plastic bottles and denim fabric to craft a captivating decorative artwork. Her creativity knew no bounds as she breathed new life into these discarded items.</p>
 	</div>
 	<div class="bigimg2">
-		<img src="CoreIII/core 3-exhibition book.jpg" style="width:60vw; height:auto"></div>
+		<img src="CoreIII/core 3-exhibition book.jpg" id="bigimg1"></div>
 
 	<div class="imagedescription">
 		<p>I took apart a broken chair from my home and embarked on a journey of disassembly, cutting, assembly, and finally, painting and decorating. The end result was a small stool created for my mom's little garden. With meticulous attention to detail, I transformed what was once discarded into a functional and aesthetically pleasing piece.</p>
 	</div>
 	<div class="bigimg3">
-		<img src="CoreIII/core 3-exhibition.jpg" style="width:60vw; height:auto"></div>
+		<img src="CoreIII/core 3-exhibition.jpg" id="bigimg1"></div>
 	<div class="imagedescription3">
 		<p>We documented the entire process in a small book, gathering inspiration from online experts who specialize in upcycling and reinvention. Through this endeavor, we aimed to raise awareness about environmental conservation and promote the idea of utilizing materials in creative ways for everyday designs.</p>
 	</div>
 	<div class="bigimg4">
-		<img src="CoreIII/3.jpg" style="width:60vw; height:auto"></div>
+		<img src="CoreIII/3.jpg" id="bigimg1"></div>
 </div>
 </body>
 </html>
