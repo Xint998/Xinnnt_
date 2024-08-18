@@ -27,7 +27,7 @@
             margin: 0;
             padding: 0;
             height: 100vh;
-            
+            width: 100vw;
             scroll-behavior: smooth;
             scroll-snap-type: y mandatory; /* 添加滚动捕捉 */
             
@@ -49,6 +49,17 @@
             z-index: 10000;
 		}
 		}
+
+        @media screen and (max-width:1200px) {
+		#nametitle {
+			position: fixed;
+            left: 20px;
+            top: 13px;
+            z-index: 10000;
+		}
+		}
+
+
         
         #rec {
             position: fixed;
@@ -88,23 +99,18 @@
 		#Portfolio {
 			right: 15vw;
             top: 25px;
-            position: fixed;
-            overflow: visible;
-            width: 94.128px;
-            height: 28.681869506835938px;
-            --web-animation: fadein undefineds undefined;
-            --web-action-type: page;
-            --web-action-target: Main_page.html;
-            cursor: pointer;
-            line-height: 999.9998168945312px;
-            margin-top: -492.9999084472656px;
-            text-align: center;
-            font-family: Bangla MN;
-            font-style: normal;
-            font-weight: normal;
+            
             font-size: 9px;
-            color: rgba(3, 0, 0, 1);
+            
             z-index: 10000;
+            text-underline-offset: 5px;
+		}
+		}
+        @media screen and (max-width:1200px) {
+		#Portfolio {
+			right: 18vw;
+            top: 25px;
+            font-size: 14px;
             text-underline-offset: 5px;
 		}
 		}
@@ -141,6 +147,14 @@
 			
 		}
 		}
+        @media screen and (max-width:1200px) {
+		#Main_Page {
+			right: 32vw;
+            top: 25px;
+            font-size: 14px;
+			
+		}
+		}
 
 
         #Contact {
@@ -168,31 +182,23 @@
 		#Contact {
 			right: 1vw;
             top: 25px;
-            position: fixed;
-            overflow: visible;
-            width: 94.128px;
-            height: 28.681869506835938px;
-            --web-animation: fadein undefineds undefined;
-            --web-action-type: page;
-            --web-action-target: Main_page.html;
-            cursor: pointer;
-            line-height: 999.9998168945312px;
-            margin-top: -492.9999084472656px;
-            text-align: center;
-            font-family: Bangla MN;
-            font-style: normal;
-            font-weight: normal;
             font-size: 9px;
-            color: rgba(3, 0, 0, 1);
-            z-index: 10000;
-            
 		}
 		}
+
+        @media screen and (max-width:1200px) {
+		#Contact {
+			right: 3vw;
+            top: 25px;
+            font-size: 14px;
+		}
+		}
+
 
 
         .section {
             width: 100vw;
-            min-height: 100vh;
+            height: 100vh;
             display: flex;
             transition: transform 1.5s ease-in-out;
             -webkit-overflow-scrolling: touch; /* 允许在iOS设备上平滑滚动 */
@@ -200,6 +206,7 @@
         }
         @media (max-width: 600px) {
             section {
+                min-height: 100vh;
                 transition: all 0.4s ease;
             }
         }
@@ -216,13 +223,9 @@
 
         @media screen and (max-width:600px) {
 		#PORT_FO_LIO_FO_LIO {
-			position: absolute;
+			
             width: 70vw;
             height: 80vh;
-            left: 9vw;
-            top: 12vh;
-            overflow: hidden;
-            animation: slidein 4s infinite alternate ease-in-out;
 		}
 		}
 
@@ -272,6 +275,17 @@
             letter-spacing: 0.5px;
 		}
 		}
+
+        @media screen and (max-width:1200px) {
+		#PORT_FO_LIO_FO_LIO_m {
+			left: 8vw;
+            top: 7vh;
+            font-size: 15vw;
+            
+		}
+		}
+
+
         #year {
 			font-family: Urbanist; 
 			position: fixed; 
@@ -289,6 +303,12 @@
 			font-size: 9px;
 		}
 		}
+        @media screen and (max-width:1200px) {
+		#year {
+			font-size: 14px;
+		}
+		}
+
 
         #section2 {
             background: #ffffff3c;
@@ -312,6 +332,16 @@
             top: 40vh;
 		}
 		}
+        @media screen and (max-width:1200px) {
+		#synthesis {
+			width: 40vw;
+            height: 40vw;
+            position: absolute;
+            left: 5vw;
+            top: 40vh;
+		}
+		}
+
 
         #flower {
             width: 29vh;
@@ -320,12 +350,24 @@
             left: 49vw;
             top: 23vh;
         }
+        
+
         @media screen and (max-width:600px) {
 		#flower {
 			width: 40vw;
             height: 40vw;
             position: absolute;
             right: 0vw;
+            top: 40vh;
+		}
+		}
+
+        @media screen and (max-width:1200px) {
+		#flower {
+			width: 30vw;
+            height: 30vw;
+            position: absolute;
+            left: 55vw;
             top: 40vh;
 		}
 		}
@@ -348,6 +390,15 @@
             
 		}
 		}
+        @media screen and (max-width:1200px) {
+		#miya {
+            width: 30vw;
+            height: 30vw;
+			left: 55vw;
+            top: 70vh;
+            
+		}
+		}
 
         #bedroom {
             width: 29vh;
@@ -358,11 +409,19 @@
         }
         @media screen and (max-width:600px) {
 		#bedroom {
-			width: 40vw;
+            width: 40vw;
             height: 40vw;
             position: absolute;
             right: 0vw;
             top: 15vh;
+		}
+		}
+        @media screen and (max-width:1200px) {
+		#bedroom {
+            width: 30vw;
+            height: 30vw;
+			left:55vw;
+            top: 10vh;
 		}
 		}
         
@@ -474,6 +533,14 @@
         @media screen and (max-width:600px) {
 		 #img11 {
 			width: 30vw; 
+            height:40vw; 
+            margin:1vw;
+		}
+		}
+
+        @media screen and (max-width:1200px) {
+		 #img11 {
+			width: 33vw; 
             height:40vw; 
             margin:1vw;
 		}

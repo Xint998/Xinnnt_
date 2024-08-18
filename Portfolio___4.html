@@ -33,11 +33,18 @@
 		--web-scale-on-resize: true;
 		--web-enable-deep-linking: true;
 	}
+	@media screen and (max-width:1024px) {
+		#Portfolio__1 {
+			max-height: 200vh;
+		}
+		}
 	@media screen and (max-width:600px) {
 		#Portfolio__1 {
-			height: 175vh;
+			max-height: 175vh;
 		}
 		}
+
+		
 	
 	a:hover {
 		opacity:0.5;
@@ -52,6 +59,14 @@
 		z-index: 1000;
 		
 	}
+	@media screen and (max-width:1024px) {
+		#nametitle {
+			position: fixed;
+            left: 20px;
+            top: 13px;
+            z-index: 10000;
+		}
+		}
 	@media screen and (max-width:600px) {
 		#nametitle {
 			position: fixed;
@@ -60,6 +75,8 @@
             z-index: 10000;
 		}
 		}
+		
+
 
 		#Portfolio {
             right: 17.5vw;
@@ -80,35 +97,33 @@
             font-weight: normal;
             font-size: 17px;
             color: rgb(128, 128, 128);
-            
+            text-decoration-line: underline;
+            text-underline-offset: 8px;
             z-index: 10000;
         }
-		@media screen and (max-width:600px) {
+		@media screen and (max-width:1024px) {
 		#Portfolio {
-			right: 15vw;
+			right: 18vw;
             top: 25px;
-            position: fixed;
-            overflow: visible;
-            width: 94.128px;
-            height: 28.681869506835938px;
-            --web-animation: fadein undefineds undefined;
-            --web-action-type: page;
-            --web-action-target: Main_page.html;
-            cursor: pointer;
-            line-height: 999.9998168945312px;
-            margin-top: -492.9999084472656px;
-            text-align: center;
-            font-family: Bangla MN;
-            font-style: normal;
-            font-weight: normal;
-            font-size: 9px;
-            color: rgba(3, 0, 0, 1);
-            z-index: 10000;
+            font-size: 14px;
 			text-decoration-line: underline;
             text-underline-offset: 5px;
             
 		}
 		}
+		@media screen and (max-width:600px) {
+		#Portfolio {
+			right: 17vw;
+            top: 25px;
+            font-size: 9px;
+			text-decoration-line: underline;
+            text-underline-offset: 5px;
+            
+		}
+		}
+
+		
+
 
         #Main_Page {
             right: 27vw;
@@ -132,30 +147,23 @@
             z-index: 10000;
 			
         }
+		@media screen and (max-width:1024px) {
+		#Main_Page {
+			right: 32vw;
+            top: 25px;
+            font-size: 14px;
+			
+		}
+		}
 		@media screen and (max-width:600px) {
 		#Main_Page {
 			right: 30vw;
             top: 25px;
-            position: fixed;
-            overflow: visible;
-            width: 94.128px;
-            height: 28.681869506835938px;
-            --web-animation: fadein undefineds undefined;
-            --web-action-type: page;
-            --web-action-target: Main_page.html;
-            cursor: pointer;
-            line-height: 999.9998168945312px;
-            margin-top: -492.9999084472656px;
-            text-align: center;
-            font-family: Bangla MN;
-            font-style: normal;
-            font-weight: normal;
             font-size: 9px;
-            color: rgba(3, 0, 0, 1);
-            z-index: 10000;
 			
 		}
 		}
+		
 
         #Contact {
             right: 7vw;
@@ -177,30 +185,22 @@
             color: rgba(3, 0, 0, 1);
             z-index: 10000;
         }
+		@media screen and (max-width:1024px) {
+		#Contact {
+			right: 3vw;
+            top: 25px;
+            font-size: 14px;
+		}
+		}
 		@media screen and (max-width:600px) {
 		#Contact {
 			right: 1vw;
             top: 25px;
-            position: fixed;
-            overflow: visible;
-            width: 94.128px;
-            height: 28.681869506835938px;
-            --web-animation: fadein undefineds undefined;
-            --web-action-type: page;
-            --web-action-target: Main_page.html;
-            cursor: pointer;
-            line-height: 999.9998168945312px;
-            margin-top: -492.9999084472656px;
-            text-align: center;
-            font-family: Bangla MN;
-            font-style: normal;
-            font-weight: normal;
             font-size: 9px;
-            color: rgba(3, 0, 0, 1);
-            z-index: 10000;
-            
 		}
 		}
+
+        
 
 	#rec {
 		position:fixed;
@@ -222,7 +222,7 @@
 		
 	
 	}
-	@media screen and (max-width:600px) {
+	@media screen and (max-width:1024px) {
 		#Rectangle {
 			position: absolute;
 			width: 75vw;
@@ -232,6 +232,8 @@
 		overflow: hidden;
 		}
 	}
+
+	
 
 	.box {
     	height: 658px;
@@ -251,20 +253,31 @@
 		line-height: 24px;
 		color:rgb(151, 151, 151);
 	}
+	@media screen and (max-width:1024px) {
+		.description {
+		
+		left:12.5vw;
+		width:75vw;
+		top:75vh;
+		font-size: 10px;
+		letter-spacing: 1px;
+		line-height: 24px;
+		}
+	}
 	@media screen and (max-width:600px) {
 		.description {
-		position:absolute;
+		
 		left:12.5vw;
 		width:75vw;
 		top:53vh;
-		text-align: left;
-		font-family: Noto;
+		
 		font-size: 9px;
 		letter-spacing: 1px;
 		line-height: 24px;
-		color:rgb(151, 151, 151);
 		}
 	}
+	
+
 
 	.title{
 		
@@ -322,7 +335,7 @@
 		top: 120vh;
 		left:35vw;
 	}
-	@media screen and (max-width:600px) {
+	@media screen and (max-width:1024px) {
 		.gif{
 		position: absolute;
 		top: 120vh;
@@ -333,7 +346,7 @@
 		width:auto; 
 		height:70vh;
 	}
-	@media screen and (max-width:600px){
+	@media screen and (max-width:1024px){
 		#bigimg {
 		width:75vw; 
 		height:auto;
