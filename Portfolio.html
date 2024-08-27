@@ -14,7 +14,7 @@
         #Portfolio1 {
             position: absolute;
             background: url(未标题-1.jpg);
-            width: 100vw;
+            max-width: 100vw;
             height: 5000px;
             background-color: rgb(255, 255, 255);
             --web-view-name: Portfolio;
@@ -39,10 +39,11 @@
         body, html {
             margin: 0;
             padding: 0;
-            height: 100vh;
-            width: 100vw;
+            height: 100%;
+            max-width: 100vw;
             scroll-behavior: smooth;
-            scroll-snap-type: y mandatory; /* 添加滚动捕捉 */
+            scroll-snap-type: y mandatory; /* 添加滚动捕捉 */;
+            overflow-x: hidden;
             
             
         }
@@ -213,16 +214,19 @@
 
         .section {
             width: 100vw;
-            height: 100vh;
+            min-height: 100vh;
             display: flex;
-            transition: transform 1.5s ease-in-out;
+            transition: transform 3s ease-in-out;
+
+            scroll-behavior: smooth;
             -webkit-overflow-scrolling: touch; /* 允许在iOS设备上平滑滚动 */
             scroll-snap-align: start; /* 每个部分对齐顶部 */
+
         }
         @media (max-width: 1024px) {
             section {
                 min-height: 100vh;
-                transition: all 0.4s ease;
+                transition: transform 3s ease-in-out;
             }
         }
 
@@ -312,7 +316,7 @@
 			position: fixed; 
 			font-size: 16px; 
 			top:40vh; 
-			right: -1.5vw; 
+			right: -0.5vw; 
 			color: rgb(116, 116, 116); 
 			text-align: center; 
 			letter-spacing: 10px; 
@@ -369,10 +373,10 @@
             width: 29vh;
             height: 29vh;
             position: absolute;
-            left: 49vw;
+            right: 35vw;
             top: 23vh;
         }
-        
+       
         @media screen and (max-width:1024px) {
                 #flower {
                     width: 30vw;
@@ -394,39 +398,14 @@
 
         
 
-        #miya {
-            width: 29vh;
-            height: 29vh;
-            position: absolute;
-            left: 66.5vw;
-            top: 23vh;
-        }
-        @media screen and (max-width:1024px) {
-                #miya {
-                    width: 30vw;
-                    height: 30vw;
-                    left: 55vw;
-                    top: 70vh;
-                    
-                }
-                }
-        @media screen and (max-width:600px) {
-		#miya {
-			width: 40vw;
-            height: 40vw;
-            position:absolute;
-            right: 0;
-            top: 65vh;
-            
-		}
-		}
+       
         
 
         #bedroom {
             width: 29vh;
             height: 29vh;
             position: absolute;
-            left: 49vw;
+            right: 35vw;
             top: 54vh;
         }
         
@@ -494,28 +473,44 @@
         .s3 {
             left: 12.5vw;
             top: 14.5vh;
-            width: 75vw;
+            width: 80vw;
             height: 75vh;
-            overflow: hidden;
+            overflow-y:auto ;
             display: flex;
             justify-content: center;
             align-items: center;
-            
             position: relative;
         }
         @media screen and (max-width:600px){
             .s3 {
             left: 12.5vw;
             top: 32vh;
-            width: 75vw;
+            width: 80vw;
             height: 75vw;
-            overflow: hidden;
+            overflow-y:auto ;
             
         }
     }
+        .gallery {
+            display: grid;
+            position: relative;
+            top:40vh;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1.5vw; /* 设置图片之间的间距 */
+            overflow-y: visible; /* Ensure no clipping */
+            padding-right: 1vw;
+        }
+
+        .gallery img {
+            width: 100%; /* 让图片宽度自适应单元格 */
+            height: 100%; /* 保持图片比例 */
+            border-radius: 10px;
+        }
+        
 
         #section4 {
             background: #ffffff6a;
+            overflow-y: auto; /* 注意这里的 overflow-y: auto */
         }
 
         a:hover {
@@ -535,6 +530,48 @@
             z-index: 1000;
             font-family: PlayfairDisplay-Regular;
         }
+        .s2page {
+            position: absolute; 
+            font-size: 5vw; 
+            width: 20vw;
+            top: 11vh; 
+            right: 12vw; 
+            color: rgb(0, 0, 0); 
+            text-align: left; 
+            letter-spacing: 0.3vw; 
+            z-index: 1000;
+            font-family: PlayfairDisplay-Regular;
+        }
+        @media screen and (max-width:1024px) {
+		.s2page {
+            position: absolute; 
+            font-size: 5vw; 
+            width: 25vw;
+            top: 70vh; 
+            right: 20vw; 
+            color: rgb(0, 0, 0); 
+            text-align: left; 
+            letter-spacing: 1.2vw; 
+            z-index: 1000;
+            font-family: PlayfairDisplay-Regular;
+		}
+		}
+        @media screen and (max-width:600px) {
+		.s2page {
+            position: absolute; 
+            font-size: 7vw; 
+            width: 25vw;
+            top: 62vh; 
+            right: 20vw; 
+            color: rgb(0, 0, 0); 
+            text-align: left; 
+            letter-spacing: 1.2vw; 
+            z-index: 1000;
+            font-family: PlayfairDisplay-Regular;
+		}
+		}
+        
+
 
         .posterimg {
             
@@ -612,8 +649,7 @@
             color: white;
             cursor: pointer;
         }
-
-        
+      
     </style>
 </head>
 
@@ -633,9 +669,9 @@
 
             <div class="section" id="section2">
                 <div style="width: 100vw; height: 100vh; position: relative;">
+                    <div class="s2page"><p>Modeling Project</p></div>
                     <a href="Portfolio___19.html" target="_blank"><img id="synthesis" src="Synthesis/ps/1.png"></a>
                     <a href="Portfolio___17.html" target="_blank"><img id="bedroom" src="bedroom/2.jpg"></a>
-                    <a href="Portfolio___10.html" target="_blank"><img id="miya" src="miya/miya1.jpg"></a>
                     <a href="Portfolio___18.html" target="_blank"><img id="flower" src="梦与花/4k荷花-1.jpg"></a>
                 </div> 
             </div>
@@ -643,25 +679,26 @@
             <div class="section" id="section3">
                 <div style="width: 100vw; height: 100vh; position: relative;">
                     <div class="s3" id="s3">
-                        <div class="scroll-container" id="scrollContainer">
+                        <div class="gallery">
                             <a href="Portfolio___16.html" target="_blank"><img src="exhibition_david/1.jpg" id="wayfinding"></a>
                             <a href="Portfolio___12.html" target="_blank"><img src="critical writing/Spiral Notebook Mockup.jpg" id="roy"></a>
                             <a href="Portfolio___11.html" target="_blank"><img src="淘宝/手打效果图.jpg" id="陷落星河"></a>
-                            <a href="Portfolio___14.html" target="_blank"><img src="web design/california.webp" id="california"></a>
 							<a href="Portfolio___1.html" target="_blank"><img  id="zine" src="zine/zine_mock_up3@2x.webp"></a>
-                            <a href="Portfolio___9.html" target="_blank"><img src="alec/1.webp" id="alec"></a>
+                            <a href="Portfolio___14.html" target="_blank"><img src="web design/california.webp" id="california"></a>
 							<a href="Portfolio___6.html" target="_blank"><img id="multiweb" src="multi website img/Rectangle@2x.webp"></a>
 							<a href="Portfolio___7.html" target="_blank"><img id="multi-memory" src="resource/multi calendar/title wall.webp"></a>
-							<a href="Portfolio___8.html" arget="_blank"><img  id="multi-mapping" src="resource/multi mapping/cover-mapping.webp"></a>
+							<a href="Portfolio___8.html" target="_blank"><img  id="multi-mapping" src="resource/multi mapping/cover-mapping.webp"></a>
+                            <a href="Portfolio___10.html" target="_blank"><img id="miya" src="miya/miya1.jpg"></a>
                             <a href="Portfolio___4.html" target="_blank"><img id="Rectangle" src="resource/core 4 kim/Rectangle@2x.webp"></a>
+                            <a href="Portfolio___9.html" target="_blank"><img src="alec/1.webp" id="alec"></a>
 							<a href="Portfolio___3.html" target="_blank"><img id="coreiii" src="coreIII/2.webp"></a>
 							<a href="Portfolio___5.html" target="_blank"><img id="multig" src="multi (anthony)/0.webp"></a>
 							<a href="Portfolio___13.html" target="_blank"><img id="web-accordin" src="web design/未标题-1.webp"></a>
 							<a href="Portfolio___2.html" target="_blank"><img id="design_practice_collection_boo" src="chinese new year collection book/design_practice_collection_boo@2x.webp"></a>
 							<a href="Portfolio___15.html" target="_blank"><img id="plant" src="plant/4-0-0.jpg"></a>
+                        </div>  
                             
-                            
-                        </div>
+                        
                     </div>
                 </div>
             </div>
@@ -737,61 +774,10 @@
                 section.style.transform = `translateY(-${currentSection * 100}vh)`;
             });
 
-            // 如果到达 section3，启动滚动动画
-            if (currentSection === 2) {
-                startScrolling();
-            } else {
-                stopScrolling();
-            }
+            
         }
 
         window.addEventListener('wheel', scrollSection);
-
-        //控制s3的滚动图片
-        const scrollContainer = document.getElementById('scrollContainer');
-        let isPaused = false;
-        let animationPausedAt;
-
-        function startScrolling() {
-            scrollContainer.style.animationPlayState = 'running';
-        }
-
-        function stopScrolling() {
-            scrollContainer.style.animationPlayState = 'paused';
-        }
-
-        // 鼠标悬停时暂停动画
-        document.querySelector('.s3').addEventListener('mouseenter', () => {
-            isPaused = true;
-            stopScrolling();
-        });
-
-        // 鼠标移出时恢复动画
-        document.querySelector('.s3').addEventListener('mouseleave', () => {
-            isPaused = false;
-            if (currentSection === 2) {
-                startScrolling();
-            }
-        });
-
-        // 鼠标滚轮滚动时手动控制滚动
-        document.querySelector('.s3').addEventListener('wheel', (event) => {
-            stopScrolling(); // 停止自动滚动
-            const currentTransform = getComputedStyle(scrollContainer).transform;
-            const matrix = new WebKitCSSMatrix(currentTransform);
-            let scrollAmount = matrix.m41; // 获取当前的translateX值
-            scrollAmount -= event.deltaY * 0.5; // 根据滚轮滚动方向调整滚动距离
-
-            // 循环滚动
-            const containerWidth = scrollContainer.scrollWidth / 2;
-            if (scrollAmount <= -containerWidth) {
-                scrollAmount += containerWidth;
-            } else if (scrollAmount >= 0) {
-                scrollAmount -= containerWidth;
-            }
-
-            scrollContainer.style.transform = `translateX(${scrollAmount}px)`;
-        });
 
 
             // 获取所有的可放大的图片
@@ -850,30 +836,10 @@
 
                 event.preventDefault();
 
-                // 设置节流时间
-                isThrottled = true;
-                setTimeout(() => {
-                    isThrottled = false;
-                }, 1500); // 1500ms 的节流时间，根据需要调整
-
-                // 确定滚动方向
-                const delta = Math.sign(event.deltaY);
-
-                // 计算新的节数，并限制在有效范围内
-                currentSection = Math.min(Math.max(currentSection + delta, 0), totalSections - 1);
-                sections.forEach((section) => {
-                    section.style.transform = `translateY(-${currentSection * 100}vh)`;
-                });
-
-                // 如果到达 section3，启动滚动动画
-                if (currentSection === 2) {
-                    startScrolling();
-                } else {
-                    stopScrolling();
-                }
+              
             }
 
-            window.addEventListener('wheel', scrollSection);
+            
 
 
             let startY, endY;
@@ -906,7 +872,14 @@
             window.addEventListener('touchstart', handleTouchStart, false);
             window.addEventListener('touchmove', handleTouchMove, false);
             window.addEventListener('touchend', handleTouchEnd, false);
-                        
+                 
+            function scrollToSection(sectionId) {
+            const section = document.querySelector(`#${sectionId}`);
+            if (section) {
+                section.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+            
                         
     </script>
 </body>
