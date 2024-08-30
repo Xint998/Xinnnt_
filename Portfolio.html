@@ -472,9 +472,9 @@
 
         .s3 {
             left: 12.5vw;
-            top: 14.5vh;
+            top: 14vh;
             width: 80vw;
-            height: 75vh;
+            height: 80vh;
             overflow-y:auto ;
             display: flex;
             justify-content: center;
@@ -484,23 +484,48 @@
         @media screen and (max-width:600px){
             .s3 {
             left: 12.5vw;
-            top: 32vh;
+            top: 14vh;
             width: 80vw;
-            height: 75vw;
+            height: 90vw;
             overflow-y:auto ;
             
         }
     }
         .gallery {
             display: grid;
-            position: relative;
-            top:40vh;
+            position: absolute;
+            top:0vh;
+            
             grid-template-columns: repeat(4, 1fr);
             gap: 1.5vw; /* 设置图片之间的间距 */
             overflow-y: visible; /* Ensure no clipping */
             padding-right: 1vw;
         }
-
+        @media screen and (max-width:1200px){
+            .gallery {
+            display: grid;
+            position: relative;
+            top:0;
+            
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1.5vw; /* 设置图片之间的间距 */
+            overflow-y: visible; /* Ensure no clipping */
+            padding-right: 1vw;
+        }
+        }
+        @media screen and (max-width:600px){
+            .gallery {
+            display: grid;
+            position: relative;
+            top:0;
+            
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1.5vw; /* 设置图片之间的间距 */
+            overflow-y: visible; /* Ensure no clipping */
+            padding-right: 1vw;
+        }
+        }
+        
         .gallery img {
             width: 100%; /* 让图片宽度自适应单元格 */
             height: 100%; /* 保持图片比例 */
@@ -537,10 +562,10 @@
             top: 11vh; 
             right: 12vw; 
             color: rgb(0, 0, 0); 
-            text-align: left; 
             letter-spacing: 0.3vw; 
             z-index: 1000;
             font-family: PlayfairDisplay-Regular;
+            text-align: justify;
         }
         @media screen and (max-width:1024px) {
 		.s2page {
@@ -550,7 +575,7 @@
             top: 70vh; 
             right: 20vw; 
             color: rgb(0, 0, 0); 
-            text-align: left; 
+            text-align: justify; 
             letter-spacing: 1.2vw; 
             z-index: 1000;
             font-family: PlayfairDisplay-Regular;
@@ -669,7 +694,7 @@
 
             <div class="section" id="section2">
                 <div style="width: 100vw; height: 100vh; position: relative;">
-                    <div class="s2page"><p>Modeling Project</p></div>
+                    <div class="s2page"><p>Modeling <br>Project</p></div>
                     <a href="Portfolio___19.html" target="_blank"><img id="synthesis" src="Synthesis/ps/1.png"></a>
                     <a href="Portfolio___17.html" target="_blank"><img id="bedroom" src="bedroom/2.jpg"></a>
                     <a href="Portfolio___18.html" target="_blank"><img id="flower" src="梦与花/4k荷花-1.jpg"></a>
